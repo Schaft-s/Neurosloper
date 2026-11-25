@@ -1,0 +1,34 @@
+{
+  "semantic_v1": {
+    "documents": 88,
+    "reference_findings": 117,
+    "candidate_count": 504,
+    "matched": 56,
+    "recall": 0.47863247863247865,
+    "precision": 0.1111111111111111
+  },
+  "skill_0.4.2": {
+    "documents": 88,
+    "reference_findings": 117,
+    "candidate_count": 815,
+    "matched": 75,
+    "recall": 0.6410256410256411,
+    "precision": 0.09202453987730061
+  },
+  "slopotron": {
+    "documents": 88,
+    "reference_findings": 117,
+    "candidate_count": 998,
+    "matched": 68,
+    "recall": 0.5811965811965812,
+    "precision": 0.06813627254509018
+  },
+  "reader_task": {
+    "documents": 88,
+    "reference_findings": 117,
+    "candidate_count": 248,
+    "matched": 31,
+    "recall": 0.26495726495726496,
+    "precision": 0.125
+  }
+}

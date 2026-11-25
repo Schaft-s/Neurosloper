@@ -1,0 +1,18 @@
+{
+  "status": "secondary prospectively named in FREEZE.json; configuration selected on development only",
+  "dev_result": "7/9 localized; one of nine clean documents had a false alarm; fixed 14/21. No changes to the search or voting prompt after this selection.",
+  "method": "reader_committee",
+  "judges": [
+    "openai/gpt-5.4-mini",
+    "google/gemma-4-31b-it",
+    "anthropic/claude-sonnet-4.6"
+  ],
+  "candidate_model": "anthropic/claude-sonnet-4.6",
+  "slopotron_model": "qwen/qwen3-235b-a22b-2507",
+  "commitment": {
+    "reader_verdict.py": "b5814a7e12bed431e3fd17cb6a0f24c2c803b468a28b1f8ed871cb1388a9ee88",
+    "consensus.py": "7bb1de692bd093c19865e079bd3c4dac09312f326858bfe31fa0865d57a6ae67",
+    "search_rubric.py": "f9ae65ac8926a56bc92e2be3f6009868834d3d96b0682bf4117fecf149cbbe5b",
+    "provider.py": "50ca23e0dd87a519a00bb8287c611068e187a2dcbffc82629147c075657afb81"
+  }
+}

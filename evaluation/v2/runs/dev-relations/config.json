@@ -1,0 +1,44 @@
+{
+  "suite": "dev-meaning",
+  "task": "fidelity",
+  "search_model": "qwen/qwen3-235b-a22b-2507",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "panel": [
+    "qwen/qwen3-235b-a22b-2507",
+    "google/gemma-4-31b-it",
+    "deepseek/deepseek-v3.2"
+  ],
+  "verify": "legacy",
+  "rubric": "legacy",
+  "policy": "relations_v2",
+  "rewriter": "standard",
+  "hashes": {
+    "consensus.py": "b601ad68903f91f56a8552c9419a50a255442359f76f334b962b4ad8cdc87922",
+    "detection_verification.py": "5c38ffcb42effc041711c303edffa8abde279cfbd25b4b48eb5c23592c08fe99",
+    "document_tools.py": "4840e6baf6834af4d79b655ed97e8b94a4007040cdd90f31f8df2e1e21c7a6f7",
+    "engine.py": "594120b4d5b1e2dc9881e2570b83904820fc91e9788cea530c4461faafe104ac",
+    "fidelity.py": "16499891be4ed69dbf2961c8300f55f71f4b55c730b7aeffc217d3da273c9e8f",
+    "formats.py": "b775422ab0745c2b7ccd6a6637696164c9bf80b1c465237032a16ef7a4c361a8",
+    "html_format.py": "681d5d6736113d6667463158f95b315218ff65481c684edffd0cef8b9fe58ced",
+    "offline.py": "c8f9b33c94b7f100e2e0b497ab508f87c5f133e41a6df4237a4695fc260a9f38",
+    "personal_search.py": "c030f68787fca375c4e45ab072ff79fdc3330b1a1fc286ea2df0dbb3ab39e153",
+    "policy.py": "c91fe64d0cdc0e4390f1715ed98b4f1781f3936a8bd28d7a53f2005181c6782d",
+    "preferences.py": "9782ff7dba1f3e144dcc7fd171f8d78bac2dfa7e468b163b16dc1c2f98b4628e",
+    "provider.py": "5d01058122678594b383dcbe291e7a50beb1943bc8f546a4ca0dbd19338fa135",
+    "report.py": "07b13c4811d8ae4aac03fc5926b155b1e7d614b994986a2784b07ecb774214c2",
+    "search_rubric.py": "25afdbb380bff2f3eec2e380e008caec0fb07025af6dfdbdcef8fdb5c558952a",
+    "spending.py": "c1c866e8d762fcb0422c10697167fd664105203fd8af113b1c068cf5568214fb",
+    "workspace.py": "a3b7b02da54569a106013b5d2d46db28d7ce84366738274b2426aa0926f1e7f3"
+  },
+  "inputs": {
+    "7ada611ff0bb8": "b885da25b7d792aa3f025749622ac159c19e58f7f109414b3f4120cd1c0b02a3",
+    "f08f93d92d75d": "3326fb47c0b255b215aa1da8e434f3be0b25e7331152000e5a22429c47f8a98d",
+    "26c742d07cf89": "fad8e9ad2765c9b7347b6428f6f0feaf0905fdedf43574c4b6c62f607921f655",
+    "b52a8efd0d533": "e32bbf9ba09ef3815f61917c218d6499fa34cb248ff5bd5f707b347563f181a9",
+    "ff070993bd963": "d835478f9dc0995dc5d249dd09a7547e1a21d68485e18e41e125000e4ba006ce",
+    "d8c8741a4b8eb": "a1ae558b6c8fdef122feaf32ced914a366029a4398327786881c0f878d6b74c3",
+    "f9eaea31f769c": "05ec05e1371eb70fa85652ddc6afb70dc9dafdff69fa618f3ccf96a08f342220",
+    "4129da872ac23": "ea309033930377a2b20faed0becdfd15dff798270ff40599fd6ae126cd239043"
+  },
+  "targets_hash": null
+}

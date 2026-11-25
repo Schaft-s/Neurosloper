@@ -3,25 +3,35 @@ import json
 import secrets
 import time
 from dataclasses import dataclass
+from functools import lru_cache
+from io import BytesIO
 from pathlib import Path
 
 import pymupdf
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import HTMLResponse, Response
+from pptx import Presentation
 from pydantic import BaseModel, Field
 
 import preferences
 from engine import analyze, finish
-from formats import LIMIT, render
-from report import diagnostic_report, marked_pages
+from formats import LIMIT, load, render
+from report import diagnostic_report, marked_pages, review_view
 from personal_search import search as search_personal
 from policy import literal_terms
-from workspace import document_consent_required, document_detector, propose
+from provider import digest
+from workspace import document_detector, propose
 
 app = FastAPI(title="По делу")
 ROOT = Path(__file__).parent
+SHOWCASE = {
+    "etiketki.md": "Передайте вечерней смене состояние заказа № 417 и порядок контрольного прогона на линии Р-4.",
+    "fonoteka.html": "Объясните звукорежиссёру, как передать остаток записи, если загрузка прервалась, и когда можно закрыть карточку сеанса.",
+    "korobka.pptx": "Покажите мастеру упаковки результаты первой пробы вкладыша и сформулируйте задание для второй пробы.",
+}
 COOKIE = "po_delu_browser"
 gate = asyncio.Semaphore(2)
+showcase_render_lock = asyncio.Lock()
 
 
 @dataclass
@@ -74,7 +84,7 @@ def save(owner, job, data):
         jobs.pop(next(iter(jobs)))
     token = secrets.token_urlsafe(32)
     jobs[token] = Saved(owner, now, job, data)
-    return dict(job, token=token)
+    return dict(job, token=token, review_view=review_view(job))
 
 
 class Selection(BaseModel):
@@ -116,8 +126,70 @@ def attachment(name, data):
 
 @app.get("/", response_class=HTMLResponse)
 async def home():
-    controls = "" if document_consent_required() else "hidden disabled"
-    return (ROOT / "index.html").read_text().replace("data-consent-visibility", controls)
+    return (ROOT / "index.html").read_text()
+
+
+def showcase_bytes(filename):
+    if filename not in SHOWCASE:
+        raise HTTPException(404, "Пример не найден.")
+    return (ROOT / "examples" / "showcase" / filename).read_bytes()
+
+
+def saved_showcase_review(filename, revision):
+    path = ROOT / "examples" / "showcase" / "reviews" / (Path(filename).stem + ".json")
+    try:
+        record = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    if isinstance(record, dict) and record.get("source_sha256") == revision:
+        return record
+    return None
+
+
+@app.get("/examples/{filename}")
+async def showcase_preview(filename: str):
+    data = showcase_bytes(filename)
+    revision = digest(data)
+    _, blocks = await asyncio.to_thread(load, filename, data)
+    return {
+        "name": filename,
+        "brief": SHOWCASE[filename],
+        "revision": revision,
+        "saved_review": saved_showcase_review(filename, revision),
+        "slides": len(Presentation(BytesIO(data)).slides) if filename.endswith(".pptx") else 0,
+        "blocks": [
+            {k: b[k] for k in ("id", "label", "text")} for b in blocks if b.get("editorial", True)
+        ],
+    }
+
+
+@app.get("/examples/{filename}/download")
+async def showcase_download(filename: str):
+    return attachment(filename, showcase_bytes(filename))
+
+
+@lru_cache(maxsize=1)
+def showcase_pdf(data):
+    return render(data)
+
+
+def page_png(pdf, page):
+    with pymupdf.open(stream=pdf, filetype="pdf") as doc:
+        if not 0 <= page < len(doc):
+            raise ValueError("Нет такой страницы.")
+        return doc[page].get_pixmap().tobytes("png")
+
+
+@app.get("/examples/{filename}/slides/{page}")
+async def showcase_slide(filename: str, page: int):
+    if filename not in SHOWCASE or not filename.endswith(".pptx"):
+        raise HTTPException(404, "Презентация не найдена.")
+    try:
+        async with showcase_render_lock:
+            pdf = await asyncio.to_thread(showcase_pdf, showcase_bytes(filename))
+        return Response(await asyncio.to_thread(page_png, pdf, page), media_type="image/png")
+    except Exception as exc:
+        raise error(exc, "Не удалось показать слайд.") from exc
 
 
 @app.get("/editor.js")
@@ -156,6 +228,8 @@ async def review(
     request: Request,
     text: str = Form(""),
     file: UploadFile | None = File(None),
+    showcase: str = Form(""),
+    showcase_revision: str = Form(""),
     format: str = Form("txt"),
     style: str = Form("voice"),
     length: str = Form("short"),
@@ -167,7 +241,14 @@ async def review(
     analysis_mode: str = Form(""),
     share_document: bool = Form(False),
 ):
-    if file:
+    if showcase:
+        if file or text:
+            raise HTTPException(422, "Выберите один источник текста.")
+        data, name = showcase_bytes(showcase), showcase
+        if showcase_revision and showcase_revision != digest(data):
+            raise HTTPException(409, "Пример обновился. Откройте его ещё раз перед проверкой.")
+        analysis_mode = analysis_mode or "local"
+    elif file:
         data = await file.read(LIMIT + 1)
         name = Path(file.filename or "file").name
     else:
@@ -218,7 +299,9 @@ async def suggestions(request: Request, token: str, selection: Selection):
             settings[key] = value
     try:
         async with gate:
-            job = await propose(settings, saved.data, selection.ids, saved.owner, selection.share_examples)
+            job = await propose(
+                settings, saved.data, selection.ids, saved.owner, selection.share_examples
+            )
         return save(saved.owner, job, saved.data)
     except Exception as e:
         raise error(e, "Не удалось получить замену. Замечания сохранены.") from e
@@ -228,7 +311,9 @@ async def suggestions(request: Request, token: str, selection: Selection):
 async def download(request: Request, token: str, selection: Selection):
     saved = fetch_job(request, token)
     try:
-        name, data = await asyncio.to_thread(finish, saved.job, saved.data, selection.ids, selection.mode)
+        name, data = await asyncio.to_thread(
+            finish, saved.job, saved.data, selection.ids, selection.mode
+        )
     except Exception as e:
         raise error(e, "Не удалось собрать документ.") from e
     return attachment(name, data)
@@ -244,10 +329,7 @@ async def preview(request: Request, token: str, page: int, selection: Selection)
         name, data = finish(saved.job, saved.data, selection.ids)
         if name.endswith(".pptx"):
             data = render(data)
-        with pymupdf.open(stream=data, filetype="pdf") as doc:
-            if not 0 <= page < len(doc):
-                raise ValueError("Нет такой страницы.")
-            return doc[page].get_pixmap().tobytes("png")
+        return page_png(data, page)
 
     try:
         return Response(await asyncio.to_thread(image), media_type="image/png")

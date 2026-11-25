@@ -1,0 +1,21 @@
+{
+  "base": "08ee0e8",
+  "policy": "relations_v2",
+  "panel": [
+    "anthropic/claude-sonnet-4.6",
+    "qwen/qwen3-235b-a22b-2507",
+    "deepseek/deepseek-v3.2"
+  ],
+  "generator": "targeted",
+  "generator_model": "qwen/qwen3-235b-a22b-2507",
+  "api_json": false,
+  "sealed_manifest": "27ff50154fe41e1789c13c09d78262b6d82c8dc87d1744c64f0599681634ae16",
+  "files": {
+    "fidelity.py": "b2aeefd9940b16b60424e5fdb8b9d5ff3d9d1e49f0574db0035a1c96c69c7ac7",
+    "policy.py": "5293e1f54f2096b32044acbf610ef6bb08dfd35adc2161afc7c72aaa252914bd",
+    "document_tools.py": "832d0dcd652fde42ee81437da93f51c6c00a56119a031cd9f2fad10c2d68f166",
+    "workspace.py": "335e11474bae413a350b4c81452a35c6f62b7959b2c1c0e3a136ed26bb1cfaf1",
+    "provider.py": "722d19c83697a1f0f71f2b0f174a4e12479bbe2b79d67f4d7e9c9e7dd417c6c0"
+  },
+  "selection": "Открытая проверка вариантов: 6/8 разрешённых перефразировок при нуле опасных допусков у mixed, 5/8 у public. Для первого закрытого испытания выбран mixed."
+}

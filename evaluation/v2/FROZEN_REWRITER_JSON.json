@@ -1,0 +1,7 @@
+{
+  "same_policy_as": "FROZEN_REWRITER.json",
+  "variant": "relations_v2",
+  "change": "Native JSON object response requested; otherwise same three judges and inputs.",
+  "selection_basis": "Before reading held-out labels: model output stopped with invalid JSON on eight calls in first run. Known supported JSON-object on development panel.",
+  "actual_before_new_run": true
+}

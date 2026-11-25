@@ -85,8 +85,9 @@ class Endpoint:
         )
 
 
-def judges():
-    specs = json.loads(os.getenv("EDITOR_JUDGES_JSON") or "[]")
+def judges(role=None):
+    specific = os.getenv(f"EDITOR_{role}_JUDGES_JSON") if role else None
+    specs = json.loads(specific if specific is not None else os.getenv("EDITOR_JUDGES_JSON") or "[]")
     if not isinstance(specs, list) or len(specs) > 12:
         raise ValueError("EDITOR_JUDGES_JSON должен содержать список до 12 моделей")
     base = Endpoint.role()
@@ -122,6 +123,7 @@ class Client:
 
     async def chat(self, endpoint, stage, messages, region, **options):
         start = time.monotonic()
+        sampling = {"reasoning_effort": "low"} if endpoint.model == "openai/gpt-5.4-mini" else {"temperature": 0}
         entry = dict(
             stage=stage,
             model=endpoint.model,
@@ -135,12 +137,12 @@ class Client:
                 dict(
                     model=endpoint.model,
                     base=endpoint.base,
-                    temperature=0,
+                    sampling=sampling,
                     options=options,
                     system=messages[0]["content"],
                 )
             ),
-            temperature=0,
+            **sampling,
             status="error",
             usage=None,
             cost_usd=None,
@@ -154,7 +156,7 @@ class Client:
             path = endpoint.base + "/chat/completions"
             request = dict(
                 headers={"Authorization": "Bearer " + endpoint.key} if endpoint.key else {},
-                json=dict(model=endpoint.model, messages=messages, temperature=0, **options),
+                json=dict(model=endpoint.model, messages=messages, **sampling, **options),
                 follow_redirects=False,
             )
             if ledger and endpoint.base.rstrip("/") == "https://openrouter.ai/api/v1":
@@ -218,7 +220,10 @@ class Client:
             {"role": "system", "content": system},
             {"role": "user", "content": json.dumps(payload, ensure_ascii=False)},
         ]
-        msg, entry = await self.chat(endpoint, stage, messages, region)
+        options = {}
+        if os.getenv("EDITOR_API_JSON") == "1":
+            options["response_format"] = {"type": "json_object"}
+        msg, entry = await self.chat(endpoint, stage, messages, region, **options)
         try:
             answer = msg["content"].strip()
             if answer.startswith("```") and answer.endswith("```"):

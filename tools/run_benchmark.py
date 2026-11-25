@@ -142,6 +142,7 @@ async def run(a):
         "protocol": os.getenv("EDITOR_SEARCH_PROTOCOL", "json"),
         "rewrite_consensus": os.getenv("EDITOR_FIDELITY_CONSENSUS", "0"),
         "detector_variant": os.getenv("EDITOR_DETECTOR_VARIANT", "blinded"),
+        "verification": os.getenv("EDITOR_VERIFICATION", "legacy"),
         "code_hash": code_hash(),
         "revision": a.run,
     }

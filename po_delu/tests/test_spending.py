@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 import httpx
-from spending import BudgetTransport, CEILING, MODELS, ORIGIN
+from spending import BudgetTransport, CEILING, MODELS, ORIGIN, ledger_balance
 
 
 class Budget(unittest.TestCase):
@@ -28,3 +28,16 @@ class Budget(unittest.TestCase):
             request = httpx.Request('POST', 'https://invalid.example/chat/completions', json={})
             with self.assertRaisesRegex(ValueError, 'upstream'):
                 asyncio.run(gate.handle_async_request(request))
+
+
+class Settlement(unittest.TestCase):
+    def test_only_evidenced_failures_are_released_and_charges_take_precedence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger=Path(tmp)/"workspace.sqlite"
+            BudgetTransport(ledger, "synthetic")
+            with sqlite3.connect(ledger) as db:
+                a=db.execute("INSERT INTO calls(reserve,status) VALUES(0.2,'404')").lastrowid
+                b=db.execute("INSERT INTO calls(reserve,status,actual) VALUES(0.2,'200',0.05)").lastrowid
+                db.execute("INSERT INTO calls(reserve,status) VALUES(0.3,'reserved')")
+                db.executemany("INSERT INTO routing_releases VALUES(?,?)",[(a,"documented no endpoint"),(b,"cannot override charge")])
+                self.assertAlmostEqual(ledger_balance(db),0.35)

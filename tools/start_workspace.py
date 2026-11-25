@@ -18,9 +18,10 @@ CACHE = Path.home() / ".cache/agm-docs-v208"
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--port", type=int, default=18477)
+    parser.add_argument("--port", type=int, default=18478)
     parser.add_argument("--state", type=Path, default=STATE)
     parser.add_argument("--renderer-cache", type=Path, default=CACHE)
+    parser.add_argument("--revision", help="Run the exact Git revision in a separate checkout")
     a = parser.parse_args()
     directory = a.state / "state"
     directory.mkdir(mode=0o700, parents=True, exist_ok=True)
@@ -35,6 +36,20 @@ def main():
     with socket.socket() as s:
         if s.connect_ex(("127.0.0.1", a.port)) == 0:
             raise SystemExit("The chosen port is already in use.")
+    app = APP
+    if a.revision:
+        ref = subprocess.check_output(
+            ["git", "-C", str(ROOT), "rev-parse", "--verify", "--end-of-options", a.revision+"^{commit}"],
+            text=True).strip()
+        checkout=a.state/"releases"/ref
+        if not checkout.exists():
+            checkout.parent.mkdir(parents=True,exist_ok=True)
+            subprocess.run(["git","-C",str(ROOT),"worktree","add","--detach",str(checkout),ref],check=True)
+        current = subprocess.check_output(["git","-C",str(checkout),"rev-parse","HEAD"],text=True).strip()
+        dirty = subprocess.check_output(["git","-C",str(checkout),"status","--porcelain","--untracked-files=no"],text=True)
+        if current!=ref or dirty:
+            raise SystemExit("Release checkout differs from the selected revision.")
+        app=checkout/"po_delu"
     env = os.environ.copy()
     env.update(
         PO_DELU_MEMORY_DB=str(directory / "preferences.sqlite3"),
@@ -60,17 +75,18 @@ def main():
             ),
         )
     python = APP / ".venv/bin/python"
-    with (directory / "server.log").open("ab") as log:
+    stem="server" if a.port==18477 else f"server-{a.port}"
+    with (directory / (stem+".log")).open("ab") as log:
         proc = subprocess.Popen(
             [str(python), "serve_loopback.py"],
-            cwd=APP,
+            cwd=app,
             env=env,
             stdin=subprocess.DEVNULL,
             stdout=log,
             stderr=log,
             start_new_session=True,
         )
-    (directory / "server.pid").write_text(str(proc.pid) + "\n")
+    (directory / (stem+".pid")).write_text(str(proc.pid) + "\n")
     print(f"http://127.0.0.1:{a.port}/ (pid {proc.pid})")
 
 

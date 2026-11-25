@@ -1,0 +1,388 @@
+{"run": "dev-cases", "group": "G7", "id": "e31cc68d85b", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-cases", "group": "G6", "id": "6557f3091dd", "failed": false, "expected": "keep", "decision": "flag", "pair": "flag", "correct": false}
+{"run": "dev-cases", "group": "G4", "id": "a29bc6c9533", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-cases", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G2", "id": "f75f37e682c", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-cases", "group": "G9", "id": "7b164626a94", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-cases", "group": "G9", "id": "87a23dc922f", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-cases", "group": "G8", "id": "73fc6603a6b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-cases", "group": "G5", "id": "b5f8ea69e31", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G8", "id": "d9cff664905", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G1", "id": "9e47865028c", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-cases", "group": "G5", "id": "bd0785541c1", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-cases", "group": "G2", "id": "d54189d8805", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G1", "id": "95ef4a71fff", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G7", "id": "ccf84b5c902", "failed": false, "expected": "uncertain", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G3", "id": "3ca26ba5226", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G4", "id": "864a6b7f87b", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-cases", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-cases", "group": "G7", "id": "b7c04625cc5", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-cases", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-cases-search", "group": "G7", "id": "e31cc68d85b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G6", "id": "6557f3091dd", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G4", "id": "a29bc6c9533", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G5", "id": "24b2d1c84ee", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G2", "id": "f75f37e682c", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G9", "id": "7b164626a94", "failed": false, "gold": 1, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G9", "id": "87a23dc922f", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G6", "id": "c4343257229", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G8", "id": "73fc6603a6b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G5", "id": "b5f8ea69e31", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-cases-search", "group": "G8", "id": "d9cff664905", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G1", "id": "9e47865028c", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G5", "id": "bd0785541c1", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G2", "id": "d54189d8805", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G1", "id": "95ef4a71fff", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G7", "id": "ccf84b5c902", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G3", "id": "3ca26ba5226", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G4", "id": "864a6b7f87b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-cases-search", "group": "G3", "id": "38dd083254b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G7", "id": "b7c04625cc5", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-cases-search", "group": "G4", "id": "065972bce8e", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-compact-stable", "group": "G7", "id": "e31cc68d85b", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G6", "id": "6557f3091dd", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G4", "id": "a29bc6c9533", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-compact-stable", "group": "G2", "id": "f75f37e682c", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G9", "id": "7b164626a94", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G9", "id": "87a23dc922f", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-compact-stable", "group": "G8", "id": "73fc6603a6b", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G5", "id": "b5f8ea69e31", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G8", "id": "d9cff664905", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G1", "id": "9e47865028c", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G5", "id": "bd0785541c1", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G2", "id": "d54189d8805", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G1", "id": "95ef4a71fff", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G7", "id": "ccf84b5c902", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G3", "id": "3ca26ba5226", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G4", "id": "864a6b7f87b", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-compact-stable", "group": "G7", "id": "b7c04625cc5", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-compact-stable", "group": "G4", "id": "065972bce8e", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-dossier-grounded", "group": "G7", "id": "e31cc68d85b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G6", "id": "6557f3091dd", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G4", "id": "a29bc6c9533", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G5", "id": "24b2d1c84ee", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G2", "id": "f75f37e682c", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G9", "id": "7b164626a94", "failed": false, "gold": 1, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G9", "id": "87a23dc922f", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G6", "id": "c4343257229", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G8", "id": "73fc6603a6b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G5", "id": "b5f8ea69e31", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 1, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G8", "id": "d9cff664905", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G1", "id": "9e47865028c", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G5", "id": "bd0785541c1", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G2", "id": "d54189d8805", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G1", "id": "95ef4a71fff", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G7", "id": "ccf84b5c902", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G3", "id": "3ca26ba5226", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G4", "id": "864a6b7f87b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-dossier-grounded", "group": "G3", "id": "38dd083254b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G7", "id": "b7c04625cc5", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-dossier-grounded", "group": "G4", "id": "065972bce8e", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-edits", "group": "edit-01", "id": "edit-01", "failed": false, "expected": "offer", "offered": true, "after": ["В ведомости осталось две строки. Прошу проверить подписи до пятницы."], "refusals": []}
+{"run": "dev-edits", "group": "edit-02", "id": "edit-02", "failed": false, "expected": "offer", "offered": true, "after": ["Если табло погасло, необходимо выполнить перезапуск питания табло. Дверцу не открывайте."], "refusals": []}
+{"run": "dev-edits", "group": "edit-03", "id": "edit-03", "failed": false, "expected": "offer", "offered": true, "after": ["Возврат заявки допускается если подпись отсутствует. Копия остаётся в архиве."], "refusals": []}
+{"run": "dev-edits", "group": "edit-04", "id": "edit-04", "failed": false, "expected": "offer", "offered": true, "after": ["Привет, Лена! Напомню о том, что ты передашь мне ключ в субботу. Если планы изменятся, напиши."], "refusals": []}
+{"run": "dev-edits", "group": "edit-05", "id": "edit-05", "failed": false, "expected": "offer", "offered": true, "after": ["В аудитории выдали 18 бланков. Ответы пока не подсчитывали."], "refusals": []}
+{"run": "dev-edits", "group": "edit-06", "id": "edit-06", "failed": false, "expected": "offer", "offered": true, "after": ["До осмотра распаковке нельзя. Пломбу проверяет кладовщик."], "refusals": []}
+{"run": "dev-edits", "group": "edit-07", "id": "edit-07", "failed": false, "expected": "offer", "offered": true, "after": ["С 1 июня талоны будут выдаваться при обращении в окно 3. Время выдачи прежнее."], "refusals": []}
+{"run": "dev-edits", "group": "edit-08", "id": "edit-08", "failed": false, "expected": "offer", "offered": true, "after": ["Привет! Потому что зал закрыт, репетиция пройдёт во дворе. Начнём в 19:00."], "refusals": []}
+{"run": "dev-edits", "group": "edit-09", "id": "edit-09", "failed": false, "expected": "offer", "offered": true, "after": ["В журнале есть сведения о двух стендах. Результаты третьего стенда пока не поступили."], "refusals": []}
+{"run": "dev-edits", "group": "edit-10", "id": "edit-10", "failed": false, "expected": "offer", "offered": true, "after": ["Курьер забирает опись в 12:00. Прошу вас обеспечить подпись на копии."], "refusals": []}
+{"run": "dev-edits", "group": "edit-11", "id": "edit-11", "failed": false, "expected": "refuse", "offered": false, "after": [], "refusals": ["Указанный участок «Заявка в работе» является защищённой цитатой, как прямо указано в поле \"protected\" и \"literal_anchors\". Автор запретил менять написание поля, а замечание, хотя и отмечено как затрудняющее восприятие, не даёт права на изменение дословной цитаты. Следовательно, никакая замена названия поля недопустима, даже при наличии редакционного замечания. Требование сохранить факты и модальность, а также юридически формальный стиль, подтверждает необходимость оставить цитату без изменений."]}
+{"run": "dev-edits", "group": "edit-12", "id": "edit-12", "failed": false, "expected": "refuse", "offered": false, "after": [], "refusals": ["Изменена дословная цитата"]}
+{"run": "dev-json-committee", "group": "G7", "id": "e31cc68d85b", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-json-committee", "group": "G6", "id": "6557f3091dd", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-json-committee", "group": "G4", "id": "a29bc6c9533", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-json-committee", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-json-committee", "group": "G2", "id": "f75f37e682c", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-json-committee", "group": "G9", "id": "7b164626a94", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-json-committee", "group": "G9", "id": "87a23dc922f", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-json-committee", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-json-committee", "group": "G8", "id": "73fc6603a6b", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-json-committee", "group": "G5", "id": "b5f8ea69e31", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-json-committee", "group": "G8", "id": "d9cff664905", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-json-committee", "group": "G1", "id": "9e47865028c", "failed": false, "expected": "flag", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-json-committee", "group": "G5", "id": "bd0785541c1", "failed": false, "expected": "uncertain", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-json-committee", "group": "G2", "id": "d54189d8805", "failed": false, "expected": "flag", "decision": "keep", "pair": "keep", "correct": false}
+{"run": "dev-json-committee", "group": "G1", "id": "95ef4a71fff", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-json-committee", "group": "G7", "id": "ccf84b5c902", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-json-committee", "group": "G3", "id": "3ca26ba5226", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-json-committee", "group": "G4", "id": "864a6b7f87b", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-json-committee", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-json-committee", "group": "G7", "id": "b7c04625cc5", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-json-committee", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-json-full", "group": "G7", "id": "e31cc68d85b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G6", "id": "6557f3091dd", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G4", "id": "a29bc6c9533", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G5", "id": "24b2d1c84ee", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G2", "id": "f75f37e682c", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G9", "id": "7b164626a94", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G9", "id": "87a23dc922f", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G6", "id": "c4343257229", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G8", "id": "73fc6603a6b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G5", "id": "b5f8ea69e31", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 1, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G8", "id": "d9cff664905", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G1", "id": "9e47865028c", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-json-full", "group": "G5", "id": "bd0785541c1", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G2", "id": "d54189d8805", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G1", "id": "95ef4a71fff", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G7", "id": "ccf84b5c902", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G3", "id": "3ca26ba5226", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": false, "clean": true}
+{"run": "dev-json-full", "group": "G4", "id": "864a6b7f87b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-json-full", "group": "G3", "id": "38dd083254b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G7", "id": "b7c04625cc5", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-json-full", "group": "G4", "id": "065972bce8e", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-minimal-edit", "group": "edit-01", "id": "edit-01", "failed": false, "expected": "offer", "offered": true, "after": ["В ведомости осталось две строки. Прошу проверить подписи до пятницы."], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-02", "id": "edit-02", "failed": false, "expected": "offer", "offered": true, "after": ["Если табло погасло, необходимо выполнить перезапуск питания табло. Дверцу не открывайте."], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-03", "id": "edit-03", "failed": false, "expected": "offer", "offered": true, "after": ["Возврат заявки допускается при отсутствии подписи. Копия остаётся в архиве."], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-04", "id": "edit-04", "failed": false, "expected": "offer", "offered": false, "after": [], "refusals": ["Событие с неуказанным исполнителем стало действием говорящего или адресата."]}
+{"run": "dev-minimal-edit", "group": "edit-05", "id": "edit-05", "failed": true, "expected": "offer", "offered": false, "after": [], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-06", "id": "edit-06", "failed": false, "expected": "offer", "offered": false, "after": [], "refusals": ["В запрете потерялась привязка к началу действия."]}
+{"run": "dev-minimal-edit", "group": "edit-07", "id": "edit-07", "failed": true, "expected": "offer", "offered": false, "after": [], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-08", "id": "edit-08", "failed": true, "expected": "offer", "offered": false, "after": [], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-09", "id": "edit-09", "failed": true, "expected": "offer", "offered": false, "after": [], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-10", "id": "edit-10", "failed": true, "expected": "offer", "offered": false, "after": [], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-11", "id": "edit-11", "failed": true, "expected": "refuse", "offered": false, "after": [], "refusals": []}
+{"run": "dev-minimal-edit", "group": "edit-12", "id": "edit-12", "failed": true, "expected": "refuse", "offered": false, "after": [], "refusals": []}
+{"run": "dev-mixed", "group": "G7", "id": "e31cc68d85b", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G6", "id": "6557f3091dd", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G4", "id": "a29bc6c9533", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-mixed", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-mixed", "group": "G2", "id": "f75f37e682c", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-mixed", "group": "G9", "id": "7b164626a94", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-mixed", "group": "G9", "id": "87a23dc922f", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-mixed", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-mixed", "group": "G8", "id": "73fc6603a6b", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G5", "id": "b5f8ea69e31", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G8", "id": "d9cff664905", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-mixed", "group": "G1", "id": "9e47865028c", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-mixed", "group": "G5", "id": "bd0785541c1", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-mixed", "group": "G2", "id": "d54189d8805", "failed": false, "expected": "flag", "decision": "keep", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G1", "id": "95ef4a71fff", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G7", "id": "ccf84b5c902", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-mixed", "group": "G3", "id": "3ca26ba5226", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G4", "id": "864a6b7f87b", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-mixed", "group": "G7", "id": "b7c04625cc5", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-mixed", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-prose", "group": "G7", "id": "e31cc68d85b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-prose", "group": "G6", "id": "6557f3091dd", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-prose", "group": "G4", "id": "a29bc6c9533", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G5", "id": "24b2d1c84ee", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": false, "clean": true}
+{"run": "dev-prose", "group": "G2", "id": "f75f37e682c", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-prose", "group": "G9", "id": "7b164626a94", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G9", "id": "87a23dc922f", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-prose", "group": "G6", "id": "c4343257229", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G8", "id": "73fc6603a6b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G5", "id": "b5f8ea69e31", "failed": false, "gold": 1, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-prose", "group": "G8", "id": "d9cff664905", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-prose", "group": "G1", "id": "9e47865028c", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G5", "id": "bd0785541c1", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G2", "id": "d54189d8805", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-prose", "group": "G1", "id": "95ef4a71fff", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-prose", "group": "G7", "id": "ccf84b5c902", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G3", "id": "3ca26ba5226", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": false, "clean": true}
+{"run": "dev-prose", "group": "G4", "id": "864a6b7f87b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-prose", "group": "G3", "id": "38dd083254b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G7", "id": "b7c04625cc5", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-prose", "group": "G4", "id": "065972bce8e", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-public", "group": "G7", "id": "e31cc68d85b", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G6", "id": "6557f3091dd", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-public", "group": "G4", "id": "a29bc6c9533", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-public", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-public", "group": "G2", "id": "f75f37e682c", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-public", "group": "G9", "id": "7b164626a94", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-public", "group": "G9", "id": "87a23dc922f", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-public", "group": "G8", "id": "73fc6603a6b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-public", "group": "G5", "id": "b5f8ea69e31", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-public", "group": "G8", "id": "d9cff664905", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-public", "group": "G1", "id": "9e47865028c", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G5", "id": "bd0785541c1", "failed": false, "expected": "uncertain", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G2", "id": "d54189d8805", "failed": false, "expected": "flag", "decision": "keep", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G1", "id": "95ef4a71fff", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G7", "id": "ccf84b5c902", "failed": false, "expected": "uncertain", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G3", "id": "3ca26ba5226", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G4", "id": "864a6b7f87b", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-public", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-public", "group": "G7", "id": "b7c04625cc5", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-public", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-compact", "group": "G7", "id": "e31cc68d85b", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G6", "id": "6557f3091dd", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G4", "id": "a29bc6c9533", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-reader-compact", "group": "G2", "id": "f75f37e682c", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G9", "id": "7b164626a94", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G9", "id": "87a23dc922f", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-reader-compact", "group": "G8", "id": "73fc6603a6b", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G5", "id": "b5f8ea69e31", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G8", "id": "d9cff664905", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G1", "id": "9e47865028c", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G5", "id": "bd0785541c1", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G2", "id": "d54189d8805", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G1", "id": "95ef4a71fff", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G7", "id": "ccf84b5c902", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G3", "id": "3ca26ba5226", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G4", "id": "864a6b7f87b", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G3", "id": "38dd083254b", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G7", "id": "b7c04625cc5", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-compact", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-direct", "group": "G7", "id": "e31cc68d85b", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G6", "id": "6557f3091dd", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G4", "id": "a29bc6c9533", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G5", "id": "24b2d1c84ee", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G2", "id": "f75f37e682c", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G9", "id": "7b164626a94", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G9", "id": "87a23dc922f", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G6", "id": "c4343257229", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G8", "id": "73fc6603a6b", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G5", "id": "b5f8ea69e31", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G8", "id": "d9cff664905", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G1", "id": "9e47865028c", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G5", "id": "bd0785541c1", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G2", "id": "d54189d8805", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G1", "id": "95ef4a71fff", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G7", "id": "ccf84b5c902", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G3", "id": "3ca26ba5226", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G4", "id": "864a6b7f87b", "failed": true, "expected": "keep", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G3", "id": "38dd083254b", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G7", "id": "b7c04625cc5", "failed": true, "expected": "flag", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-direct", "group": "G4", "id": "065972bce8e", "failed": true, "expected": "uncertain", "decision": "unavailable", "pair": null, "correct": false}
+{"run": "dev-reader-verified", "group": "G7", "id": "e31cc68d85b", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-reader-verified", "group": "G6", "id": "6557f3091dd", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-reader-verified", "group": "G4", "id": "a29bc6c9533", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-reader-verified", "group": "G2", "id": "f75f37e682c", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-reader-verified", "group": "G9", "id": "7b164626a94", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G9", "id": "87a23dc922f", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-reader-verified", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G8", "id": "73fc6603a6b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-reader-verified", "group": "G5", "id": "b5f8ea69e31", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G8", "id": "d9cff664905", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G1", "id": "9e47865028c", "failed": false, "expected": "flag", "decision": "keep", "pair": "keep", "correct": false}
+{"run": "dev-reader-verified", "group": "G5", "id": "bd0785541c1", "failed": false, "expected": "uncertain", "decision": "uncertain", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G2", "id": "d54189d8805", "failed": false, "expected": "flag", "decision": "keep", "pair": "keep", "correct": false}
+{"run": "dev-reader-verified", "group": "G1", "id": "95ef4a71fff", "failed": false, "expected": "keep", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-reader-verified", "group": "G7", "id": "ccf84b5c902", "failed": false, "expected": "uncertain", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-reader-verified", "group": "G3", "id": "3ca26ba5226", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G4", "id": "864a6b7f87b", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-reader-verified", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-reader-verified", "group": "G7", "id": "b7c04625cc5", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-reader-verified", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "flag", "pair": "uncertain", "correct": false}
+{"run": "dev-relations", "group": "7ada611ff0bb8", "id": "7ada611ff0bb8", "failed": false, "equivalent": 1, "equivalent_reject": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations", "group": "f08f93d92d75d", "id": "f08f93d92d75d", "failed": false, "equivalent": 1, "equivalent_pass": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations", "group": "26c742d07cf89", "id": "26c742d07cf89", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-relations", "group": "b52a8efd0d533", "id": "b52a8efd0d533", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-relations", "group": "ff070993bd963", "id": "ff070993bd963", "failed": false, "equivalent": 1, "equivalent_reject": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations", "group": "d8c8741a4b8eb", "id": "d8c8741a4b8eb", "failed": false, "equivalent": 1, "equivalent_reject": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations", "group": "f9eaea31f769c", "id": "f9eaea31f769c", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-relations", "group": "4129da872ac23", "id": "4129da872ac23", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-relations-mixed", "group": "7ada611ff0bb8", "id": "7ada611ff0bb8", "failed": false, "equivalent": 1, "equivalent_pass": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations-mixed", "group": "f08f93d92d75d", "id": "f08f93d92d75d", "failed": false, "equivalent": 1, "equivalent_pass": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations-mixed", "group": "26c742d07cf89", "id": "26c742d07cf89", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-relations-mixed", "group": "b52a8efd0d533", "id": "b52a8efd0d533", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-relations-mixed", "group": "ff070993bd963", "id": "ff070993bd963", "failed": false, "equivalent": 1, "equivalent_reject": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations-mixed", "group": "d8c8741a4b8eb", "id": "d8c8741a4b8eb", "failed": false, "equivalent": 1, "equivalent_reject": 1, "corrupt": 1, "corrupt_reject": 1}
+{"run": "dev-relations-mixed", "group": "f9eaea31f769c", "id": "f9eaea31f769c", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-relations-mixed", "group": "4129da872ac23", "id": "4129da872ac23", "failed": false, "corrupt": 1, "corrupt_reject": 1, "equivalent": 1, "equivalent_pass": 1}
+{"run": "dev-v2-budget", "group": "G7", "id": "e31cc68d85b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G6", "id": "6557f3091dd", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G4", "id": "a29bc6c9533", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G5", "id": "24b2d1c84ee", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G2", "id": "f75f37e682c", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G9", "id": "7b164626a94", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G9", "id": "87a23dc922f", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G6", "id": "c4343257229", "failed": false, "gold": 1, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G8", "id": "73fc6603a6b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G5", "id": "b5f8ea69e31", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G8", "id": "d9cff664905", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G1", "id": "9e47865028c", "failed": false, "gold": 1, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G5", "id": "bd0785541c1", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": false, "clean": false}
+{"run": "dev-v2-budget", "group": "G2", "id": "d54189d8805", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-v2-budget", "group": "G1", "id": "95ef4a71fff", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G7", "id": "ccf84b5c902", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G3", "id": "3ca26ba5226", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-budget", "group": "G4", "id": "864a6b7f87b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": false, "clean": true}
+{"run": "dev-v2-budget", "group": "G3", "id": "38dd083254b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-budget", "group": "G7", "id": "b7c04625cc5", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-v2-budget", "group": "G4", "id": "065972bce8e", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": false, "clean": false}
+{"run": "dev-v2-editors", "group": "G7", "id": "e31cc68d85b", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-v2-editors", "group": "G6", "id": "6557f3091dd", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-v2-editors", "group": "G4", "id": "a29bc6c9533", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-v2-editors", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G2", "id": "f75f37e682c", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G9", "id": "7b164626a94", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-v2-editors", "group": "G9", "id": "87a23dc922f", "failed": false, "expected": "keep", "decision": "flag", "pair": "flag", "correct": false}
+{"run": "dev-v2-editors", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G8", "id": "73fc6603a6b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-v2-editors", "group": "G5", "id": "b5f8ea69e31", "failed": false, "expected": "flag", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G8", "id": "d9cff664905", "failed": false, "expected": "keep", "decision": "flag", "pair": "flag", "correct": false}
+{"run": "dev-v2-editors", "group": "G1", "id": "9e47865028c", "failed": false, "expected": "flag", "decision": "keep", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G5", "id": "bd0785541c1", "failed": false, "expected": "uncertain", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G2", "id": "d54189d8805", "failed": false, "expected": "flag", "decision": "keep", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G1", "id": "95ef4a71fff", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G7", "id": "ccf84b5c902", "failed": false, "expected": "uncertain", "decision": "flag", "pair": "flag", "correct": false}
+{"run": "dev-v2-editors", "group": "G3", "id": "3ca26ba5226", "failed": false, "expected": "keep", "decision": "flag", "pair": "flag", "correct": false}
+{"run": "dev-v2-editors", "group": "G4", "id": "864a6b7f87b", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-editors", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-v2-editors", "group": "G7", "id": "b7c04625cc5", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-v2-editors", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "flag", "pair": "flag", "correct": false}
+{"run": "dev-v2-full", "group": "G7", "id": "e31cc68d85b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-full", "group": "G6", "id": "6557f3091dd", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-full", "group": "G4", "id": "a29bc6c9533", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-full", "group": "G5", "id": "24b2d1c84ee", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": false, "clean": true}
+{"run": "dev-v2-full", "group": "G2", "id": "f75f37e682c", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": false, "clean": true}
+{"run": "dev-v2-full", "group": "G9", "id": "7b164626a94", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-full", "group": "G9", "id": "87a23dc922f", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-full", "group": "G6", "id": "c4343257229", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-v2-full", "group": "G8", "id": "73fc6603a6b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-full", "group": "G5", "id": "b5f8ea69e31", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-v2-full", "group": "G8", "id": "d9cff664905", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-full", "group": "G1", "id": "9e47865028c", "failed": false, "gold": 1, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 1, "complete": true, "clean": false}
+{"run": "dev-v2-full", "group": "G5", "id": "bd0785541c1", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": false, "clean": false}
+{"run": "dev-v2-full", "group": "G2", "id": "d54189d8805", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 0, "fp": 0, "fn": 1, "complete": false, "clean": false}
+{"run": "dev-v2-full", "group": "G1", "id": "95ef4a71fff", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-full", "group": "G7", "id": "ccf84b5c902", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-full", "group": "G3", "id": "3ca26ba5226", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": false, "clean": true}
+{"run": "dev-v2-full", "group": "G4", "id": "864a6b7f87b", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 0, "fn": 0, "complete": true, "clean": true}
+{"run": "dev-v2-full", "group": "G3", "id": "38dd083254b", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": false, "clean": false}
+{"run": "dev-v2-full", "group": "G7", "id": "b7c04625cc5", "failed": false, "gold": 1, "candidate_hits": 1, "tp": 1, "fp": 0, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-full", "group": "G4", "id": "065972bce8e", "failed": false, "gold": 0, "candidate_hits": 0, "tp": 0, "fp": 1, "fn": 0, "complete": true, "clean": false}
+{"run": "dev-v2-referee", "group": "G7", "id": "e31cc68d85b", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G6", "id": "6557f3091dd", "failed": false, "expected": "keep", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G4", "id": "a29bc6c9533", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-v2-referee", "group": "G5", "id": "24b2d1c84ee", "failed": false, "expected": "keep", "decision": "flag", "pair": "flag", "correct": false}
+{"run": "dev-v2-referee", "group": "G2", "id": "f75f37e682c", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G9", "id": "7b164626a94", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G9", "id": "87a23dc922f", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-v2-referee", "group": "G6", "id": "c4343257229", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G8", "id": "73fc6603a6b", "failed": false, "expected": "flag", "decision": "flag", "pair": "uncertain", "correct": true}
+{"run": "dev-v2-referee", "group": "G5", "id": "b5f8ea69e31", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G8", "id": "d9cff664905", "failed": false, "expected": "keep", "decision": "keep", "pair": "uncertain", "correct": true}
+{"run": "dev-v2-referee", "group": "G1", "id": "9e47865028c", "failed": false, "expected": "flag", "decision": "uncertain", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G5", "id": "bd0785541c1", "failed": false, "expected": "uncertain", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G2", "id": "d54189d8805", "failed": false, "expected": "flag", "decision": "keep", "pair": "keep", "correct": false}
+{"run": "dev-v2-referee", "group": "G1", "id": "95ef4a71fff", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G7", "id": "ccf84b5c902", "failed": false, "expected": "uncertain", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G3", "id": "3ca26ba5226", "failed": false, "expected": "keep", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G4", "id": "864a6b7f87b", "failed": false, "expected": "keep", "decision": "keep", "pair": "keep", "correct": true}
+{"run": "dev-v2-referee", "group": "G3", "id": "38dd083254b", "failed": false, "expected": "flag", "decision": "flag", "pair": "flag", "correct": true}
+{"run": "dev-v2-referee", "group": "G7", "id": "b7c04625cc5", "failed": false, "expected": "flag", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-v2-referee", "group": "G4", "id": "065972bce8e", "failed": false, "expected": "uncertain", "decision": "unavailable", "pair": "uncertain", "correct": false}
+{"run": "dev-write-referee", "group": "edit-01", "id": "edit-01", "failed": false, "expected": "offer", "offered": true, "after": ["В ведомости осталось две строки. Прошу проверить подписи до пятницы."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-02", "id": "edit-02", "failed": false, "expected": "offer", "offered": true, "after": ["Если табло погасло, необходимо выполнить перезапуск питания табло. Дверцу не открывайте."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-03", "id": "edit-03", "failed": false, "expected": "offer", "offered": true, "after": ["Возврат заявки допускается если заявка не подписана. Копия остаётся в архиве."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-04", "id": "edit-04", "failed": false, "expected": "offer", "offered": true, "after": ["Привет, Лена! Напомню о том, что нужно передать мне ключ в субботу. Если планы изменятся, напиши."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-05", "id": "edit-05", "failed": false, "expected": "offer", "offered": true, "after": ["В аудитории выдали 18 бланков. Ответы пока не подсчитывали."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-06", "id": "edit-06", "failed": false, "expected": "offer", "offered": true, "after": ["До осмотра начинать распаковку нельзя. Пломбу проверяет кладовщик."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-07", "id": "edit-07", "failed": false, "expected": "offer", "offered": true, "after": ["С 1 июня талоны будут выдаваться при обращении в окно 3. Время выдачи прежнее."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-08", "id": "edit-08", "failed": false, "expected": "offer", "offered": true, "after": ["Привет! Потому что зал закрыт, репетиция пройдёт во дворе. Начнём в 19:00."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-09", "id": "edit-09", "failed": false, "expected": "offer", "offered": true, "after": ["В журнале есть сведения о двух стендах. Результаты третьего стенда пока не поступили."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-10", "id": "edit-10", "failed": false, "expected": "offer", "offered": true, "after": ["Курьер забирает опись в 12:00. Прошу вас обеспечить подпись на копии."], "refusals": []}
+{"run": "dev-write-referee", "group": "edit-11", "id": "edit-11", "failed": false, "expected": "refuse", "offered": false, "after": [], "refusals": ["Изменена дословная цитата"]}
+{"run": "dev-write-referee", "group": "edit-12", "id": "edit-12", "failed": false, "expected": "refuse", "offered": false, "after": [], "refusals": ["Изменена дословная цитата"]}

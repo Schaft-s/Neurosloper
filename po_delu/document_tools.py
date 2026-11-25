@@ -88,6 +88,9 @@ def check_patch(block_id: str, before: str, after: str, reason: str) -> dict:
             job["length"],
             job["terms"],
             reviewed_phrasing=job.get("fidelity_consensus", False),
+            equality_review=job.get("fidelity_policy") == "relations_v4",
+            relation_review=job.get("fidelity_consensus", False)
+            and job.get("fidelity_policy") in ("relations_v2", "relations_v3", "relations_v4"),
         )
     )
     if not error and not allowed_ranges(before, after, job.get("selected", {}).get(block_id, [])):

@@ -3,6 +3,9 @@
 import re
 from bisect import bisect_right
 from collections import Counter
+from decimal import Decimal
+
+import boundary_review
 
 STYLES = {
     "voice": "Сохранить голос автора",
@@ -231,7 +234,134 @@ def phrasing_evidence(before, after, claims):
     return True
 
 
-def check(block, new, length, terms, *, reviewed_phrasing=False):
+# Literal references carry identity independently of the wording of a requirement.
+REFERENCE = re.compile(
+    r"https?://[^\s<>()«»]+|[\w.+-]+@[\w.-]+\.\w+|`[^`\n]+`|"
+    r"\b(?=[A-ZА-ЯЁ0-9_-]*\d)"
+    r"[A-ZА-ЯЁ][A-ZА-ЯЁ0-9]*(?:[-_][A-ZА-ЯЁ0-9]+)+\b"
+)
+
+
+def literal_references(text):
+    return [m[0].rstrip(".,;:!?") for m in REFERENCE.finditer(text)] + QUOTED.findall(text)
+
+
+def verbatim_error(old, new, terms):
+    if Counter(QUOTED.findall(old)) != Counter(QUOTED.findall(new)):
+        return "Изменена дословная цитата"
+    protected = literal_terms(terms)
+    if old != new and old in protected:
+        return "Блок целиком защищён дословно."
+    if any(old.count(t) != new.count(t) for t in protected):
+        return "Изменена защищённая строка"
+    if len(protected) > 1:
+
+        def sequence(value):
+            positions = [
+                (m.start(), term) for term in protected for m in re.finditer(re.escape(term), value)
+            ]
+            return [term for _, term in sorted(positions)]
+
+        if sequence(old) != sequence(new):
+            return "Изменён порядок защищённых строк"
+    return ""
+
+
+# A different measured quantity in exactly the same syntactic slot is decidable.
+# Restructured sentences, spelled-out quantities and unfamiliar units go to the judges.
+UNIT_GROUPS = {
+    ("time", 1): r"секунд(?:а|ы|у|е|ой)?|сек|с",
+    ("time", 60): r"минут(?:а|ы|у|е|ой)?|мин",
+    ("time", 3600): r"час(?:а|ов|у|е|ом)?|ч",
+    ("length", 1): r"мм|миллиметр(?:а|ов)?",
+    ("length", 10): r"см|сантиметр(?:а|ов)?",
+    ("length", 1000): r"м|метр(?:а|ов)?",
+    ("length", 1000000): r"км|километр(?:а|ов)?",
+    ("mass", 1): r"г|грамм(?:а|ов)?",
+    ("mass", 1000): r"кг|килограмм(?:а|ов)?",
+    ("fraction", 1): r"%|процент(?:а|ов)?",
+}
+UNITS = list(UNIT_GROUPS)
+MEASURE = re.compile(
+    r"(?<![\w.,])(?P<number>[−+-]?\d+(?:[.,]\d+)?)\s*"
+    + "(?:"
+    + "|".join(f"(?P<u{i}>{pattern})" for i, pattern in enumerate(UNIT_GROUPS.values()))
+    + ")"
+    + r"(?!\w)",
+    re.I,
+)
+EXPLICIT_FORCE = re.compile(
+    r"\b(?:не\s+обязан(?:а|о|ы)?|не\s+долж(?:ен|на|но|ны)|"
+    r"обязан(?:а|о|ы)?|долж(?:ен|на|но|ны)|вправе|име(?:ет|ют) право|"
+    r"разреш(?:ено|ается)|запрещ(?:ено|ается)|следует|рекомендуется)\b",
+    re.I,
+)
+
+
+BOUND_TYPES = {
+    "at_most": r"не (?:больше|более|выше)|максимум",
+    "at_least": r"не (?:меньше|менее|ниже)|минимум",
+    "less": r"меньше|менее",
+    "greater": r"больше|более",
+    "equal": r"ровно",
+}
+BOUND = re.compile(
+    r"\b(?:" + "|".join(f"(?P<{name}>{words})" for name, words in BOUND_TYPES.items())
+    + r")(?=\s+\d)", re.I
+)
+
+
+def slot_values(pattern, text, value):
+    values = []
+
+    def slot(match):
+        values.append(value(match))
+        return "〈слот〉"
+
+    return pattern.sub(slot, text.casefold()), values
+
+
+def measured_value(match):
+    dim, scale = UNITS[int(match.lastgroup[1:])]
+    return dim, Decimal(match["number"].replace(",", ".").replace("−", "-")) * scale
+
+
+def explicit_force(match):
+    word = match[0]
+    if word.startswith(("не долж", "запрещ")):
+        return "prohibited"
+    if word.startswith("не обязан"):
+        return "exempt"
+    if word.startswith(("долж", "обязан")):
+        return "required"
+    if word.startswith(("следует", "рекомендуется")):
+        return "advice"
+    return "permitted"
+
+
+def relation_preflight(old, new, terms):
+    error = verbatim_error(old, new, terms)
+    if error:
+        return error
+    if Counter(literal_references(old)) != Counter(literal_references(new)):
+        return "Изменена дословная ссылка, идентификатор или адрес."
+    for pattern, value, reason in (
+        (MEASURE, measured_value, "Изменена величина или её размерность."),
+        (BOUND, lambda match: match.lastgroup, "Изменена граница допустимого диапазона."),
+        (
+            EXPLICIT_FORCE,
+            explicit_force,
+            "При том же действии изменилась сила требования или запрета.",
+        ),
+    ):
+        left, left_slots = slot_values(pattern, old, value)
+        right, right_slots = slot_values(pattern, new, value)
+        if left == right and left_slots != right_slots:
+            return reason
+    return ""
+
+
+def check(block, new, length, terms, *, reviewed_phrasing=False, relation_review=False, equality_review=False):
     old = block["text"]
     if length not in LENGTHS:
         return "Неизвестный режим длины"
@@ -245,6 +375,12 @@ def check(block, new, length, terms, *, reviewed_phrasing=False):
         return "Превышен предел длины"
     if length == "near" and abs(len(new) - len(old)) > max(1, len(old) * 0.1):
         return "Изменение превышает 10%"
+    if equality_review:
+        boundary = boundary_review.compare(old, new)
+        if boundary["status"] != "no_veto":
+            return boundary["reason"]
+    if relation_review:
+        return relation_preflight(old, new, terms)
     a, b = old.casefold(), new.casefold()
     if NUM.findall(a) != NUM.findall(b):
         return "Изменены числа, единицы или порядок чисел"
@@ -262,26 +398,14 @@ def check(block, new, length, terms, *, reviewed_phrasing=False):
         strict_counts_differ = Counter(ANCHOR.findall(old_anchors)) != Counter(
             ANCHOR.findall(new_anchors)
         )
-        old_anchors, new_anchors = canonical_phrasing(old_anchors), canonical_phrasing(new_anchors)
+        old_anchors, new_anchors = (
+            canonical_phrasing(old_anchors),
+            canonical_phrasing(new_anchors),
+        )
         if strict_counts_differ and re.findall(r"\w+|[^\w\s]", canonical_phrasing(a)) != re.findall(
             r"\w+|[^\w\s]", canonical_phrasing(b)
         ):
             return "Вместе с формулировкой ограничения изменены другие слова или их привязка."
     if Counter(ANCHOR.findall(old_anchors)) != Counter(ANCHOR.findall(new_anchors)):
         return "Изменены адрес, отрицание, модальность или условие"
-    if Counter(QUOTED.findall(old)) != Counter(QUOTED.findall(new)):
-        return "Изменена дословная цитата"
-    protected = literal_terms(terms)
-    if any(old.count(t) != new.count(t) for t in protected):
-        return "Изменена защищённая строка"
-    if len(protected) > 1:
-
-        def sequence(value):
-            positions = [
-                (m.start(), term) for term in protected for m in re.finditer(re.escape(term), value)
-            ]
-            return [term for _, term in sorted(positions)]
-
-        if sequence(old) != sequence(new):
-            return "Изменён порядок защищённых строк"
-    return ""
+    return verbatim_error(old, new, terms)

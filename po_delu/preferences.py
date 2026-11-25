@@ -81,6 +81,27 @@ def remove(owner, item_id):
     return entries(owner)
 
 
+def occurrences(text, phrase):
+    start = 0
+    while (pos := text.find(phrase, start)) >= 0:
+        end = pos + len(phrase)
+        yield pos, end
+        start = end
+
+
+def word_char(char):
+    return char.isalnum() or char == "_"
+
+
+def protected_ranges(text, rules):
+    return [(a, b) for rule in rules if rule["kind"] == "exception"
+            for a, b in occurrences(text, rule["before"])]
+
+
+def inside_exception(start, end, locked):
+    return any(start < b and a < end for a, b in locked)
+
+
 def attach(job, owner):
     rules = entries(owner)
     matches = []
@@ -88,23 +109,23 @@ def attach(job, owner):
     for block in job["blocks"]:
         if not block.get("editorial", True):
             continue
+        text = block["text"]
+        locked = protected_ranges(text, rules)
         for item in rules:
             phrase = item["before"]
-            cursor = 0
-            while (start := block["text"].find(phrase, cursor)) >= 0:
-                cursor = start + len(phrase)
+            for start, end in occurrences(text, phrase):
+                if item["kind"] == "example":
+                    inside_word = (
+                        start > 0 and word_char(text[start-1]) and word_char(phrase[0])
+                        or end < len(text) and word_char(text[end]) and word_char(phrase[-1])
+                    )
+                    if inside_word or inside_exception(start, end, locked):
+                        continue
                 total += 1
                 if len(matches) < 250:
                     matches.append(
-                        dict(
-                            item,
-                            rule_id=item["id"],
-                            block_id=block["id"],
-                            start=start,
-                            end=cursor,
-                            quote=phrase,
-                            id=f"p/{item['id']}/{block['id']}/{start}",
-                        )
+                        dict(item, rule_id=item["id"], block_id=block["id"], start=start, end=end,
+                             quote=phrase, id=f"p/{item['id']}/{block['id']}/{start}")
                     )
     return dict(
         job,

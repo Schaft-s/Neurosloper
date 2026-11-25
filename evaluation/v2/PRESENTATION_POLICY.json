@@ -1,0 +1,29 @@
+{
+  "version": "editorial-priority",
+  "created_before_opening_keys": true,
+  "holdout_manifest": "bf9d4ba5fce84b5e7f0e394f5a17b0352270179047602fe8598f261afa54c30c",
+  "selection_basis": "Two primary votes or corroboration by semantic search and Slopotron for disputed text. Other candidates go to manual review. A secondary independent objection is advisory. The primary paid audit veto reduced sensitivity in its frozen run and is disabled.",
+  "models": {
+    "semantic": "anthropic/claude-sonnet-4.6",
+    "slopotron": "qwen/qwen3-235b-a22b-2507",
+    "reviewers": [
+      "openai/gpt-5.4-mini",
+      "google/gemma-4-31b-it",
+      "qwen/qwen3-235b-a22b-2507"
+    ]
+  },
+  "all_reviewers": true,
+  "brief_audit": false,
+  "editorial_control": "reader_committee",
+  "search_rubric": "reader_task",
+  "priority": "corroborated",
+  "source_hashes": {
+    "reader_verdict.py": "b5814a7e12bed431e3fd17cb6a0f24c2c803b468a28b1f8ed871cb1388a9ee88",
+    "search_rubric.py": "f9ae65ac8926a56bc92e2be3f6009868834d3d96b0682bf4117fecf149cbbe5b",
+    "consensus.py": "d09176954bf3ed96c6d851663735dfb4a3e2fee620811e2d61e4c94e646167d0",
+    "provider.py": "50ca23e0dd87a519a00bb8287c611068e187a2dcbffc82629147c075657afb81",
+    "detection_verification.py": "37e856c25e7a7d42e7d1ad2b9c517509c270837b1b40d68a369d308727c2c7ff",
+    "case_review.py": "b174f8a67c79b690b07aba8264386b7cdaeff3a8b92add6e60d4298b46d8447f"
+  },
+  "gates": "PROTOCOL.md"
+}

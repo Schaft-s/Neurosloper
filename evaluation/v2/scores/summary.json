@@ -1,0 +1,1353 @@
+{
+  "baseline-confirm": {
+    "task": "union",
+    "suite": "audit2-detect",
+    "recorded": 18,
+    "planned": 18,
+    "raw": {
+      "documents": 18,
+      "positives": 8,
+      "delivered": 5,
+      "matched": 4,
+      "candidates": 26,
+      "proposal_matched": 6,
+      "clean": 8,
+      "clean_no_flag": 7,
+      "clean_false_alarm": 0,
+      "complete": 17
+    },
+    "stages": {
+      "ok": 73,
+      "partial": 7,
+      "error": 1
+    },
+    "median_seconds": 46.2,
+    "recall": 0.5,
+    "precision": 0.8,
+    "f1": 0.6153846153846154,
+    "clean_ok": 0.875,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 8,
+      "CI95": [
+        0.2222222222222222,
+        0.8571428571428571
+      ]
+    }
+  },
+  "baseline-fresh-fixed": {
+    "task": "fixed",
+    "suite": "fresh-detect",
+    "recorded": 28,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "correct": 20,
+      "answered": 27,
+      "arbiter": 0,
+      "pair_correct": 0
+    },
+    "stages": {
+      "ok": 77,
+      "partial": 7
+    },
+    "median_seconds": 24.11,
+    "accuracy": 0.7142857142857143,
+    "all_versions_correct": 6,
+    "groups": 12,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 12,
+      "CI95": [
+        0.5625,
+        0.8846153846153846
+      ]
+    }
+  },
+  "baseline-fresh-meaning": {
+    "task": "fidelity",
+    "suite": "fresh-meaning",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "corrupt": 16,
+      "corrupt_reject": 16,
+      "equivalent": 16,
+      "equivalent_reject": 15,
+      "equivalent_pass": 1
+    },
+    "stages": {
+      "ok": 91,
+      "error": 5
+    },
+    "median_seconds": 64.58,
+    "uncertainty": {}
+  },
+  "baseline-fresh-union": {
+    "task": "union",
+    "suite": "fresh-detect",
+    "recorded": 28,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "positives": 12,
+      "delivered": 10,
+      "matched": 6,
+      "candidates": 37,
+      "proposal_matched": 10,
+      "clean": 12,
+      "clean_no_flag": 9,
+      "clean_false_alarm": 1,
+      "complete": 25
+    },
+    "stages": {
+      "ok": 119,
+      "error": 1,
+      "partial": 8
+    },
+    "median_seconds": 37.9,
+    "recall": 0.5,
+    "precision": 0.6,
+    "f1": 0.5454545454545454,
+    "clean_ok": 0.75,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 12,
+      "CI95": [
+        0.2608695652173913,
+        0.8
+      ]
+    }
+  },
+  "candidate-fresh-meaning": {
+    "task": "fidelity",
+    "suite": "fresh-meaning",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "corrupt": 16,
+      "corrupt_reject": 14,
+      "equivalent": 16,
+      "equivalent_pass": 8,
+      "equivalent_reject": 8,
+      "corrupt_pass": 2
+    },
+    "stages": {
+      "error": 9,
+      "ok": 87
+    },
+    "median_seconds": 53.15,
+    "uncertainty": {}
+  },
+  "candidate-meaning-json": {
+    "task": "fidelity",
+    "suite": "fresh-meaning",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "corrupt": 16,
+      "corrupt_reject": 14,
+      "equivalent": 16,
+      "equivalent_pass": 13,
+      "equivalent_reject": 3,
+      "corrupt_pass": 2
+    },
+    "stages": {
+      "ok": 95,
+      "error": 1
+    },
+    "median_seconds": 48.38,
+    "uncertainty": {}
+  },
+  "challenger-fixed": {
+    "task": "fixed",
+    "suite": "fresh-detect",
+    "recorded": 28,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "correct": 20,
+      "answered": 26,
+      "arbiter": 8,
+      "pair_correct": 16
+    },
+    "stages": {
+      "ok": 56,
+      "partial": 8
+    },
+    "median_seconds": 5.46,
+    "accuracy": 0.7142857142857143,
+    "all_versions_correct": 7,
+    "groups": 12,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 12,
+      "CI95": [
+        0.5,
+        0.92
+      ]
+    }
+  },
+  "challenger-search": {
+    "task": "union",
+    "suite": "fresh-detect",
+    "recorded": 28,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "positives": 12,
+      "delivered": 26,
+      "matched": 11,
+      "candidates": 54,
+      "proposal_matched": 11,
+      "clean": 12,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 6,
+      "complete": 24
+    },
+    "stages": {
+      "ok": 125,
+      "error": 1,
+      "partial": 6
+    },
+    "median_seconds": 24.71,
+    "recall": 0.9166666666666666,
+    "precision": 0.4230769230769231,
+    "f1": 0.5789473684210527,
+    "clean_ok": 0.5,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 12,
+      "CI95": [
+        0.5116279069767442,
+        0.6666666666666666
+      ]
+    }
+  },
+  "compact-brief-replay": {
+    "task": "union",
+    "suite": "fresh-detect",
+    "recorded": 28,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "positives": 12,
+      "delivered": 14,
+      "matched": 6,
+      "candidates": 54,
+      "proposal_matched": 11,
+      "clean": 12,
+      "clean_no_flag": 8,
+      "clean_false_alarm": 3,
+      "complete": 24
+    },
+    "stages": {
+      "ok": 144,
+      "error": 1,
+      "partial": 6
+    },
+    "median_seconds": 8.04,
+    "recall": 0.5,
+    "precision": 0.42857142857142855,
+    "f1": 0.46153846153846156,
+    "clean_ok": 0.6666666666666666,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 12,
+      "CI95": [
+        0.23076923076923078,
+        0.64
+      ]
+    }
+  },
+  "confirm-fixed": {
+    "task": "fixed",
+    "suite": "audit2-detect",
+    "recorded": 18,
+    "planned": 18,
+    "raw": {
+      "documents": 18,
+      "correct": 6,
+      "answered": 18,
+      "arbiter": 7,
+      "pair_correct": 9
+    },
+    "stages": {
+      "ok": 52,
+      "partial": 4
+    },
+    "median_seconds": 14.18,
+    "accuracy": 0.3333333333333333,
+    "all_versions_correct": 1,
+    "groups": 8,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 8,
+      "CI95": [
+        0.14285714285714285,
+        0.5882352941176471
+      ]
+    }
+  },
+  "confirm-search": {
+    "task": "union",
+    "suite": "audit2-detect",
+    "recorded": 18,
+    "planned": 18,
+    "raw": {
+      "documents": 18,
+      "positives": 8,
+      "delivered": 12,
+      "matched": 4,
+      "candidates": 42,
+      "proposal_matched": 8,
+      "clean": 8,
+      "clean_no_flag": 4,
+      "clean_false_alarm": 3,
+      "complete": 15
+    },
+    "stages": {
+      "ok": 95,
+      "partial": 6,
+      "error": 1
+    },
+    "median_seconds": 43.21,
+    "recall": 0.5,
+    "precision": 0.3333333333333333,
+    "f1": 0.4,
+    "clean_ok": 0.5,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 8,
+      "CI95": [
+        0.14285714285714285,
+        0.5714285714285714
+      ]
+    }
+  },
+  "dev-cases": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 11,
+      "answered": 21,
+      "arbiter": 11,
+      "pair_correct": 10
+    },
+    "stages": {
+      "ok": 67,
+      "partial": 7
+    },
+    "median_seconds": 19.15,
+    "accuracy": 0.5238095238095238,
+    "all_versions_correct": 1,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.35,
+        0.6956521739130435
+      ]
+    }
+  },
+  "dev-cases-search": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 8,
+      "matched": 5,
+      "candidates": 33,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 8,
+      "clean_false_alarm": 1,
+      "complete": 20
+    },
+    "stages": {
+      "ok": 84,
+      "error": 19,
+      "partial": 7
+    },
+    "median_seconds": 20.61,
+    "recall": 0.5555555555555556,
+    "precision": 0.625,
+    "f1": 0.5882352941176471,
+    "clean_ok": 0.8888888888888888,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.2857142857142857,
+        0.8
+      ]
+    }
+  },
+  "dev-compact-search": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 11,
+      "matched": 7,
+      "candidates": 34,
+      "proposal_matched": 9,
+      "clean": 9,
+      "clean_no_flag": 8,
+      "clean_false_alarm": 1,
+      "complete": 21
+    },
+    "stages": {
+      "ok": 91,
+      "partial": 3,
+      "error": 2
+    },
+    "median_seconds": 19.74,
+    "recall": 0.7777777777777778,
+    "precision": 0.6363636363636364,
+    "f1": 0.7,
+    "clean_ok": 0.8888888888888888,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.38095238095238093,
+        1.0
+      ]
+    }
+  },
+  "dev-compact-stable": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 0,
+      "answered": 3,
+      "arbiter": 3,
+      "pair_correct": 0
+    },
+    "stages": {
+      "ok": 6,
+      "partial": 3
+    },
+    "median_seconds": 9.91,
+    "accuracy": 0.0,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "dev-dossier-grounded": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 12,
+      "matched": 7,
+      "candidates": 29,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 3,
+      "complete": 21
+    },
+    "stages": {
+      "ok": 94,
+      "partial": 8,
+      "error": 1
+    },
+    "median_seconds": 25.65,
+    "recall": 0.7777777777777778,
+    "precision": 0.5833333333333334,
+    "f1": 0.6666666666666666,
+    "clean_ok": 0.6666666666666666,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.47058823529411764,
+        0.8421052631578947
+      ]
+    }
+  },
+  "dev-edits": {
+    "task": "rewrite",
+    "suite": "dev-writing",
+    "recorded": 12,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "offered": 10
+    },
+    "stages": {
+      "ok": 42,
+      "error": 1
+    },
+    "median_seconds": 39.78,
+    "uncertainty": {}
+  },
+  "dev-json-committee": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 14,
+      "answered": 18,
+      "arbiter": 14,
+      "pair_correct": 9
+    },
+    "stages": {
+      "partial": 15,
+      "ok": 41
+    },
+    "median_seconds": 18.32,
+    "accuracy": 0.6666666666666666,
+    "all_versions_correct": 4,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.45454545454545453,
+        0.8636363636363636
+      ]
+    }
+  },
+  "dev-json-full": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 9,
+      "matched": 5,
+      "candidates": 35,
+      "proposal_matched": 9,
+      "clean": 9,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 2,
+      "complete": 19
+    },
+    "stages": {
+      "ok": 83,
+      "partial": 10
+    },
+    "median_seconds": 27.45,
+    "recall": 0.5555555555555556,
+    "precision": 0.5555555555555556,
+    "f1": 0.5555555555555556,
+    "clean_ok": 0.6666666666666666,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.2222222222222222,
+        0.875
+      ]
+    }
+  },
+  "dev-minimal-edit": {
+    "task": "rewrite",
+    "suite": "dev-writing",
+    "recorded": 12,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "offered": 7
+    },
+    "stages": {
+      "ok": 45
+    },
+    "median_seconds": 42.89,
+    "uncertainty": {}
+  },
+  "dev-mixed": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 12,
+      "answered": 21,
+      "arbiter": 12,
+      "pair_correct": 8
+    },
+    "stages": {
+      "ok": 50,
+      "partial": 4
+    },
+    "median_seconds": 30.13,
+    "accuracy": 0.5714285714285714,
+    "all_versions_correct": 1,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.4583333333333333,
+        0.7
+      ]
+    }
+  },
+  "dev-prose": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 7,
+      "matched": 4,
+      "candidates": 34,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 5,
+      "clean_false_alarm": 3,
+      "complete": 17
+    },
+    "stages": {
+      "ok": 84,
+      "error": 4,
+      "partial": 4
+    },
+    "median_seconds": 50.75,
+    "recall": 0.4444444444444444,
+    "precision": 0.5714285714285714,
+    "f1": 0.5,
+    "clean_ok": 0.5555555555555556,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.16666666666666666,
+        0.7368421052631579
+      ]
+    }
+  },
+  "dev-public": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 12,
+      "answered": 21,
+      "arbiter": 12,
+      "pair_correct": 12
+    },
+    "stages": {
+      "ok": 53,
+      "partial": 1
+    },
+    "median_seconds": 24.43,
+    "accuracy": 0.5714285714285714,
+    "all_versions_correct": 3,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.3181818181818182,
+        0.8095238095238095
+      ]
+    }
+  },
+  "dev-reader-compact": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 1,
+      "answered": 3,
+      "arbiter": 3,
+      "pair_correct": 1
+    },
+    "stages": {
+      "ok": 6,
+      "partial": 3
+    },
+    "median_seconds": 9.24,
+    "accuracy": 0.047619047619047616,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.13636363636363635
+      ]
+    }
+  },
+  "dev-reader-direct": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 0,
+      "answered": 0,
+      "arbiter": 0,
+      "pair_correct": 0
+    },
+    "stages": {},
+    "median_seconds": 0.0,
+    "accuracy": 0.0,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "dev-reader-verified": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 14,
+      "answered": 21,
+      "arbiter": 13,
+      "pair_correct": 9
+    },
+    "stages": {
+      "ok": 51,
+      "partial": 3,
+      "error": 1
+    },
+    "median_seconds": 9.52,
+    "accuracy": 0.6666666666666666,
+    "all_versions_correct": 3,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.4782608695652174,
+        0.8421052631578947
+      ]
+    }
+  },
+  "dev-relations": {
+    "task": "fidelity",
+    "suite": "dev-meaning",
+    "recorded": 8,
+    "planned": 8,
+    "raw": {
+      "documents": 8,
+      "equivalent": 8,
+      "equivalent_reject": 3,
+      "corrupt": 8,
+      "corrupt_reject": 8,
+      "equivalent_pass": 5
+    },
+    "stages": {
+      "ok": 47,
+      "error": 1
+    },
+    "median_seconds": 71.19,
+    "uncertainty": {}
+  },
+  "dev-relations-mixed": {
+    "task": "fidelity",
+    "suite": "dev-meaning",
+    "recorded": 8,
+    "planned": 8,
+    "raw": {
+      "documents": 8,
+      "equivalent": 8,
+      "equivalent_pass": 6,
+      "corrupt": 8,
+      "corrupt_reject": 8,
+      "equivalent_reject": 2
+    },
+    "stages": {
+      "ok": 45,
+      "error": 3
+    },
+    "median_seconds": 77.06,
+    "uncertainty": {}
+  },
+  "dev-v2-budget": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 3,
+      "matched": 3,
+      "candidates": 30,
+      "proposal_matched": 7,
+      "clean": 9,
+      "clean_no_flag": 8,
+      "clean_false_alarm": 0,
+      "complete": 16
+    },
+    "stages": {
+      "ok": 77,
+      "partial": 10,
+      "error": 8
+    },
+    "median_seconds": 25.78,
+    "recall": 0.3333333333333333,
+    "precision": 1.0,
+    "f1": 0.5,
+    "clean_ok": 0.8888888888888888,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.8
+      ]
+    }
+  },
+  "dev-v2-editors": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 7,
+      "answered": 15,
+      "arbiter": 11,
+      "pair_correct": 6
+    },
+    "stages": {
+      "partial": 10,
+      "ok": 36,
+      "error": 7
+    },
+    "median_seconds": 8.35,
+    "accuracy": 0.3333333333333333,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.17391304347826086,
+        0.5
+      ]
+    }
+  },
+  "dev-v2-full": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 9,
+      "matched": 5,
+      "candidates": 32,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 5,
+      "clean_false_alarm": 3,
+      "complete": 14
+    },
+    "stages": {
+      "ok": 79,
+      "error": 13,
+      "partial": 5
+    },
+    "median_seconds": 30.39,
+    "recall": 0.5555555555555556,
+    "precision": 0.5555555555555556,
+    "f1": 0.5555555555555556,
+    "clean_ok": 0.5555555555555556,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.25,
+        0.8
+      ]
+    }
+  },
+  "dev-v2-referee": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 6,
+      "answered": 13,
+      "arbiter": 15,
+      "pair_correct": 7
+    },
+    "stages": {
+      "partial": 8,
+      "ok": 35,
+      "error": 14
+    },
+    "median_seconds": 19.79,
+    "accuracy": 0.2857142857142857,
+    "all_versions_correct": 1,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.08695652173913043,
+        0.5238095238095238
+      ]
+    }
+  },
+  "dev-write-referee": {
+    "task": "rewrite",
+    "suite": "dev-writing",
+    "recorded": 12,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "offered": 10
+    },
+    "stages": {
+      "ok": 43,
+      "error": 1
+    },
+    "median_seconds": 31.59,
+    "uncertainty": {}
+  },
+  "final-detection": {
+    "task": "union",
+    "suite": "fresh-detect",
+    "recorded": 18,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "positives": 12,
+      "delivered": 16,
+      "matched": 7,
+      "candidates": 40,
+      "proposal_matched": 7,
+      "clean": 12,
+      "clean_no_flag": 5,
+      "clean_false_alarm": 3,
+      "complete": 15
+    },
+    "stages": {
+      "ok": 98,
+      "partial": 12,
+      "error": 1
+    },
+    "median_seconds": 37.48,
+    "recall": 0.5833333333333334,
+    "precision": 0.4375,
+    "f1": 0.5,
+    "clean_ok": 0.4166666666666667,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 12,
+      "CI95": [
+        0.2857142857142857,
+        0.6956521739130435
+      ]
+    }
+  },
+  "final-detection-complete": {
+    "task": "union",
+    "suite": "fresh-detect",
+    "recorded": 28,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "positives": 12,
+      "delivered": 26,
+      "matched": 11,
+      "candidates": 62,
+      "proposal_matched": 12,
+      "clean": 12,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 5,
+      "complete": 24
+    },
+    "stages": {
+      "ok": 152,
+      "partial": 21,
+      "error": 1
+    },
+    "median_seconds": 38.83,
+    "recall": 0.9166666666666666,
+    "precision": 0.4230769230769231,
+    "f1": 0.5789473684210527,
+    "clean_ok": 0.5,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 12,
+      "CI95": [
+        0.4864864864864865,
+        0.7058823529411765
+      ]
+    }
+  },
+  "final-detection-retry": {
+    "task": "union",
+    "suite": "fresh-detect",
+    "recorded": 10,
+    "planned": 10,
+    "raw": {
+      "documents": 10,
+      "positives": 5,
+      "delivered": 10,
+      "matched": 4,
+      "candidates": 22,
+      "proposal_matched": 5,
+      "clean": 3,
+      "clean_no_flag": 1,
+      "clean_false_alarm": 2,
+      "complete": 9
+    },
+    "stages": {
+      "ok": 54,
+      "partial": 9
+    },
+    "median_seconds": 50.97,
+    "recall": 0.8,
+    "precision": 0.4,
+    "f1": 0.5333333333333333,
+    "clean_ok": 0.3333333333333333,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 6,
+      "CI95": [
+        0.3333333333333333,
+        0.7142857142857143
+      ]
+    }
+  },
+  "final-fixed": {
+    "task": "fixed",
+    "suite": "fresh-detect",
+    "recorded": 28,
+    "planned": 28,
+    "raw": {
+      "documents": 28,
+      "correct": 14,
+      "answered": 25,
+      "arbiter": 17,
+      "pair_correct": 9
+    },
+    "stages": {
+      "ok": 77,
+      "partial": 24
+    },
+    "median_seconds": 13.43,
+    "accuracy": 0.5,
+    "all_versions_correct": 3,
+    "groups": 12,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 12,
+      "CI95": [
+        0.3333333333333333,
+        0.68
+      ]
+    }
+  },
+  "presentation-baseline": {
+    "task": "union",
+    "suite": "presentation-detect",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "positives": 8,
+      "delivered": 5,
+      "matched": 2,
+      "candidates": 32,
+      "proposal_matched": 7,
+      "clean": 8,
+      "clean_no_flag": 8,
+      "clean_false_alarm": 0,
+      "complete": 14
+    },
+    "stages": {
+      "ok": 74,
+      "partial": 6
+    },
+    "median_seconds": 65.68,
+    "recall": 0.25,
+    "precision": 0.4,
+    "f1": 0.3076923076923077,
+    "clean_ok": 1.0,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 8,
+      "CI95": [
+        0.0,
+        0.5263157894736842
+      ]
+    }
+  },
+  "presentation-complete": {
+    "task": "union",
+    "suite": "presentation-detect",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "positives": 8,
+      "delivered": 7,
+      "matched": 5,
+      "candidates": 38,
+      "proposal_matched": 7,
+      "clean": 8,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 1,
+      "complete": 12
+    },
+    "stages": {
+      "ok": 90,
+      "partial": 10,
+      "error": 1
+    },
+    "median_seconds": 53.5,
+    "recall": 0.625,
+    "precision": 0.7142857142857143,
+    "f1": 0.6666666666666666,
+    "clean_ok": 0.75,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 8,
+      "CI95": [
+        0.36363636363636365,
+        0.8571428571428571
+      ]
+    }
+  },
+  "presentation-fixed": {
+    "task": "fixed",
+    "suite": "presentation-detect",
+    "recorded": 12,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "correct": 7,
+      "answered": 10,
+      "arbiter": 12,
+      "pair_correct": 5
+    },
+    "stages": {
+      "ok": 28,
+      "partial": 8
+    },
+    "median_seconds": 11.21,
+    "accuracy": 0.4375,
+    "all_versions_correct": 1,
+    "groups": 8,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 8,
+      "CI95": [
+        0.25,
+        0.625
+      ]
+    }
+  },
+  "presentation-retry": {
+    "task": "union",
+    "suite": "presentation-detect",
+    "recorded": 4,
+    "planned": 4,
+    "raw": {
+      "documents": 4,
+      "positives": 3,
+      "delivered": 3,
+      "matched": 2,
+      "candidates": 10,
+      "proposal_matched": 2,
+      "clean": 1,
+      "clean_no_flag": 0,
+      "clean_false_alarm": 1,
+      "complete": 3
+    },
+    "stages": {
+      "ok": 25,
+      "partial": 1
+    },
+    "median_seconds": 64.01,
+    "recall": 0.6666666666666666,
+    "precision": 0.6666666666666666,
+    "f1": 0.6666666666666666,
+    "clean_ok": 0.0,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 4,
+      "CI95": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "presentation-search": {
+    "task": "union",
+    "suite": "presentation-detect",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "positives": 8,
+      "delivered": 4,
+      "matched": 3,
+      "candidates": 28,
+      "proposal_matched": 5,
+      "clean": 8,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 0,
+      "complete": 9
+    },
+    "stages": {
+      "ok": 65,
+      "partial": 9,
+      "error": 1
+    },
+    "median_seconds": 44.23,
+    "recall": 0.375,
+    "precision": 0.75,
+    "f1": 0.5,
+    "clean_ok": 0.75,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 8,
+      "CI95": [
+        0.0,
+        0.7692307692307693
+      ]
+    }
+  },
+  "rel3-independent": {
+    "task": "fidelity",
+    "suite": "audit2-meaning",
+    "recorded": 12,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "equivalent": 12,
+      "equivalent_pass": 6,
+      "corrupt": 12,
+      "corrupt_reject": 12,
+      "equivalent_reject": 4,
+      "equivalent_uncertain": 2
+    },
+    "stages": {
+      "ok": 58,
+      "error": 14
+    },
+    "median_seconds": 108.24,
+    "uncertainty": {}
+  },
+  "rel3-regression": {
+    "task": "fidelity",
+    "suite": "fresh-meaning",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "corrupt": 16,
+      "corrupt_reject": 14,
+      "equivalent": 16,
+      "equivalent_pass": 11,
+      "equivalent_uncertain": 3,
+      "equivalent_reject": 2,
+      "corrupt_uncertain": 1,
+      "corrupt_pass": 1
+    },
+    "stages": {
+      "ok": 83,
+      "error": 13
+    },
+    "median_seconds": 98.68,
+    "uncertainty": {}
+  },
+  "rel4-independent-replay": {
+    "task": "fidelity",
+    "suite": "audit2-meaning",
+    "recorded": 12,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "equivalent": 12,
+      "equivalent_pass": 6,
+      "corrupt": 12,
+      "corrupt_reject": 12,
+      "equivalent_reject": 4,
+      "equivalent_uncertain": 2
+    },
+    "stages": {
+      "ok": 58,
+      "error": 14
+    },
+    "median_seconds": 108.24,
+    "uncertainty": {}
+  },
+  "rel4-regression-replay": {
+    "task": "fidelity",
+    "suite": "fresh-meaning",
+    "recorded": 16,
+    "planned": 16,
+    "raw": {
+      "documents": 16,
+      "corrupt": 16,
+      "corrupt_reject": 15,
+      "equivalent": 16,
+      "equivalent_pass": 11,
+      "equivalent_uncertain": 3,
+      "equivalent_reject": 2,
+      "corrupt_uncertain": 1
+    },
+    "stages": {
+      "ok": 83,
+      "error": 13
+    },
+    "median_seconds": 98.68,
+    "uncertainty": {}
+  }
+}

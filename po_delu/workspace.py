@@ -214,6 +214,9 @@ async def propose(job, data, ids, owner, share_examples=False):
                     settings["length"],
                     settings["terms"] + active_exceptions,
                     reviewed_phrasing=verified,
+                    equality_review=result.get("fidelity_policy") == "relations_v4",
+                    relation_review=verified
+                    and changes[key]["verification"].get("policy") in ("relations_v2", "relations_v3", "relations_v4"),
                 )
                 if error:
                     raise ValueError(error)

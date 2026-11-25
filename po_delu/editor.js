@@ -1,7 +1,9 @@
 "use strict";
 const $ = selector => document.querySelector(selector);
 const form = $("#form"), fields = form.elements, result = $("#result"), statusBox = $("#status");
+const reviewStatus = $("#review-status");
 let mode = "text", revision = 0, active = null, generation = false;
+let exampleRequest = 0, openedExample = null, ownSettings = null, reviewTimer = null;
 
 function el(tag, value = "", cls = "") {
   const node = document.createElement(tag);
@@ -44,17 +46,36 @@ function reset() {
   revision++;
   active = null;
   generation = false;
+  clearInterval(reviewTimer);
+  $("#review").disabled = false;
   result.replaceChildren();
   statusBox.textContent = "";
+  reviewStatus.textContent = "";
 }
 function selectMode(next) {
   reset();
+  exampleRequest++;
+  if (mode !== "showcase" && next === "showcase") {
+    ownSettings = Object.fromEntries(["context","source","terms","length"].map(name => [name, fields.namedItem(name).value]));
+    for (const name of ["context","source","terms"]) fields.namedItem(name).value = "";
+    fields.namedItem("length").value = "short";
+    openedExample = null;
+    $("#showcase-choice").value = "";
+    $("#showcase-preview").hidden = true;
+    $("#showcase-status").textContent = "";
+  } else if (mode === "showcase" && next !== "showcase" && ownSettings) {
+    for (const [name, value] of Object.entries(ownSettings)) fields.namedItem(name).value = value;
+    ownSettings = null;
+  }
   fields.share_document.checked = false;
   fields.share_examples.checked = false;
+  fields.analysis_mode.value = "local";
+  updateConsent();
   mode = next;
-  $("#text-pane").hidden = mode !== "text";
-  $("#file-pane").hidden = mode !== "file";
-  for (const id of ["text","file"]) $("#tab-" + id).setAttribute("aria-pressed", String(mode === id));
+  for (const id of ["text","file","showcase"]) {
+    $("#" + id + "-pane").hidden = mode !== id;
+    $("#tab-" + id).setAttribute("aria-pressed", String(mode === id));
+  }
 }
 function count() {
   const n = Array.from(fields.text.value).length;
@@ -79,24 +100,41 @@ function contextLine(block, f) {
     el("mark", f.quote), document.createTextNode(chars.slice(f.end, f.end + 80).join("")));
   return p;
 }
-function findingCard(job, f, personal) {
+function findingCard(job, f, personal, reviewCase) {
   const b = job.blocks[Number(f.block_id)], card = el("article");
-  const allow = b.edit && (personal ? f.kind !== "exception" : f.decision === "flag");
+  const allow = b.edit && (personal ? f.kind !== "exception" : reviewCase?.group === "flag");
   card.append(selection("finding", f.id, b.label, allow), contextLine(b, f));
   if (personal) {
     card.append(el("strong", f.kind === "exception" ? "Оставлять эту фразу" : f.kind === "variant" ? "Похоже на личный пример: "+f.before+" → "+f.after : "Предпочитаю: " + f.after));
     if (f.rationale) card.append(el("p", f.rationale));
     if (f.note) card.append(el("p", f.note));
   } else {
-    card.append(el("strong", f.pattern), el("p", f.effect), el("small", f.normal));
-    const verdict = (job.verdicts || []).find(v => v.block_id === f.block_id && v.start === f.start && v.end === f.end);
-    if (verdict?.votes?.length) {
+    if (reviewCase?.priority_reason) card.append(el("p", reviewCase.priority_reason));
+    if (reviewCase?.note) card.append(el("p", reviewCase.note, "hint"));
+    card.append(el("strong", f.pattern));
+    if (f.effect && f.effect !== f.pattern) card.append(el("p", f.effect));
+    if (f.normal) card.append(el("p", f.normal, "hint"));
+    if (reviewCase?.question) card.append(el("p", reviewCase.question));
+    if (reviewCase?.arbitration) card.append(el("p", reviewCase.arbitration));
+    if (reviewCase?.material) {
+      const material = el("details");
+      material.append(el("summary", "Материал для проверяющих"));
+      if (reviewCase.scope) material.append(el("p", reviewCase.scope, "hint"));
+      for (const [title, claim, evidence] of reviewCase.material) {
+        const row = el("div", "", "ballot");
+        row.append(el("strong", title), el("p", claim), el("small", evidence)); material.append(row);
+      }
+      card.append(material);
+    }
+    if (reviewCase?.votes.length) {
       const details = el("details");
-      details.append(el("summary","Голоса проверяющих"));
-      const labels = {flag:"Есть замечание", keep:"Оставить", uncertain:"Нужен контекст"};
-      for (const vote of verdict.votes) {
-        details.append(el("p",(vote.family || vote.model)+" · "+(labels[vote.decision] || "Ответ недоступен")+
-          (vote.effect ? ". "+vote.effect : "")));
+      details.append(el("summary","Голоса проверяющих (" + reviewCase.votes.length + ")"));
+      for (const vote of reviewCase.votes) {
+        const ballot = el("div", "", "ballot"), reasons = el("dl");
+        ballot.append(el("strong", vote.title));
+        for (const [label, value] of vote.reasons) reasons.append(el("dt", label), el("dd", value));
+        ballot.append(reasons);
+        details.append(ballot);
       }
       card.append(details);
     }
@@ -117,6 +155,7 @@ function reports(job) {
   bar.append(button("Отчёт JSON", () => {
     const {token, blocks, trace, source, terms, preference_examples, personal_matches, ...diagnosis} = job;
     const data = {file:job.name, revision:job.revision_hash, backend:job.backend, seen:job.seen, total:job.total,
+      editorial_total:job.editorial_total, coverage:job.coverage, coverage_summary:job.coverage_summary, errors:job.errors,
       consensus:diagnosis.consensus, findings:job.findings.map(f => ({...f, location:blocks[Number(f.block_id)].label})),
       verdicts:job.verdicts, stages:job.stages, refusals:job.refusals};
     download(new Blob([JSON.stringify(data,null,2)], {type:"application/json"}), "findings.json");
@@ -171,35 +210,27 @@ function show(job, rewritten) {
   generation = rewritten;
   active = job;
   result.replaceChildren();
-  statusBox.textContent = job.backend + " · Прочитано блоков: " + job.seen + " из " + job.total + ". " + job.summary;
-  section("Замечания");
-  const panel = job.consensus || {};
-  if (panel.quorum) {
-    const states = {complete:"голосование завершено",partial:"получена часть оценок",unavailable:"не удалось собрать кворум",no_candidates:"кандидатов для голосования нет"};
-    result.append(el("p","Независимая проверка: "+(states[panel.status] || panel.status)+". Кворум: "+panel.quorum+
-      ". Семейства: "+(panel.families?.join(", ") || "не настроены")+"."));
-  }
+  statusBox.textContent = "";
+  const heading = el("h2", "Замечания");
+  heading.id = "review-results"; heading.tabIndex = -1;
+  const view = job.review_view, overview = el("div", "", "overview" + (view.incomplete ? " incomplete" : ""));
+  overview.append(el("strong", view.state), el("p", job.name + " · " + job.backend), el("p", view.coverage));
+  for (const line of [...view.channels, ...view.notes]) overview.append(el("small", line));
+  result.append(heading, overview);
   result.append(reports(job));
-  const flags = job.findings.filter(f => f.decision === "flag");
-  const uncertain = (job.verdicts || job.findings).filter(f => f.decision === "uncertain");
-  if (!flags.length) {
-    const incomplete = ["incomplete_search","partial","unavailable"].includes(panel.status) || job.seen < job.total;
-    result.append(el("p", incomplete
-      ? "Подтверждённых замечаний пока нет. Проверка выполнена частично."
-      : "В прочитанном тексте подтверждённых замечаний нет."));
+  const groups = Object.entries(view.titles).map(([group, title]) =>
+    ({group, title, cases: view.cases.filter(c => c.group === group)})).filter(g => g.cases.length);
+  if (groups.length > 1) {
+    const nav = el("nav", "", "result-links"); nav.setAttribute("aria-label", "Разделы замечаний");
+    for (const {group, title, cases} of groups) {
+      const link = el("a", title + " (" + cases.length + ")"); link.href = "#results-" + group; nav.append(link);
+    }
+    result.append(nav);
   }
-  for (const f of flags) result.append(findingCard(job, f, false));
-  if (uncertain.length) {
-    result.append(el("h3","Требуют контекста"));
-    for (const f of uncertain) result.append(findingCard(job, f, false));
-  }
-  const dissent = (job.verdicts || []).filter(v => v.decision === "keep" &&
-    v.votes?.some(vote => vote.status === "ok" && vote.decision === "flag"));
-  if (dissent.length) {
-    const details = el("details");
-    details.append(el("summary", "Оставлены большинством, есть возражения (" + dissent.length + ")"));
-    for (const item of dissent) details.append(findingCard(job, item, false));
-    result.append(details);
+  for (const {group, title, cases} of groups) {
+    const h = el("h3", title + " (" + cases.length + ")"); h.id = "results-" + group; h.tabIndex = -1;
+    result.append(h);
+    for (const item of cases) result.append(findingCard(job, job[item.collection][item.index], false, item));
   }
   if (job.personal_matches?.length) {
     section("Совпадения с личными правилами");
@@ -207,12 +238,18 @@ function show(job, rewritten) {
     if (job.personal_total > job.personal_matches.length) result.append(el("p","Показаны первые "+job.personal_matches.length+" совпадений из "+job.personal_total+"."));
   }
   if (job.personal_example_count && job.detector !== "offline") {
-    result.append(button("Передать модели текст и личные примеры для поиска похожих фраз", async () => {
+    const agreement = selection("personal-consent", "", "Разрешаю передать модели этот черновик и мои личные примеры для поиска похожих фраз.", true);
+    const consent = agreement.querySelector("input");
+    const search = button("Найти похожие фразы", async () => {
+      if (!consent.checked) return;
       const seq = ++revision;
       statusBox.textContent = "Модель сопоставляет черновик с личными примерами…";
-      const updated = await (await jsonRequest("/personal-check/"+job.token,{share_examples:true})).json();
+      const updated = await (await jsonRequest("/personal-check/"+job.token,{share_examples:consent.checked})).json();
       if (seq === revision) show(updated,rewritten);
-    }));
+    });
+    search.disabled = true;
+    consent.onchange = () => { search.disabled = !consent.checked; };
+    result.append(agreement, search);
   }
   if (job.personal_search) {
     result.append(el("h3","Смысловые совпадения с личными примерами"));
@@ -228,14 +265,14 @@ function show(job, rewritten) {
         length:fields.namedItem("length").value, precision:fields.precision.value,
         terms:fields.terms.value.split(/\n/).map(s=>s.trim()).filter(Boolean), share_examples:fields.share_examples.checked});
       const updated = await response.json();
-      if (seq === revision) { show(updated, true); $("#changes")?.scrollIntoView({block:"start"}); }
+      if (seq === revision) { show(updated, true); $("#changes").focus(); }
     }, "primary");
     go.disabled = true;
     for (const n of result.querySelectorAll(".finding")) n.onchange = () => {go.disabled = !checked("finding").length;};
     result.append(go);
   }
   if (rewritten) {
-    const h = el("h2", "Предлагаемые замены"); h.id = "changes"; result.append(h);
+    const h = el("h2", "Предлагаемые замены"); h.id = "changes"; h.tabIndex = -1; result.append(h);
     if (job.rewrite_summary) result.append(el("p", job.rewrite_summary));
     if (!job.changes.length) result.append(el("p", "Подходящей замены нет."));
     for (const f of job.refusals || []) result.append(el("p", (job.blocks[Number(f.block_id)]?.label || "Фрагмент") + " · " + f.reason));
@@ -260,8 +297,109 @@ function show(job, rewritten) {
   trace.append(el("summary","Ход проверки"),el("pre",JSON.stringify({consensus:job.consensus,stages:job.stages,trace:job.trace},null,2)));
   result.append(trace);
 }
-$("#tab-text").onclick = () => selectMode("text");
-$("#tab-file").onclick = () => selectMode("file");
+for (const id of ["text","file","showcase"]) {
+  $("#tab-" + id).onclick = () => { if (mode !== id) selectMode(id); };
+}
+function showExampleSlide() {
+  const page = Number($("#showcase-page").value), seq = exampleRequest;
+  const img = el("img");
+  img.id = "showcase-image"; img.alt = "Слайд " + (page + 1); img.hidden = true;
+  $("#showcase-image").replaceWith(img);
+  $("#slide-status").textContent = "Открываем слайд…";
+  img.onload = () => {
+    if (seq !== exampleRequest || !img.isConnected) return;
+    img.hidden = false;
+    $("#slide-status").textContent = "";
+  };
+  img.onerror = () => {
+    if (seq !== exampleRequest || !img.isConnected) return;
+    $("#slide-status").textContent = "Предпросмотр слайда недоступен. Текст приведён ниже.";
+    $("#showcase-preview details").open = true;
+  };
+  img.src = "/examples/" + encodeURIComponent(openedExample.name) + "/slides/" + page;
+}
+$("#showcase-page").onchange = showExampleSlide;
+const savedDialog = $("#saved-showcase");
+$("#close-saved").onclick = () => savedDialog.close();
+savedDialog.onclose = () => $("#saved-content").replaceChildren();
+$("#open-saved").onclick = () => {
+  const example = openedExample, record = example?.saved_review;
+  if (!record || record.source_sha256 !== example.revision) return;
+  const blocks = new Map(example.blocks.map(b => [b.id, b]));
+  const content = $("#saved-content");
+  content.replaceChildren();
+  const date = record.date.split("-").reverse().join(".");
+  content.append(el("p", example.name + " · " + date + " · Профиль " + record.profile));
+  const coverage = "Проверено блоков: " + record.seen + " из " + record.total + ".";
+  content.append(el("p", coverage + (record.search_errors ? " Сбоев поиска или привязки: " + record.search_errors + "." : ""), "hint"));
+  const decisions = {flag:"Есть замечание", keep:"Оставить", uncertain:"Решение открыто"};
+  for (const item of record.cases) {
+    const b = blocks.get(item.block_id), card = el("article");
+    card.append(el("h3", item.decision === "flag" ? "Подтверждённое замечание" : "Спорный фрагмент"),
+      el("small", b.label), contextLine(b, item));
+    const supporting = item.votes.find(v => v.status === "ok" && v.decision === item.decision);
+    if (supporting) card.append(el("p", supporting.reason));
+    else if (item.decision === "uncertain") card.append(el("p", "Голоса проверяющих не дали общего решения."));
+    const details = el("details"); details.append(el("summary", "Голоса проверяющих (" + item.votes.length + ")"));
+    for (const vote of item.votes) {
+      const ballot = el("div", "", "ballot");
+      const role = vote.role === "arbiter" ? "Арбитр" : "Проверяющий";
+      ballot.append(el("strong", role + " · " + vote.family + " · " + (decisions[vote.decision] || "Оценка недоступна")));
+      if (vote.reason) ballot.append(el("p", vote.reason));
+      if (vote.evidence) ballot.append(el("small", blocks.get(vote.evidence.block_id).label + " · «" + vote.evidence.quote.trim() + "»"));
+      details.append(ballot);
+    }
+    card.append(details); content.append(card);
+  }
+  for (const edit of record.edits) {
+    const card = el("article");
+    if (edit.status === "refused") {
+      card.append(el("h3", "Замена отклонена проверкой"), el("small", blocks.get(edit.block_id).label), el("p", edit.reason));
+    } else if (edit.status === "verified_native") {
+      card.append(el("h3", "Отдельный прогон правки"), el("small", blocks.get(edit.block_id).label + " · " + edit.model + " · " + edit.profile),
+        el("p", "Исходный абзац", "diff-label"), el("del", edit.before), el("p", "Вариант модели", "diff-label"), el("ins", edit.after),
+        el("p", edit.editorial_note || "Сформированный файл повторно открыт и проверен."));
+    }
+    content.append(card);
+  }
+  savedDialog.showModal(); savedDialog.scrollTop = 0; $("#saved-title").focus();
+};
+$("#showcase-choice").onchange = async e => {
+  reset();
+  const seq = ++exampleRequest, name = e.target.value;
+  openedExample = null;
+  $("#showcase-preview").hidden = true;
+  $("#showcase-status").textContent = name ? "Открываем документ…" : "";
+  fields.context.value = fields.source.value = fields.terms.value = "";
+  fields.share_document.checked = fields.share_examples.checked = false;
+  fields.analysis_mode.value = "local"; updateConsent();
+  fields.namedItem("length").value = name.endsWith(".pptx") ? "fit" : "short";
+  if (!name) return;
+  try {
+    const url = "/examples/" + encodeURIComponent(name);
+    const example = await (await send(url)).json();
+    if (seq !== exampleRequest) return;
+    const blocks = $("#showcase-blocks"); blocks.replaceChildren();
+    for (const b of example.blocks) blocks.append(el("small", b.label), el("p", b.text));
+    fields.context.value = example.brief;
+    fields.share_document.checked = fields.share_examples.checked = false;
+    $("#showcase-name").textContent = example.name;
+    $("#showcase-download").href = url + "/download";
+    $("#open-saved").hidden = !example.saved_review || example.saved_review.source_sha256 !== example.revision;
+    $("#showcase-slides").hidden = !example.slides;
+    $("#showcase-preview details").open = !example.slides;
+    $("#showcase-preview").hidden = false;
+    $("#showcase-status").textContent = "";
+    openedExample = example;
+    if (example.slides) {
+      const pages = $("#showcase-page"); pages.replaceChildren();
+      for (let i = 0; i < example.slides; i++) pages.add(new Option((i + 1) + " из " + example.slides, i));
+      showExampleSlide();
+    }
+  } catch (error) {
+    if (seq === exampleRequest) $("#showcase-status").textContent = error.message;
+  }
+};
 function updateConsent() {
   const models = !$("#consent-panel").disabled && fields.analysis_mode.value === "models";
   $("#local-description").hidden = models;
@@ -271,6 +409,7 @@ function updateConsent() {
 }
 updateConsent();
 form.oninput = e => {
+  if (!e.target.name) return;
   if (["analysis_mode","text","file","format","context","source"].includes(e.target.name)) {
     fields.share_document.checked = false;
     fields.share_examples.checked = false;
@@ -295,18 +434,36 @@ $("#example").onclick = () => {
   count(); fields.text.focus();
 };
 form.onsubmit = async e => {
-  e.preventDefault(); reset();
+  e.preventDefault();
+  if ($("#review").disabled) return;
+  reset();
   const seq = revision, payload = new FormData(form);
-  if (mode === "file" && !fields.file.files.length) {statusBox.textContent = "Выберите файл."; return;}
-  if (mode === "text" && !fields.text.value.trim()) {statusBox.textContent = "Введите текст черновика."; fields.text.focus(); return;}
-  if (mode === "text") payload.delete("file"); else payload.delete("text");
+  if (mode === "file" && !fields.file.files.length) {reviewStatus.textContent = "Выберите файл."; fields.file.focus(); return;}
+  if (mode === "text" && !fields.text.value.trim()) {reviewStatus.textContent = "Введите текст черновика."; fields.text.focus(); return;}
+  if (mode === "showcase" && !openedExample) {reviewStatus.textContent = "Откройте пример для проверки."; $("#showcase-choice").focus(); return;}
+  if (mode !== "file") payload.delete("file");
+  if (mode !== "text") payload.delete("text");
+  if (mode === "showcase") {
+    payload.set("showcase", openedExample.name);
+    payload.set("showcase_revision", openedExample.revision);
+  }
   payload.delete("share_examples");
   payload.set("exact_terms", JSON.stringify(fields.terms.value.split(/\n/).map(s=>s.trim()).filter(Boolean)));
-  statusBox.textContent = "Идёт проверка…";
+  $("#review").disabled = true;
+  reviewStatus.textContent = fields.analysis_mode.value === "models" ? "Идёт проверка моделями…" : "Идёт проверка локальными правилами…";
+  const started = Date.now(), timer = el("span");
+  timer.setAttribute("aria-hidden", "true"); reviewStatus.append(timer);
+  reviewTimer = setInterval(() => { timer.textContent = " " + Math.floor((Date.now() - started) / 1000) + " с"; }, 1000);
   try {
     const job = await (await send("/review",{method:"POST",body:payload})).json();
-    if (seq === revision) {show(job,false); statusBox.scrollIntoView({block:"start"});}
-  } catch (error) {if (seq === revision) statusBox.textContent = error.message;}
+    if (seq === revision) {
+      reviewStatus.textContent = "";
+      show(job,false);
+      $("#review-results").focus({preventScroll:true});
+      $("#review-results").scrollIntoView({block:"start"});
+    }
+  } catch (error) {if (seq === revision) reviewStatus.textContent = error.message;}
+  finally {if (seq === revision) {clearInterval(reviewTimer); $("#review").disabled = false;}}
 };
 const memory = $("#memory"), rules = $("#rules"), ruleForm = $("#rule-form"), ruleStatus = $("#rule-status");
 function renderRules(items) {

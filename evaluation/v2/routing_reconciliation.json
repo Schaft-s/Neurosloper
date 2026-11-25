@@ -1,0 +1,14 @@
+{
+  "check-fixed": {
+    "documented_routing_errors": 48,
+    "reserved_usd": 0.3081264
+  },
+  "check-cascade": {
+    "documented_routing_errors": 48,
+    "reserved_usd": 1.5493992
+  },
+  "v2-dev-cases-search": {
+    "documented_routing_errors": 19,
+    "reserved_usd": 0.2682232
+  }
+}

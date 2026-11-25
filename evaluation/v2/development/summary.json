@@ -1,0 +1,594 @@
+{
+  "dev-cases": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 11,
+      "answered": 21,
+      "arbiter": 11,
+      "pair_correct": 10
+    },
+    "stages": {
+      "ok": 67,
+      "partial": 7
+    },
+    "median_seconds": 19.15,
+    "accuracy": 0.5238095238095238,
+    "all_versions_correct": 1,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.35,
+        0.6956521739130435
+      ]
+    }
+  },
+  "dev-cases-search": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 8,
+      "matched": 5,
+      "candidates": 33,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 8,
+      "clean_false_alarm": 1,
+      "complete": 20
+    },
+    "stages": {
+      "ok": 84,
+      "error": 19,
+      "partial": 7
+    },
+    "median_seconds": 20.61,
+    "recall": 0.5555555555555556,
+    "precision": 0.625,
+    "f1": 0.5882352941176471,
+    "clean_ok": 0.8888888888888888,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.2857142857142857,
+        0.8
+      ]
+    }
+  },
+  "dev-compact-stable": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 0,
+      "answered": 3,
+      "arbiter": 3,
+      "pair_correct": 0
+    },
+    "stages": {
+      "ok": 6,
+      "partial": 3
+    },
+    "median_seconds": 9.91,
+    "accuracy": 0.0,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "dev-dossier-grounded": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 12,
+      "matched": 7,
+      "candidates": 29,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 3,
+      "complete": 21
+    },
+    "stages": {
+      "ok": 94,
+      "partial": 8,
+      "error": 1
+    },
+    "median_seconds": 25.65,
+    "recall": 0.7777777777777778,
+    "precision": 0.5833333333333334,
+    "f1": 0.6666666666666666,
+    "clean_ok": 0.6666666666666666,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.47058823529411764,
+        0.8421052631578947
+      ]
+    }
+  },
+  "dev-edits": {
+    "task": "rewrite",
+    "suite": "dev-writing",
+    "recorded": 12,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "offered": 10
+    },
+    "stages": {
+      "ok": 42,
+      "error": 1
+    },
+    "median_seconds": 39.78,
+    "uncertainty": {}
+  },
+  "dev-json-committee": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 14,
+      "answered": 18,
+      "arbiter": 14,
+      "pair_correct": 9
+    },
+    "stages": {
+      "partial": 15,
+      "ok": 41
+    },
+    "median_seconds": 18.32,
+    "accuracy": 0.6666666666666666,
+    "all_versions_correct": 4,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.45454545454545453,
+        0.8636363636363636
+      ]
+    }
+  },
+  "dev-json-full": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 9,
+      "matched": 5,
+      "candidates": 35,
+      "proposal_matched": 9,
+      "clean": 9,
+      "clean_no_flag": 6,
+      "clean_false_alarm": 2,
+      "complete": 19
+    },
+    "stages": {
+      "ok": 83,
+      "partial": 10
+    },
+    "median_seconds": 27.45,
+    "recall": 0.5555555555555556,
+    "precision": 0.5555555555555556,
+    "f1": 0.5555555555555556,
+    "clean_ok": 0.6666666666666666,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.2222222222222222,
+        0.875
+      ]
+    }
+  },
+  "dev-minimal-edit": {
+    "task": "rewrite",
+    "suite": "dev-writing",
+    "recorded": 5,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "offered": 3
+    },
+    "stages": {
+      "ok": 17
+    },
+    "median_seconds": 43.84,
+    "uncertainty": {}
+  },
+  "dev-mixed": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 12,
+      "answered": 21,
+      "arbiter": 12,
+      "pair_correct": 8
+    },
+    "stages": {
+      "ok": 50,
+      "partial": 4
+    },
+    "median_seconds": 30.13,
+    "accuracy": 0.5714285714285714,
+    "all_versions_correct": 1,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.4583333333333333,
+        0.7
+      ]
+    }
+  },
+  "dev-prose": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 7,
+      "matched": 4,
+      "candidates": 34,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 5,
+      "clean_false_alarm": 3,
+      "complete": 17
+    },
+    "stages": {
+      "ok": 84,
+      "error": 4,
+      "partial": 4
+    },
+    "median_seconds": 50.75,
+    "recall": 0.4444444444444444,
+    "precision": 0.5714285714285714,
+    "f1": 0.5,
+    "clean_ok": 0.5555555555555556,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.16666666666666666,
+        0.7368421052631579
+      ]
+    }
+  },
+  "dev-public": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 12,
+      "answered": 21,
+      "arbiter": 12,
+      "pair_correct": 12
+    },
+    "stages": {
+      "ok": 53,
+      "partial": 1
+    },
+    "median_seconds": 24.43,
+    "accuracy": 0.5714285714285714,
+    "all_versions_correct": 3,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.3181818181818182,
+        0.8095238095238095
+      ]
+    }
+  },
+  "dev-reader-compact": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 1,
+      "answered": 3,
+      "arbiter": 3,
+      "pair_correct": 1
+    },
+    "stages": {
+      "ok": 6,
+      "partial": 3
+    },
+    "median_seconds": 9.24,
+    "accuracy": 0.047619047619047616,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.13636363636363635
+      ]
+    }
+  },
+  "dev-reader-direct": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 0,
+      "answered": 0,
+      "arbiter": 0,
+      "pair_correct": 0
+    },
+    "stages": {},
+    "median_seconds": 0.0,
+    "accuracy": 0.0,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "dev-reader-verified": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 14,
+      "answered": 21,
+      "arbiter": 13,
+      "pair_correct": 9
+    },
+    "stages": {
+      "ok": 51,
+      "partial": 3,
+      "error": 1
+    },
+    "median_seconds": 9.52,
+    "accuracy": 0.6666666666666666,
+    "all_versions_correct": 3,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.4782608695652174,
+        0.8421052631578947
+      ]
+    }
+  },
+  "dev-relations": {
+    "task": "fidelity",
+    "suite": "dev-meaning",
+    "recorded": 8,
+    "planned": 8,
+    "raw": {
+      "documents": 8,
+      "equivalent": 8,
+      "equivalent_reject": 3,
+      "corrupt": 8,
+      "corrupt_reject": 8,
+      "equivalent_pass": 5
+    },
+    "stages": {
+      "ok": 47,
+      "error": 1
+    },
+    "median_seconds": 71.19,
+    "uncertainty": {}
+  },
+  "dev-relations-mixed": {
+    "task": "fidelity",
+    "suite": "dev-meaning",
+    "recorded": 8,
+    "planned": 8,
+    "raw": {
+      "documents": 8,
+      "equivalent": 8,
+      "equivalent_pass": 6,
+      "corrupt": 8,
+      "corrupt_reject": 8,
+      "equivalent_reject": 2
+    },
+    "stages": {
+      "ok": 45,
+      "error": 3
+    },
+    "median_seconds": 77.06,
+    "uncertainty": {}
+  },
+  "dev-v2-budget": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 3,
+      "matched": 3,
+      "candidates": 30,
+      "proposal_matched": 7,
+      "clean": 9,
+      "clean_no_flag": 8,
+      "clean_false_alarm": 0,
+      "complete": 16
+    },
+    "stages": {
+      "ok": 77,
+      "partial": 10,
+      "error": 8
+    },
+    "median_seconds": 25.78,
+    "recall": 0.3333333333333333,
+    "precision": 1.0,
+    "f1": 0.5,
+    "clean_ok": 0.8888888888888888,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.0,
+        0.8
+      ]
+    }
+  },
+  "dev-v2-editors": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 7,
+      "answered": 15,
+      "arbiter": 11,
+      "pair_correct": 6
+    },
+    "stages": {
+      "partial": 10,
+      "ok": 36,
+      "error": 7
+    },
+    "median_seconds": 8.35,
+    "accuracy": 0.3333333333333333,
+    "all_versions_correct": 0,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.17391304347826086,
+        0.5
+      ]
+    }
+  },
+  "dev-v2-full": {
+    "task": "union",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "positives": 9,
+      "delivered": 9,
+      "matched": 5,
+      "candidates": 32,
+      "proposal_matched": 8,
+      "clean": 9,
+      "clean_no_flag": 5,
+      "clean_false_alarm": 3,
+      "complete": 14
+    },
+    "stages": {
+      "ok": 79,
+      "error": 13,
+      "partial": 5
+    },
+    "median_seconds": 30.39,
+    "recall": 0.5555555555555556,
+    "precision": 0.5555555555555556,
+    "f1": 0.5555555555555556,
+    "clean_ok": 0.5555555555555556,
+    "uncertainty": {
+      "metric": "f1",
+      "groups": 9,
+      "CI95": [
+        0.25,
+        0.8
+      ]
+    }
+  },
+  "dev-v2-referee": {
+    "task": "fixed",
+    "suite": "dev-detect",
+    "recorded": 21,
+    "planned": 21,
+    "raw": {
+      "documents": 21,
+      "correct": 6,
+      "answered": 13,
+      "arbiter": 15,
+      "pair_correct": 7
+    },
+    "stages": {
+      "partial": 8,
+      "ok": 35,
+      "error": 14
+    },
+    "median_seconds": 19.79,
+    "accuracy": 0.2857142857142857,
+    "all_versions_correct": 1,
+    "groups": 9,
+    "uncertainty": {
+      "metric": "accuracy",
+      "groups": 9,
+      "CI95": [
+        0.08695652173913043,
+        0.5238095238095238
+      ]
+    }
+  },
+  "dev-write-referee": {
+    "task": "rewrite",
+    "suite": "dev-writing",
+    "recorded": 12,
+    "planned": 12,
+    "raw": {
+      "documents": 12,
+      "offered": 10
+    },
+    "stages": {
+      "ok": 43,
+      "error": 1
+    },
+    "median_seconds": 31.59,
+    "uncertainty": {}
+  }
+}

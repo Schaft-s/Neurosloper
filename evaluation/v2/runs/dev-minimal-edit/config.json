@@ -1,0 +1,53 @@
+{
+  "suite": "dev-writing",
+  "task": "rewrite",
+  "search_model": "qwen/qwen3-235b-a22b-2507",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "case_model": "anthropic/claude-sonnet-4.6",
+  "panel": [
+    "anthropic/claude-sonnet-4.6",
+    "qwen/qwen3-235b-a22b-2507",
+    "deepseek/deepseek-v3.2"
+  ],
+  "verify": "legacy",
+  "rubric": "legacy",
+  "policy": "relations_v2",
+  "rewriter": "minimal_edit",
+  "api_json": "1",
+  "hashes": {
+    "case_review.py": "b174f8a67c79b690b07aba8264386b7cdaeff3a8b92add6e60d4298b46d8447f",
+    "consensus.py": "5b529486007763eb18d9533d4de2395bf2e36f81a63241fed024d940333b5601",
+    "detection_verification.py": "37e856c25e7a7d42e7d1ad2b9c517509c270837b1b40d68a369d308727c2c7ff",
+    "document_tools.py": "832d0dcd652fde42ee81437da93f51c6c00a56119a031cd9f2fad10c2d68f166",
+    "engine.py": "0e8df966fd144c4348ba81e590bc656947b1ce10f3971b0cc1e28970a0bc789c",
+    "fidelity.py": "f26e76a6512bdcc18e7722712f427c5aaa898f1ac7c68a5f92693b2f316af9cb",
+    "formats.py": "b775422ab0745c2b7ccd6a6637696164c9bf80b1c465237032a16ef7a4c361a8",
+    "html_format.py": "681d5d6736113d6667463158f95b315218ff65481c684edffd0cef8b9fe58ced",
+    "minimal_edit.py": "94f74733c4f720cd55e679b59a1c2d945f191a993fabeb9f246eb9529595a58c",
+    "offline.py": "c8f9b33c94b7f100e2e0b497ab508f87c5f133e41a6df4237a4695fc260a9f38",
+    "personal_search.py": "c030f68787fca375c4e45ab072ff79fdc3330b1a1fc286ea2df0dbb3ab39e153",
+    "policy.py": "5293e1f54f2096b32044acbf610ef6bb08dfd35adc2161afc7c72aaa252914bd",
+    "preferences.py": "9782ff7dba1f3e144dcc7fd171f8d78bac2dfa7e468b163b16dc1c2f98b4628e",
+    "provider.py": "50ca23e0dd87a519a00bb8287c611068e187a2dcbffc82629147c075657afb81",
+    "reader_verdict.py": "b5814a7e12bed431e3fd17cb6a0f24c2c803b468a28b1f8ed871cb1388a9ee88",
+    "report.py": "141c9b36adda4fd6fc53617af1f04fbc8237b2480ed4318bc56707875abffe0d",
+    "search_rubric.py": "25afdbb380bff2f3eec2e380e008caec0fb07025af6dfdbdcef8fdb5c558952a",
+    "spending.py": "c1c866e8d762fcb0422c10697167fd664105203fd8af113b1c068cf5568214fb",
+    "workspace.py": "335e11474bae413a350b4c81452a35c6f62b7959b2c1c0e3a136ed26bb1cfaf1"
+  },
+  "inputs": {
+    "edit-01": "569de75be42ff153e06fdefee2d2dcac3cb26b5badea682a45352959ce3974b1",
+    "edit-02": "1443223248d7961f49220237ede2a93d95f06c3e90d975628ce49cce7158e3c9",
+    "edit-03": "c9c9cf46413460587a740046d0545207c38b5ae95eddd64884ac8df378bd94ac",
+    "edit-04": "cfcc07779bb6339f1cc5c1b2da582f66c847378d45407a8080438f1d48ce9816",
+    "edit-05": "16d0f93130b91608f8904c0e21ae05445543e8f91dc6a3c819300c7003cdc6eb",
+    "edit-06": "fae8d50bdff56cb7e4eb6db7778c071522fbcb31b35ead0fb21fdd38344e357a",
+    "edit-07": "8967bb6b6b317a5f6c00ffedf5162c8ba2daad38ce49ab82a1364d9a16bc44c3",
+    "edit-08": "87f509b45e6dffdfd200f4ffbab4425b644b6f45b0d5886c21b94b7ab57d22ef",
+    "edit-09": "ec8bec15bbbe7e77580967e8b7971cbc0a95e0d605808f391cac4112ffd55d4f",
+    "edit-10": "9b81460f4b82e8a5fc7bdc1a6974c4eea45b65ee8e6ed2dc3aec6e1b560f385e",
+    "edit-11": "336b223668faf30406643ee538db4365f70673661b64bbe182a2d313df580df2",
+    "edit-12": "382d7556ed325c98a34e095f2df57f6ddefa25b91e4a650fd4dc27ecaa1a5bb3"
+  },
+  "targets_hash": null
+}

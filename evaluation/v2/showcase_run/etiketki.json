@@ -1,0 +1,1939 @@
+{
+  "id": "etiketki",
+  "expected_found": true,
+  "protected_flagged": 0,
+  "findings": [
+    {
+      "accepted": true,
+      "block_id": "3",
+      "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+      "start": 66,
+      "end": 147,
+      "pattern": "подмена решения метафорой",
+      "effect": "форма требует вывод о готовности вместо указания",
+      "normal": "связка между пробой и контролем",
+      "related_ids": [
+        "2",
+        "5"
+      ],
+      "decision": "flag",
+      "channel": "semantic",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 36
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 116
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 147
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 22
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 133
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 148
+        }
+      ],
+      "id": "0",
+      "channels": [
+        "semantic",
+        "slopotron"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "3",
+          "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+          "start": 66,
+          "end": 147,
+          "pattern": "Под видом итога раздела «Что проверили» появляется план будущего действия, обёрнутый в образную фразу.",
+          "effect": "Оператор получает в разделе с результатами пробы не вывод, а новое задание — притом расплывчатое («длинный контрольный прогон»), которое противоречит точному заданию блока 5 (150 этикеток, сверка с риской). Образность скрывает подмену.",
+          "normal": "Раздел должен фиксировать только результат короткой пробы: запасной рулон поставлен, первые 20 этикеток вышли ровно. Задание вечерней смене уже есть в блоке 5 и повторять его здесь не нужно.",
+          "related_ids": [
+            "2",
+            "5"
+          ],
+          "decision": "flag",
+          "channel": "semantic",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 36
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 116
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 13
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 147
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 22
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 133
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 148
+            }
+          ]
+        },
+        {
+          "accepted": true,
+          "block_id": "3",
+          "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+          "start": 66,
+          "end": 147,
+          "pattern": "Метафора, растянутая ради связности",
+          "effect": "Введение и поддержание образа «истории» для сцепки абзацев, хотя в исходных данных (брифе) такого образа нет",
+          "normal": "Образ «истории» и «главы» введён для стилистической связности, но не следует из содержания брифа и не требуется для понимания задачи. Это приём, характерный для AI-переформулирования, когда модель добавляет нарративную оболочку к техническому сообщению",
+          "related_ids": [],
+          "decision": "flag",
+          "channel": "slopotron",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 36
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 116
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 13
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 147
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 22
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 133
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 148
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": "moe+gqa",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "flag",
+          "pattern": "подмена решения метафорой",
+          "normal": "связка между пробой и контролем",
+          "effect": "форма требует вывод о готовности вместо указания",
+          "normal_test": "форма требует вывод о готовности вместо указания",
+          "counterfactual": "форма требует вывод о готовности вместо указания",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "challenge": "подмена решения метафорой",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 55,
+            "end": 140,
+            "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "flag",
+          "pattern": "метафора вместо вывода",
+          "normal": "связка этапов",
+          "effect": "заменяет технический вывод о готовности линии повествовательным ходом",
+          "normal_test": "заменяет технический вывод о готовности линии повествовательным ходом",
+          "counterfactual": "заменяет технический вывод о готовности линии повествовательным ходом",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "challenge": "метафора вместо вывода",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 55,
+            "end": 140,
+            "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": true,
+      "normal_test": "форма требует вывод о готовности вместо указания",
+      "counterfactual": "форма требует вывод о готовности вместо указания",
+      "voice": "author",
+      "verification_evidence": {
+        "block_id": "3",
+        "start": 66,
+        "end": 147,
+        "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+        "ref": "b3.s2"
+      },
+      "without_arbiter": "flag",
+      "arbiter_called": false,
+      "challenge": "подмена решения метафорой",
+      "task_anchor": {
+        "block_id": "brief",
+        "start": 55,
+        "end": 140,
+        "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+        "ref": "brief.s1"
+      },
+      "fact_anchor": {
+        "block_id": "3",
+        "start": 66,
+        "end": 147,
+        "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+        "ref": "b3.s2"
+      },
+      "case_file": {
+        "status": "ok",
+        "stage_index": 2,
+        "coverage": {
+          "chars_shown": 615,
+          "chars_total": 615,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                36
+              ]
+            ],
+            "1": [
+              [
+                0,
+                116
+              ]
+            ],
+            "2": [
+              [
+                0,
+                13
+              ]
+            ],
+            "3": [
+              [
+                0,
+                147
+              ]
+            ],
+            "4": [
+              [
+                0,
+                22
+              ]
+            ],
+            "5": [
+              [
+                0,
+                133
+              ]
+            ],
+            "6": [
+              [
+                0,
+                148
+              ]
+            ]
+          }
+        },
+        "dossier": {
+          "harm": [
+            "Метафорический ход «следующая глава истории» подменяет рабочую связь между остановкой, короткой пробой и решением о продолжении; вместо того чтобы назвать, чьё именно заключение подтверждает готовность линии, текст переводит это в повествовательную рамку и тем самым размывает конкретный ответственный шаг.",
+            "b3.s2"
+          ],
+          "use": [
+            "Та же формула может выполнять для вечернего оператора функцию мягкой связки между протоколом сбоя и дальнейшим контролем: она помечает переход к следующему этапу без жёсткой терминологии и помогает считать длинный прогон продолжением уже начатой проверки.",
+            "brief.s1"
+          ],
+          "test": [
+            "Различие между версиями в том, нужна ли здесь именно операционная формулировка о результате пробы и условии возобновления работы. Если в соседних строках есть только распоряжение о контрольном прогоне и сводка «первые 20 вышли ровно», а не отдельное решение о допуске, тогда приходится предполагать, что метафора заменяет незафиксированное служебное решение.",
+            "b3.s1"
+          ]
+        },
+        "anchors": {
+          "harm": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "use": {
+            "block_id": "brief",
+            "start": 55,
+            "end": 140,
+            "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+            "ref": "brief.s1"
+          },
+          "test": {
+            "block_id": "3",
+            "start": 34,
+            "end": 66,
+            "quote": "Первые 20 этикеток вышли ровно. ",
+            "ref": "b3.s1"
+          }
+        }
+      },
+      "case_status": "ok",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f"
+    }
+  ],
+  "verdicts": [
+    {
+      "accepted": true,
+      "block_id": "3",
+      "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+      "start": 66,
+      "end": 147,
+      "pattern": "подмена решения метафорой",
+      "effect": "форма требует вывод о готовности вместо указания",
+      "normal": "связка между пробой и контролем",
+      "related_ids": [
+        "2",
+        "5"
+      ],
+      "decision": "flag",
+      "channel": "semantic",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 36
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 116
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 147
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 22
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 133
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 148
+        }
+      ],
+      "id": "0",
+      "channels": [
+        "semantic",
+        "slopotron"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "3",
+          "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+          "start": 66,
+          "end": 147,
+          "pattern": "Под видом итога раздела «Что проверили» появляется план будущего действия, обёрнутый в образную фразу.",
+          "effect": "Оператор получает в разделе с результатами пробы не вывод, а новое задание — притом расплывчатое («длинный контрольный прогон»), которое противоречит точному заданию блока 5 (150 этикеток, сверка с риской). Образность скрывает подмену.",
+          "normal": "Раздел должен фиксировать только результат короткой пробы: запасной рулон поставлен, первые 20 этикеток вышли ровно. Задание вечерней смене уже есть в блоке 5 и повторять его здесь не нужно.",
+          "related_ids": [
+            "2",
+            "5"
+          ],
+          "decision": "flag",
+          "channel": "semantic",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 36
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 116
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 13
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 147
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 22
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 133
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 148
+            }
+          ]
+        },
+        {
+          "accepted": true,
+          "block_id": "3",
+          "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+          "start": 66,
+          "end": 147,
+          "pattern": "Метафора, растянутая ради связности",
+          "effect": "Введение и поддержание образа «истории» для сцепки абзацев, хотя в исходных данных (брифе) такого образа нет",
+          "normal": "Образ «истории» и «главы» введён для стилистической связности, но не следует из содержания брифа и не требуется для понимания задачи. Это приём, характерный для AI-переформулирования, когда модель добавляет нарративную оболочку к техническому сообщению",
+          "related_ids": [],
+          "decision": "flag",
+          "channel": "slopotron",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 36
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 116
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 13
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 147
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 22
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 133
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 148
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": "moe+gqa",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "flag",
+          "pattern": "подмена решения метафорой",
+          "normal": "связка между пробой и контролем",
+          "effect": "форма требует вывод о готовности вместо указания",
+          "normal_test": "форма требует вывод о готовности вместо указания",
+          "counterfactual": "форма требует вывод о готовности вместо указания",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "challenge": "подмена решения метафорой",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 55,
+            "end": 140,
+            "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "flag",
+          "pattern": "метафора вместо вывода",
+          "normal": "связка этапов",
+          "effect": "заменяет технический вывод о готовности линии повествовательным ходом",
+          "normal_test": "заменяет технический вывод о готовности линии повествовательным ходом",
+          "counterfactual": "заменяет технический вывод о готовности линии повествовательным ходом",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "challenge": "метафора вместо вывода",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 55,
+            "end": 140,
+            "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": true,
+      "normal_test": "форма требует вывод о готовности вместо указания",
+      "counterfactual": "форма требует вывод о готовности вместо указания",
+      "voice": "author",
+      "verification_evidence": {
+        "block_id": "3",
+        "start": 66,
+        "end": 147,
+        "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+        "ref": "b3.s2"
+      },
+      "without_arbiter": "flag",
+      "arbiter_called": false,
+      "challenge": "подмена решения метафорой",
+      "task_anchor": {
+        "block_id": "brief",
+        "start": 55,
+        "end": 140,
+        "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+        "ref": "brief.s1"
+      },
+      "fact_anchor": {
+        "block_id": "3",
+        "start": 66,
+        "end": 147,
+        "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+        "ref": "b3.s2"
+      },
+      "case_file": {
+        "status": "ok",
+        "stage_index": 2,
+        "coverage": {
+          "chars_shown": 615,
+          "chars_total": 615,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                36
+              ]
+            ],
+            "1": [
+              [
+                0,
+                116
+              ]
+            ],
+            "2": [
+              [
+                0,
+                13
+              ]
+            ],
+            "3": [
+              [
+                0,
+                147
+              ]
+            ],
+            "4": [
+              [
+                0,
+                22
+              ]
+            ],
+            "5": [
+              [
+                0,
+                133
+              ]
+            ],
+            "6": [
+              [
+                0,
+                148
+              ]
+            ]
+          }
+        },
+        "dossier": {
+          "harm": [
+            "Метафорический ход «следующая глава истории» подменяет рабочую связь между остановкой, короткой пробой и решением о продолжении; вместо того чтобы назвать, чьё именно заключение подтверждает готовность линии, текст переводит это в повествовательную рамку и тем самым размывает конкретный ответственный шаг.",
+            "b3.s2"
+          ],
+          "use": [
+            "Та же формула может выполнять для вечернего оператора функцию мягкой связки между протоколом сбоя и дальнейшим контролем: она помечает переход к следующему этапу без жёсткой терминологии и помогает считать длинный прогон продолжением уже начатой проверки.",
+            "brief.s1"
+          ],
+          "test": [
+            "Различие между версиями в том, нужна ли здесь именно операционная формулировка о результате пробы и условии возобновления работы. Если в соседних строках есть только распоряжение о контрольном прогоне и сводка «первые 20 вышли ровно», а не отдельное решение о допуске, тогда приходится предполагать, что метафора заменяет незафиксированное служебное решение.",
+            "b3.s1"
+          ]
+        },
+        "anchors": {
+          "harm": {
+            "block_id": "3",
+            "start": 66,
+            "end": 147,
+            "quote": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "ref": "b3.s2"
+          },
+          "use": {
+            "block_id": "brief",
+            "start": 55,
+            "end": 140,
+            "quote": "Ему нужно понять, что показала короткая проба и на каком условии продолжается работа.",
+            "ref": "brief.s1"
+          },
+          "test": {
+            "block_id": "3",
+            "start": 34,
+            "end": 66,
+            "quote": "Первые 20 этикеток вышли ровно. ",
+            "ref": "b3.s1"
+          }
+        }
+      },
+      "case_status": "ok",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "search_semantic",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 36
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 116
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 147
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 22
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 133
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 148
+        }
+      ],
+      "input_hash": "7ba2d438694d12a9fed08fcf345d859c722f6eef5f680de673638d89d8790c21",
+      "prompt_hash": "8a69792dd94a7c0a5a0da6b4612b53ea80a35370de673d42c2c1ca2ca97da58f",
+      "config_hash": "9f82081dd0c66d21269ffaf0a83c37c0b19ad4b766b7829a608a4ad927da0528",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1395,
+        "completion_tokens": 653,
+        "total_tokens": 2048,
+        "cost": 0.01398,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01398,
+          "upstream_inference_prompt_cost": 0.004185,
+          "upstream_inference_completions_cost": 0.009795
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.01398,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 12.175
+    },
+    {
+      "stage": "search_slopotron",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 36
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 116
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 13
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 147
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 22
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 133
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 148
+        }
+      ],
+      "input_hash": "5a242bcbc89955410b2b4aa53a3dd9f9df7b005595095485b5f8c87071d9c0a2",
+      "prompt_hash": "6000381e8584a28a46a6920cc93fa0d68cd0c29c3f17479ba34d2ad0c1b7b9dd",
+      "config_hash": "d1ed9284f91c2d9da96992db0c2829e352eea5bde847e6e355e5748694ad5ebc",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 19775,
+        "completion_tokens": 215,
+        "total_tokens": 19990,
+        "cost": 0.00120962,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 19232,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00120962,
+          "upstream_inference_prompt_cost": 0.00103762,
+          "upstream_inference_completions_cost": 0.000172
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00120962,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 5.625,
+      "skill_revision": "94060716b06d2e8c1e21018b994033f014d23e7d"
+    },
+    {
+      "stage": "case_builder",
+      "model": "openai/gpt-5.4-mini",
+      "family": "gpt",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "0"
+      ],
+      "input_hash": "862c5588029ff17e92b363c2748ffc5d5b06a2d6959b538a570fe46c3658a619",
+      "prompt_hash": "5bfac809175ea9b7367a960eb6ec2064a0fbbbff0ab7985b662a8dc3e9fd4859",
+      "config_hash": "3651ea979e3a05b75dc4d77c9f8593e858328238860db7c81738ba2d45461ebd",
+      "reasoning_effort": "low",
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 910,
+        "completion_tokens": 397,
+        "total_tokens": 1307,
+        "cost": 0.002469,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002469,
+          "upstream_inference_prompt_cost": 0.0006825,
+          "upstream_inference_completions_cost": 0.0017865
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 130,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.002469,
+      "served_model": "openai/gpt-5.4-mini",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 4.395,
+      "context_coverage": {
+        "chars_shown": 615,
+        "chars_total": 615,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              36
+            ]
+          ],
+          "1": [
+            [
+              0,
+              116
+            ]
+          ],
+          "2": [
+            [
+              0,
+              13
+            ]
+          ],
+          "3": [
+            [
+              0,
+              147
+            ]
+          ],
+          "4": [
+            [
+              0,
+              22
+            ]
+          ],
+          "5": [
+            [
+              0,
+              133
+            ]
+          ],
+          "6": [
+            [
+              0,
+              148
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "0"
+      ],
+      "input_hash": "8f964cebb62eec71066b22aa3a8fcc84184f9374ea0fede329fd4a58abd8ae26",
+      "prompt_hash": "65099cb577408a738b9fee4c5c16b16c23f836fea89876950a6a66a24da178f2",
+      "config_hash": "202376b99bf8bd086200f8ce3833c8140fc0a5b8391d4979e8da70cd99ea7280",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1841,
+        "completion_tokens": 96,
+        "total_tokens": 1937,
+        "cost": 0.00026254,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 800,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00026254,
+          "upstream_inference_prompt_cost": 0.00018574,
+          "upstream_inference_completions_cost": 7.68e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00026254,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 2.805,
+      "context_coverage": {
+        "chars_shown": 615,
+        "chars_total": 615,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              36
+            ]
+          ],
+          "1": [
+            [
+              0,
+              116
+            ]
+          ],
+          "2": [
+            [
+              0,
+              13
+            ]
+          ],
+          "3": [
+            [
+              0,
+              147
+            ]
+          ],
+          "4": [
+            [
+              0,
+              22
+            ]
+          ],
+          "5": [
+            [
+              0,
+              133
+            ]
+          ],
+          "6": [
+            [
+              0,
+              148
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "google/gemma-4-31b-it",
+      "family": "gemma",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "0"
+      ],
+      "input_hash": "a2ec83b7fc1b0bcb1f87986270cc23f9178876af2a7a27c4976765cfd3441775",
+      "prompt_hash": "7694105ac904e54c959484884eae75450abc6d31105f7bb45806367a52ed51e4",
+      "config_hash": "bfecc848b670abc38da4309805682f02c505ec9c84927aa91b6aceaaa6ca81aa",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1639,
+        "completion_tokens": 67,
+        "total_tokens": 1706,
+        "cost": 0.0002208,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002208,
+          "upstream_inference_prompt_cost": 0.00019668,
+          "upstream_inference_completions_cost": 2.412e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.0002208,
+      "served_model": "google/gemma-4-31b-it",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 1.815,
+      "context_coverage": {
+        "chars_shown": 615,
+        "chars_total": 615,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              36
+            ]
+          ],
+          "1": [
+            [
+              0,
+              116
+            ]
+          ],
+          "2": [
+            [
+              0,
+              13
+            ]
+          ],
+          "3": [
+            [
+              0,
+              147
+            ]
+          ],
+          "4": [
+            [
+              0,
+              22
+            ]
+          ],
+          "5": [
+            [
+              0,
+              133
+            ]
+          ],
+          "6": [
+            [
+              0,
+              148
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "seen": 7,
+  "total": 7,
+  "blocks": [
+    {
+      "id": "0",
+      "text": "Передача смены на линии этикеток Р-4",
+      "edit": true,
+      "label": "Строка 1",
+      "line": 0,
+      "prefix": "# ",
+      "editorial": true
+    },
+    {
+      "id": "1",
+      "text": "Заказ № 417 остановили в 15:40. На рулоне 6В после 140 этикеток подложка ушла вправо и край печати попал на высечку.",
+      "edit": true,
+      "label": "Строка 3",
+      "line": 2,
+      "prefix": "",
+      "editorial": true
+    },
+    {
+      "id": "2",
+      "text": "Что проверили",
+      "edit": true,
+      "label": "Строка 5",
+      "line": 4,
+      "prefix": "## ",
+      "editorial": true
+    },
+    {
+      "id": "3",
+      "text": "Оператор поставил запасной рулон. Первые 20 этикеток вышли ровно. Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+      "edit": true,
+      "label": "Строка 7",
+      "line": 6,
+      "prefix": "",
+      "editorial": true
+    },
+    {
+      "id": "4",
+      "text": "Задание вечерней смене",
+      "edit": true,
+      "label": "Строка 9",
+      "line": 8,
+      "prefix": "## ",
+      "editorial": true
+    },
+    {
+      "id": "5",
+      "text": "Напечатайте на запасном рулоне 150 этикеток и сверьте край подложки с правой риской. До конца проверки заказ № 417 остаётся на паузе.",
+      "edit": true,
+      "label": "Строка 11",
+      "line": 10,
+      "prefix": "",
+      "editorial": true
+    },
+    {
+      "id": "6",
+      "text": "Если край пересечёт риску, остановите линию и внесите в журнал «Увод к правой риске». Это дословная метка, по ней наладчик отбирает случаи смещения.",
+      "edit": true,
+      "label": "Строка 13",
+      "line": 12,
+      "prefix": "",
+      "editorial": true
+    }
+  ],
+  "errors": [],
+  "consensus": {
+    "status": "complete",
+    "quorum": 2,
+    "families": [
+      "qwen",
+      "gemma",
+      "claude"
+    ],
+    "skipped": [],
+    "verification": "case_arbiter"
+  },
+  "name": "etiketki.md",
+  "backend": "LLM · независимая проверка",
+  "summary": "Подтверждено 1 из 1 локализованных кандидатов.",
+  "coverage_summary": {
+    "semantic": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "slopotron": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  "changes": [],
+  "refusals": [
+    {
+      "block_id": "3",
+      "reason": "В original «Сейчас мы пишем... — готовим...» — сложное бессоюзное предложение с тире, где вторая часть уточняет первую; в proposal «Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4» — конструкция с двоеточием, менее естественная в устной инструкции. Стык «прогон: проверка» создаёт синтаксический дефект: двоеточие неуместно, требуется тире или запятая. Слово «проверка» вводит избыточность, не проясняя связи с пробой.",
+      "verification": {
+        "id": "3",
+        "block_id": "3",
+        "status": "reject",
+        "mode": "consensus",
+        "policy": "relations_v2",
+        "literal_status": "requires_consensus",
+        "literal_reason": "Изменилась привязка числа к участнику или единице",
+        "reason": "В original «Сейчас мы пишем... — готовим...» — сложное бессоюзное предложение с тире, где вторая часть уточняет первую; в proposal «Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4» — конструкция с двоеточием, менее естественная в устной инструкции. Стык «прогон: проверка» создаёт синтаксический дефект: двоеточие неуместно, требуется тире или запятая. Слово «проверка» вводит избыточность, не проясняя связи с пробой.",
+        "semantic_status": "reject",
+        "claims": [
+          {
+            "before": "Оператор поставил запасной рулон.",
+            "after": "Оператор поставил запасной рулон.",
+            "before_quotes": [
+              "Оператор поставил запасной рулон."
+            ],
+            "after_quotes": [
+              "Оператор поставил запасной рулон."
+            ],
+            "fact": "Оператор поставил запасной рулон — действие выполнено, участник и объект совпадают",
+            "source_units": [
+              "s1"
+            ],
+            "proposal_units": [
+              "t1"
+            ],
+            "status": "compared"
+          },
+          {
+            "before": "Первые 20 этикеток вышли ровно.",
+            "after": "Первые 20 этикеток вышли ровно.",
+            "before_quotes": [
+              "Первые 20 этикеток вышли ровно."
+            ],
+            "after_quotes": [
+              "Первые 20 этикеток вышли ровно."
+            ],
+            "fact": "Первые 20 этикеток вышли ровно — результат пробы зафиксирован, условие выполнено",
+            "source_units": [
+              "s2"
+            ],
+            "proposal_units": [
+              "t2"
+            ],
+            "status": "compared"
+          },
+          {
+            "before": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+            "after": "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4.",
+            "before_quotes": [
+              "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон."
+            ],
+            "after_quotes": [
+              "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4."
+            ],
+            "fact": "После пробы по Р-4 следует длинный контрольный прогон — последовательность действий, но в proposal она выражена как объявление следующего шага, а в original — как текущая деятельность",
+            "source_units": [
+              "s3"
+            ],
+            "proposal_units": [
+              "t3"
+            ],
+            "status": "compared"
+          }
+        ],
+        "source_conflicts": [],
+        "votes": [
+          {
+            "model": "anthropic/claude-sonnet-4.6",
+            "family": "claude",
+            "status": "pass",
+            "claims": [
+              {
+                "before": "Оператор поставил запасной рулон.",
+                "after": "Оператор поставил запасной рулон.",
+                "before_quotes": [
+                  "Оператор поставил запасной рулон."
+                ],
+                "after_quotes": [
+                  "Оператор поставил запасной рулон."
+                ],
+                "fact": "Оператор установил запасной рулон",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "preserved"
+              },
+              {
+                "before": "Первые 20 этикеток вышли ровно.",
+                "after": "Первые 20 этикеток вышли ровно.",
+                "before_quotes": [
+                  "Первые 20 этикеток вышли ровно."
+                ],
+                "after_quotes": [
+                  "Первые 20 этикеток вышли ровно."
+                ],
+                "fact": "Первые 20 этикеток вышли ровно (результат короткой пробы)",
+                "source_units": [
+                  "s2"
+                ],
+                "proposal_units": [
+                  "t2"
+                ],
+                "status": "preserved"
+              },
+              {
+                "before": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+                "after": "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4.",
+                "before_quotes": [
+                  "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон."
+                ],
+                "after_quotes": [
+                  "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4."
+                ],
+                "fact": "Следующий шаг — длинный контрольный прогон по Р-4 (после пробы)",
+                "source_units": [
+                  "s3"
+                ],
+                "proposal_units": [
+                  "t3"
+                ],
+                "status": "preserved"
+              }
+            ],
+            "source_conflicts": [],
+            "edits": [
+              {
+                "id": "0",
+                "status": "fixed",
+                "reason": "Метафора «пишем следующую главу истории Р-4» убрана; вместо неё — прямая конструкция «Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4», которая явно называет связку между пробой и контрольным прогоном и не требует вывода о готовности из образного оборота."
+              }
+            ],
+            "policy": "relations_v2",
+            "served_model": "anthropic/claude-sonnet-4.6",
+            "architecture": null,
+            "model_status": "pass",
+            "forward": "yes",
+            "reverse": "yes",
+            "reason": "Единственное изменение касается s3/t3: метафорическая формулировка «пишем следующую главу истории Р-4» заменена прямой связкой «проверка после пробы по Р-4», что устраняет указанное редакционное замечание без потери или добавления фактов. Все три утверждения (установка запасного рулона, ровный выход первых 20 этикеток, следующий шаг — длинный контрольный прогон) сохранены в обеих версиях.",
+            "counterexample": "",
+            "minimal_check": {
+              "agent": "same",
+              "origin": "same",
+              "phase": "same",
+              "scenario": "В оригинале «мы» — коллективный субъект, а «готовим» допускает прочтение, при котором прогон ещё только планируется и не начат; в редакции «Следующий шаг» — безличная конструкция, субъект не назван, но действие так же отнесено к будущему. Роль и событие однозначны: вечерний оператор (или смена) должен провести длинный контрольный прогон.",
+              "outcome": "both",
+              "syntax": "natural",
+              "reason": "Оригинал: «Сейчас мы пишем… — готовим…» — метафора создаёт двусмысленность (процесс уже идёт или только объявляется). Редакция: «Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4» — двоеточие корректно вводит уточнение, управление и границы придаточного не нарушены, регистр и пунктуация в норме, фраза естественна для технической инструкции."
+            }
+          },
+          {
+            "model": "qwen/qwen3-235b-a22b-2507",
+            "family": "qwen",
+            "status": "reject",
+            "claims": [
+              {
+                "before": "Оператор поставил запасной рулон.",
+                "after": "Оператор поставил запасной рулон.",
+                "before_quotes": [
+                  "Оператор поставил запасной рулон."
+                ],
+                "after_quotes": [
+                  "Оператор поставил запасной рулон."
+                ],
+                "fact": "Оператор поставил запасной рулон — действие выполнено, участник и объект совпадают",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "compared"
+              },
+              {
+                "before": "Первые 20 этикеток вышли ровно.",
+                "after": "Первые 20 этикеток вышли ровно.",
+                "before_quotes": [
+                  "Первые 20 этикеток вышли ровно."
+                ],
+                "after_quotes": [
+                  "Первые 20 этикеток вышли ровно."
+                ],
+                "fact": "Первые 20 этикеток вышли ровно — результат пробы зафиксирован, условие выполнено",
+                "source_units": [
+                  "s2"
+                ],
+                "proposal_units": [
+                  "t2"
+                ],
+                "status": "compared"
+              },
+              {
+                "before": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+                "after": "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4.",
+                "before_quotes": [
+                  "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон."
+                ],
+                "after_quotes": [
+                  "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4."
+                ],
+                "fact": "После пробы по Р-4 следует длинный контрольный прогон — последовательность действий, но в proposal она выражена как объявление следующего шага, а в original — как текущая деятельность",
+                "source_units": [
+                  "s3"
+                ],
+                "proposal_units": [
+                  "t3"
+                ],
+                "status": "compared"
+              }
+            ],
+            "source_conflicts": [],
+            "edits": [
+              {
+                "id": "0",
+                "status": "remains",
+                "reason": "Замена прямого описания действия («готовим длинный контрольный прогон») на метафору («пишем следующую главу истории Р-4») сохраняется в proposal, что оставляет эффект подмены решения метафорой. Несмотря на то, что в t3 используется более прямая формулировка «следующий шаг — длинный контрольный прогон», вводная часть «проверка после пробы по Р-4» не устраняет метафоричности, а лишь дополняет её. Связка между пробой и контролем выражена слабее, чем в original, где «готовим» прямо указывает на начало действия."
+              }
+            ],
+            "policy": "relations_v2",
+            "served_model": "qwen/qwen3-235b-a22b-2507",
+            "architecture": "moe+gqa",
+            "model_status": "uncertain",
+            "forward": "unclear",
+            "reverse": "unclear",
+            "reason": "В original «Сейчас мы пишем... — готовим...» — сложное бессоюзное предложение с тире, где вторая часть уточняет первую; в proposal «Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4» — конструкция с двоеточием, менее естественная в устной инструкции. Стык «прогон: проверка» создаёт синтаксический дефект: двоеточие неуместно, требуется тире или запятая. Слово «проверка» вводит избыточность, не проясняя связи с пробой.",
+            "counterexample": "Если оператор воспримет фразу «следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4» как констатацию, а не приказ, он может не начать прогон немедленно, ожидая уточнений, тогда как в оригинале «готовим» подразумевает активное действие в текущий момент.",
+            "minimal_check": {
+              "agent": "same",
+              "origin": "same",
+              "phase": "changed",
+              "scenario": "В оригинале оператор уже находится в фазе активной подготовки контрольного прогона («готовим»), тогда как в редакции это представлено как объявление следующего шага, что может интерпретироваться как ещё не начатое действие.",
+              "outcome": "only_original",
+              "syntax": "defect",
+              "reason": "В original «Сейчас мы пишем... — готовим...» — сложное бессоюзное предложение с тире, где вторая часть уточняет первую; в proposal «Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4» — конструкция с двоеточием, менее естественная в устной инструкции. Стык «прогон: проверка» создаёт синтаксический дефект: двоеточие неуместно, требуется тире или запятая. Слово «проверка» вводит избыточность, не проясняя связи с пробой."
+            }
+          },
+          {
+            "model": "deepseek/deepseek-v3.2",
+            "family": "deepseek",
+            "status": "reject",
+            "claims": [
+              {
+                "before": "Оператор поставил запасной рулон.",
+                "after": "Оператор поставил запасной рулон.",
+                "before_quotes": [
+                  "Оператор поставил запасной рулон."
+                ],
+                "after_quotes": [
+                  "Оператор поставил запасной рулон."
+                ],
+                "fact": "Оператор выполнил действие по установке запасного рулона.",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "preserved"
+              },
+              {
+                "before": "Первые 20 этикеток вышли ровно.",
+                "after": "Первые 20 этикеток вышли ровно.",
+                "before_quotes": [
+                  "Первые 20 этикеток вышли ровно."
+                ],
+                "after_quotes": [
+                  "Первые 20 этикеток вышли ровно."
+                ],
+                "fact": "Первые 20 этикеток были произведены без дефектов (вышли ровно).",
+                "source_units": [
+                  "s2"
+                ],
+                "proposal_units": [
+                  "t2"
+                ],
+                "status": "preserved"
+              },
+              {
+                "before": "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.",
+                "after": "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4.",
+                "before_quotes": [
+                  "Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон."
+                ],
+                "after_quotes": [
+                  "Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4."
+                ],
+                "fact": "Следующим планируемым действием является проведение длинного контрольного прогона, связанного с Р-4.",
+                "source_units": [
+                  "s3"
+                ],
+                "proposal_units": [
+                  "t3"
+                ],
+                "status": "preserved"
+              }
+            ],
+            "source_conflicts": [],
+            "edits": [
+              {
+                "id": "0",
+                "status": "fixed",
+                "reason": "Метафора 'пишем следующую главу истории' заменена на прямую связку 'Следующий шаг — ... проверка после пробы по Р-4'. Это устраняет необходимость интерпретации метафоры и прямо указывает на последовательность действий (шаг) и цель (проверка)."
+              }
+            ],
+            "policy": "relations_v2",
+            "served_model": "deepseek/deepseek-v3.2",
+            "architecture": "mla+moe",
+            "model_status": "pass",
+            "forward": "yes",
+            "reverse": "yes",
+            "reason": "Оригинал: 'Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.' — метафора 'пишем главу' оставляет открытой природу события. Редакция: 'Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4.' — конструкция 'Следующий шаг — ...' прямо указывает на событие. Синтаксис редакции естественен для инструктивного жанра.",
+            "counterexample": "",
+            "minimal_check": {
+              "agent": "same",
+              "origin": "changed",
+              "phase": "same",
+              "scenario": "В оригинале (s3) 'мы пишем следующую главу истории Р-4' может быть прочитано как метафорическое описание любого будущего действия, связанного с Р-4, не обязательно именно контрольного прогона, или как риторическая фигура, не описывающая конкретное событие. В редакции (t3) 'Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4' однозначно называет следующее конкретное событие (контрольный прогон) и его цель (проверка).",
+              "outcome": "only_proposal",
+              "syntax": "natural",
+              "reason": "Оригинал: 'Сейчас мы пишем следующую главу истории Р-4 — готовим длинный контрольный прогон.' — метафора 'пишем главу' оставляет открытой природу события. Редакция: 'Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4.' — конструкция 'Следующий шаг — ...' прямо указывает на событие. Синтаксис редакции естественен для инструктивного жанра."
+            }
+          }
+        ],
+        "proposal_hash": "ec95c137db20b7a0888ae282a11eb062a2aa2ce97067be07f980a84acb526468",
+        "generation_review": "minimal_edit",
+        "semantic_reason": "В original «Сейчас мы пишем... — готовим...» — сложное бессоюзное предложение с тире, где вторая часть уточняет первую; в proposal «Следующий шаг — длинный контрольный прогон: проверка после пробы по Р-4» — конструкция с двоеточием, менее естественная в устной инструкции. Стык «прогон: проверка» создаёт синтаксический дефект: двоеточие неуместно, требуется тире или запятая. Слово «проверка» вводит избыточность, не проясняя связи с пробой.",
+        "consensus": {
+          "status": "veto",
+          "quorum": 2,
+          "families": [
+            "claude",
+            "qwen",
+            "deepseek"
+          ],
+          "pass_families": [
+            "claude"
+          ],
+          "skipped": []
+        },
+        "editorial_status": "remains",
+        "syntax_status": "defect"
+      }
+    }
+  ],
+  "rewrite_stages": [
+    {
+      "stage": "rewrite_minimal_edit",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "3"
+      ],
+      "input_hash": "55f826dff473154c78a33582156caf4324adcae3cf836b5ef99d7a67463c5750",
+      "prompt_hash": "92ffaf08b587168b1955562135cd5b10ee74a56b9e62423f93e5afc2d4d25daf",
+      "config_hash": "32096533e39b2f67169160323d1c9801df38e3a0620684f71f791f0100412491",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1159,
+        "completion_tokens": 365,
+        "total_tokens": 1524,
+        "cost": 0.00045426,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00045426,
+          "upstream_inference_prompt_cost": 0.00016226,
+          "upstream_inference_completions_cost": 0.000292
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00045426,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 11.992,
+      "attempt": 1,
+      "proposed_strategies": [
+        "subtractive",
+        "rephrase"
+      ]
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "3"
+      ],
+      "input_hash": "6067028a3bc14b46e344dbc534592219e47aef5d09d6e08fcf4791060008c752",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "13914e0b9fa52805b16d4d49b5734daa51bf66ce70715fc3518671df4520203e",
+      "temperature": 0,
+      "status": "error",
+      "usage": {
+        "prompt_tokens": 2150,
+        "completion_tokens": 987,
+        "total_tokens": 3137,
+        "cost": 0.021255,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021255,
+          "upstream_inference_prompt_cost": 0.00645,
+          "upstream_inference_completions_cost": 0.014805
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.021255,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 16.766,
+      "fidelity_policy": "relations_v2",
+      "error": "unpaired_relation"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "3"
+      ],
+      "input_hash": "6067028a3bc14b46e344dbc534592219e47aef5d09d6e08fcf4791060008c752",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "cc086acc4e95d062fd90b08dce446a762c1fd0a3c6a86b2657f676d98f723949",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1846,
+        "completion_tokens": 1201,
+        "total_tokens": 3047,
+        "cost": 0.00115012,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00115012,
+          "upstream_inference_prompt_cost": 0.00018932,
+          "upstream_inference_completions_cost": 0.0009608
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00115012,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 23.2,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "deepseek/deepseek-v3.2",
+      "family": "deepseek",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "3"
+      ],
+      "input_hash": "6067028a3bc14b46e344dbc534592219e47aef5d09d6e08fcf4791060008c752",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "baf047e9310b656eb86fb6c832604f31384862926c4c2a06f080c3072cf75493",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1697,
+        "completion_tokens": 613,
+        "total_tokens": 2310,
+        "cost": 0.00051608,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00051608,
+          "upstream_inference_prompt_cost": 0.00028314,
+          "upstream_inference_completions_cost": 0.00023294
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00051608,
+      "served_model": "deepseek/deepseek-v3.2",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 37.474,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "3"
+      ],
+      "input_hash": "007e1f5aa59c620c0fa9a4ec6fa4ffbce1fdd27270d5e76fc5f55de11510bec5",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "13914e0b9fa52805b16d4d49b5734daa51bf66ce70715fc3518671df4520203e",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 2153,
+        "completion_tokens": 868,
+        "total_tokens": 3021,
+        "cost": 0.019479,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019479,
+          "upstream_inference_prompt_cost": 0.006459,
+          "upstream_inference_completions_cost": 0.01302
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.019479,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 14.657,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "3"
+      ],
+      "input_hash": "007e1f5aa59c620c0fa9a4ec6fa4ffbce1fdd27270d5e76fc5f55de11510bec5",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "cc086acc4e95d062fd90b08dce446a762c1fd0a3c6a86b2657f676d98f723949",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1849,
+        "completion_tokens": 981,
+        "total_tokens": 2830,
+        "cost": 0.00070596,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00070596,
+          "upstream_inference_prompt_cost": 0.00016641,
+          "upstream_inference_completions_cost": 0.00053955
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00070596,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 52.203,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "deepseek/deepseek-v3.2",
+      "family": "deepseek",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "1f19099286d6875d00a6c41175f759949bb046ed6f937e1bdade9dec120a561f",
+      "region": [
+        "3"
+      ],
+      "input_hash": "007e1f5aa59c620c0fa9a4ec6fa4ffbce1fdd27270d5e76fc5f55de11510bec5",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "baf047e9310b656eb86fb6c832604f31384862926c4c2a06f080c3072cf75493",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1700,
+        "completion_tokens": 679,
+        "total_tokens": 2379,
+        "cost": 0.0009835,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009835,
+          "upstream_inference_prompt_cost": 0.0004403,
+          "upstream_inference_completions_cost": 0.0005432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.0009835,
+      "served_model": "deepseek/deepseek-v3.2",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 31.85,
+      "fidelity_policy": "relations_v2"
+    }
+  ]
+}

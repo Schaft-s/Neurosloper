@@ -11,7 +11,7 @@ import preferences
 from engine import analyze, finish
 from formats import LIMIT
 from policy import LENGTHS, STYLES, literal_terms
-from report import diagnostic_report, marked_pages
+from report import audit_note, diagnostic_report, marked_pages
 from personal_search import search as search_personal
 from workspace import document_consent_required, document_detector, propose
 
@@ -235,8 +235,12 @@ class Bot:
                     fs = [f for f in j["verdicts"] if f["decision"] == "uncertain"]
                 for n in indices(arg, len(fs)):
                     f = fs[n]
+                    locations = {key: b["label"] for key, b in by_block.items()}
+                    locations.update(brief="Бриф", source="ТЗ автора")
+                    note = audit_note(f, locations)
                     await say(
                         f"{by_block[f['block_id']]['label']} · {'Нужен контекст' if f['decision'] == 'uncertain' else 'Замечание'}\n«{f['quote']}»\n{f['pattern']}\n{f['effect']}\n{f['normal']}"
+                        + ("\n" + note if note else "")
                     )
             elif command == "/rewrite":
                 ids = []

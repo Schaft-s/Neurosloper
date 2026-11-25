@@ -1,0 +1,21 @@
+{
+  "policy": "relations_v3",
+  "rewriter": "minimal_edit",
+  "panel": [
+    "anthropic/claude-sonnet-4.6",
+    "qwen/qwen3-235b-a22b-2507",
+    "deepseek/deepseek-v3.2"
+  ],
+  "api_json": 1,
+  "original_holdout_status": "Two observed critical failures now used for regression; audit2 is the untouched confirmation set.",
+  "new_locked_files": {
+    "rewrite_inputs.jsonl": "9b198bc1d0c4946d8e1716d02296a5099008dced9fa45bef6816ff72eeb4c4a2",
+    "rewrite_keys.jsonl": "6fa57c14f3e7f724a6b00974fd755dedf557a83ec86cb7143a2e444f68c20c32"
+  },
+  "files": {
+    "contract_relations.py": "fcde8a0d0242c093bfbc3ccf64d94bf8bc566386d702a2e98c878b9a4aae7fc0",
+    "fidelity.py": "f51012f0ce56cdcec0414923f9d29812ad94ee0ff4c30f67645c396e28df355f",
+    "minimal_edit.py": "94f74733c4f720cd55e679b59a1c2d945f191a993fabeb9f246eb9529595a58c",
+    "engine.py": "9986985dc0692e4875cfe238ec861e9b87cd90883c1b6303988090f64f879312"
+  }
+}

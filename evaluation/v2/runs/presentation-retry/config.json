@@ -1,0 +1,53 @@
+{
+  "suite": "presentation-detect",
+  "task": "union",
+  "search_model": "anthropic/claude-sonnet-4.6",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "case_model": "anthropic/claude-sonnet-4.6",
+  "panel": [
+    "openai/gpt-5.4-mini",
+    "google/gemma-4-31b-it",
+    "qwen/qwen3-235b-a22b-2507"
+  ],
+  "verify": "reader_committee",
+  "rubric": "reader_task",
+  "policy": "legacy",
+  "rewriter": "standard",
+  "api_json": "1",
+  "brief_audit": false,
+  "priority": "corroborated",
+  "all_reviewers": true,
+  "audit_model": "deepseek/deepseek-v3.2",
+  "replay": null,
+  "hashes": {
+    "boundary_review.py": "2171f9cef80d2841e321965613458c7c8167f3409656bd360b7776a8da448114",
+    "brief_audit.py": "987d76ceb8b006936725801a6af7fb774bd7b2db3b9cf82d3639645306147bb4",
+    "case_review.py": "b174f8a67c79b690b07aba8264386b7cdaeff3a8b92add6e60d4298b46d8447f",
+    "consensus.py": "d09176954bf3ed96c6d851663735dfb4a3e2fee620811e2d61e4c94e646167d0",
+    "contract_relations.py": "fcde8a0d0242c093bfbc3ccf64d94bf8bc566386d702a2e98c878b9a4aae7fc0",
+    "detection_verification.py": "37e856c25e7a7d42e7d1ad2b9c517509c270837b1b40d68a369d308727c2c7ff",
+    "document_tools.py": "86248440fb6b882cc144eedd82f8ae2e681bc70f6082cf8ecd10051b1984af26",
+    "engine.py": "0792e0b524419dceb56f58110e54de369af5857033d7aa4b44e47210961dfa50",
+    "fidelity.py": "08da03a7650a84827ec74d17585cbec64d6a554b7b9d2731ff926cf204b78a04",
+    "formats.py": "b775422ab0745c2b7ccd6a6637696164c9bf80b1c465237032a16ef7a4c361a8",
+    "html_format.py": "681d5d6736113d6667463158f95b315218ff65481c684edffd0cef8b9fe58ced",
+    "minimal_edit.py": "cba5cad26dc5dddbdb57f7846dc4e07d504ec293197a121ff5bcf588b175e166",
+    "offline.py": "c8f9b33c94b7f100e2e0b497ab508f87c5f133e41a6df4237a4695fc260a9f38",
+    "personal_search.py": "c030f68787fca375c4e45ab072ff79fdc3330b1a1fc286ea2df0dbb3ab39e153",
+    "policy.py": "e33b84fb06140f48b9da5281776cefc712dc8502a51e0c6122ae840428d84c75",
+    "preferences.py": "9782ff7dba1f3e144dcc7fd171f8d78bac2dfa7e468b163b16dc1c2f98b4628e",
+    "provider.py": "50ca23e0dd87a519a00bb8287c611068e187a2dcbffc82629147c075657afb81",
+    "reader_verdict.py": "b5814a7e12bed431e3fd17cb6a0f24c2c803b468a28b1f8ed871cb1388a9ee88",
+    "report.py": "611e93377ba93550dc5c693469ee37cb3f4fee6c2bfc5cee4201656d0456e96f",
+    "search_rubric.py": "f9ae65ac8926a56bc92e2be3f6009868834d3d96b0682bf4117fecf149cbbe5b",
+    "spending.py": "e0fba4e88dd500fddbb11be09fe9b3f84deefb7b47cfde3e7a8d0d49965fbe13",
+    "workspace.py": "5f18265d5732f4cb6559ab5cedf66fbc9ce858cf68e592bc54d8039947fa7009"
+  },
+  "inputs": {
+    "p-4b29": "3d46ab067a1f605486bb07c53b76affe3edd888a2d68a68d7574440addb99741",
+    "p-35e9": "4bc50e78e83d7eb806a0486ad5257d1972fbe8508cf9e74912da1783d8e289a8",
+    "p-64f2": "f18689754792c6d86ebab2c78cc445859d43dc3669b17d67bb21a93ffb263f6b",
+    "p-67ab": "cfd38b4e9ecefac3d384a783e6abfea55f22d9590691bda59239de2f33534be2"
+  },
+  "targets_hash": null
+}

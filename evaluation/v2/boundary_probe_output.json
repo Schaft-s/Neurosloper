@@ -1,0 +1,620 @@
+[
+  {
+    "id": "bp-e0b2",
+    "expected": "veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "9",
+          "unit": "word:мб",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "Перед печатью размер макета был строго меньше 9 МБ",
+          "context": "Перед печатью размер макета был строго"
+        }
+      ],
+      "proposal": []
+    }
+  },
+  {
+    "id": "bp-46d2",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "8",
+          "unit": "volume",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "По журналу объём пробы был меньше 8 мл",
+          "context": "По журналу объём пробы был"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "9",
+          "unit": "volume",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "По журналу объём пробы был не больше 9 мл",
+          "context": "По журналу объём пробы был"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-6ee9",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "19",
+          "unit": "word:стуль",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "Утром в малом зале насчитали не менее 19 стульев",
+          "context": "Утром в малом зале насчитали"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "19",
+          "unit": "word:скамеек",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "Утром в малом зале насчитали не менее 19 скамеек",
+          "context": "Утром в малом зале насчитали"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-024a",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "16",
+          "unit": "degree",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "На чердаке показания датчика оставались ниже 16 градусов",
+          "context": "На чердаке показания датчика оставались"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "16",
+          "unit": "degree",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "Показания датчика на чердаке составляли менее 16 градусов",
+          "context": "Показания датчика на чердаке составляли"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-218d",
+    "expected": "veto",
+    "outcome": "veto",
+    "raw": {
+      "status": "reject",
+      "reason": "При точном равенстве порогу одна формулировка допускает значение, другая исключает его.",
+      "source": [
+        {
+          "value": "18",
+          "unit": "word:бланк",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "По окончании смены в ящике оставалось не менее 18 бланков",
+          "context": "По окончании смены в ящике оставалось"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "18",
+          "unit": "word:бланк",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "По окончании смены в ящике оставалось более 18 бланков",
+          "context": "По окончании смены в ящике оставалось"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-57c4",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "10",
+          "unit": "word:конверт",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "До полудня за раз принимали менее 10 конвертов, после полудня — не более 15",
+          "context": "До полудня за раз принимали   , после полудня — не более 15"
+        },
+        {
+          "value": "15",
+          "unit": "",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "До полудня за раз принимали менее 10 конвертов, после полудня — не более 15",
+          "context": "До полудня за раз принимали менее 10 конвертов, после полудня —"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "15",
+          "unit": "word:конверт",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "До полудня за раз принимали не более 15 конвертов, после полудня — менее 10",
+          "context": "До полудня за раз принимали   , после полудня — менее 10"
+        },
+        {
+          "value": "10",
+          "unit": "",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "До полудня за раз принимали не более 15 конвертов, после полудня — менее 10",
+          "context": "До полудня за раз принимали не более 15 конвертов, после полудня —"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-f93c",
+    "expected": "veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [],
+      "proposal": [
+        {
+          "value": "3",
+          "unit": "km_per_hour",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "На повороте скорость тележки была строго больше 3 км/ч",
+          "context": "На повороте скорость тележки была строго"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-bc28",
+    "expected": "veto",
+    "outcome": "veto",
+    "raw": {
+      "status": "reject",
+      "reason": "При точном равенстве порогу одна формулировка допускает значение, другая исключает его.",
+      "source": [
+        {
+          "value": "7",
+          "unit": "percent",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "После сушки влажность бумаги составляла менее 7 процентов",
+          "context": "После сушки влажность бумаги составляла"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "7",
+          "unit": "percent",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "После сушки влажность бумаги составляла не более 7 процентов",
+          "context": "После сушки влажность бумаги составляла"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-382c",
+    "expected": "veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "35",
+          "unit": "db",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "Если дверь была закрыта, уровень шума превышал 35 дБ",
+          "context": "Если дверь была закрыта, уровень шума"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "35",
+          "unit": "db",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "Уровень шума составлял не менее 35 дБ при закрытой двери",
+          "context": "Уровень шума составлял    при закрытой двери"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-a479",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "18000",
+          "unit": "duration",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "На сборку рамки ушло больше 5 часов",
+          "context": "На сборку рамки ушло"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "300",
+          "unit": "duration",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "На сборку рамки ушло не меньше 5 минут",
+          "context": "На сборку рамки ушло"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-74a9",
+    "expected": "veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "12000",
+          "unit": "mass",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "При встречном ветре ткань выдерживала нагрузку как минимум 12 кг",
+          "context": "При встречном ветре ткань выдерживала нагрузку как"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "12000",
+          "unit": "mass",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "Ткань выдерживала нагрузку свыше 12 кг при встречном ветре",
+          "context": "Ткань выдерживала нагрузку    при встречном ветре"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-a613",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "450",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "Для отправки принимали футляры длиной не более 45 см",
+          "context": "Для отправки принимали футляры длиной"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "450",
+          "unit": "length",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "Футляры длиной больше 45 см для отправки не принимали",
+          "context": "Футляры длиной    для отправки не принимали"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-d385",
+    "expected": "veto",
+    "outcome": "veto",
+    "raw": {
+      "status": "reject",
+      "reason": "При точном равенстве порогу одна формулировка допускает значение, другая исключает его.",
+      "source": [
+        {
+          "value": "30",
+          "unit": "word:человек",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "На вечернем сеансе в зале было больше 30 человек",
+          "context": "На вечернем сеансе в зале было"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "30",
+          "unit": "word:человек",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "На вечернем сеансе в зале было не меньше 30 человек",
+          "context": "На вечернем сеансе в зале было"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-31e7",
+    "expected": "veto",
+    "outcome": "veto",
+    "raw": {
+      "status": "reject",
+      "reason": "При точном равенстве порогу одна формулировка допускает значение, другая исключает его.",
+      "source": [
+        {
+          "value": "4",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "Во время прогона зазор у крышки не превышал 4 мм",
+          "context": "Во время прогона зазор у крышки"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "4",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "Зазор у крышки во время прогона был меньше 4 мм",
+          "context": "Зазор у крышки во время прогона был"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-608d",
+    "expected": "veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "48",
+          "unit": "degree",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "На малом ходу температура кожуха оставалась ниже 48 градусов",
+          "context": "На малом ходу температура кожуха оставалась"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "48",
+          "unit": "degree",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "Температура кожуха не поднималась выше 48 градусов, пока станок работал на малом ходу",
+          "context": "Температура кожуха   , пока станок работал на малом ходу"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-6da1",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "25",
+          "unit": "word:корзин",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "В дни ярмарки за рейс перевозили как минимум 25 корзин",
+          "context": "В дни ярмарки за рейс перевозили как"
+        }
+      ],
+      "proposal": []
+    }
+  },
+  {
+    "id": "bp-41cf",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "8000",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "К вечеру в рулоне осталось не больше 8 метров ткани",
+          "context": "К вечеру в рулоне осталось    ткани"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "8000",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "Остаток ткани в рулоне к вечеру не превышал 8 метров",
+          "context": "Остаток ткани в рулоне к вечеру"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-a0be",
+    "expected": "veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "6000",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "При повторном замере лента оказалась длиной максимум 6 метров",
+          "context": "При повторном замере лента оказалась длиной"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "6000",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "При повторном замере длина ленты была меньше 6 метров",
+          "context": "При повторном замере длина ленты была"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-ac08",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "11000",
+          "unit": "length",
+          "orientation": "lower",
+          "inclusive": false,
+          "quote": "В расправленном виде длина сети была более 11 метров",
+          "context": "В расправленном виде длина сети была"
+        }
+      ],
+      "proposal": []
+    }
+  },
+  {
+    "id": "bp-0cde",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "140",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "Высота передней стенки была меньше 14 см",
+          "context": "Высота передней стенки была"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "140",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "Высота задней стенки была не больше 14 см",
+          "context": "Высота задней стенки была"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-ff25",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "60",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "При глубине менее 6 см лоток не проходил проверку",
+          "context": "При глубине    лоток не проходил проверку"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "60",
+          "unit": "length",
+          "orientation": "lower",
+          "inclusive": true,
+          "quote": "Лоток проходил проверку при глубине не менее 6 см",
+          "context": "Лоток проходил проверку при глубине"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bp-42fe",
+    "expected": "no_veto",
+    "outcome": "no_veto",
+    "raw": {
+      "status": "no_veto",
+      "reason": "",
+      "source": [
+        {
+          "value": "2000",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": false,
+          "quote": "На сухом настиле тормозной путь тележки был менее 2 метров",
+          "context": "На сухом настиле тормозной путь тележки был"
+        }
+      ],
+      "proposal": [
+        {
+          "value": "2000",
+          "unit": "length",
+          "orientation": "upper",
+          "inclusive": true,
+          "quote": "На мокром настиле тормозной путь тележки был не более 2 метров",
+          "context": "На мокром настиле тормозной путь тележки был"
+        }
+      ]
+    }
+  }
+]

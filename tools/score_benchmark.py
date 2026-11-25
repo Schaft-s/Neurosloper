@@ -199,9 +199,10 @@ def decode(doc, row, mode):
         stages = row.get("stages", [])
         errors = list(row.get("errors", []))
         failed_stages = [s for s in stages if s.get("status") not in ("ok",)]
-        search_errors = any(s.get("stage") != "vote" for s in failed_stages) or bool(
-            errors
-        )
+        search_errors = any(
+            s.get("stage") not in {"vote", "vote_evidence", "arbiter", "case_builder", "brief_audit"}
+            for s in failed_stages
+        ) or any(not isinstance(e, dict) or e.get("stage") != "brief_audit" for e in errors)
         incomplete = mode != "fixed" and (
             row.get("seen") != len(blocks)
             or row.get("total") != len(blocks)
@@ -248,6 +249,21 @@ def decode(doc, row, mode):
                 (label for label in ("flag", "keep") if tally[label] >= quorum),
                 "uncertain",
             )
+            audit = verdict.get("audit", {})
+            if audit.get("status") == "withdrawn":
+                anchor = audit.get("evidence", {})
+                ref = anchor.get("block_id")
+                if ref in ("brief", "source"):
+                    material = doc.get("request" if ref == "brief" else "source", "")
+                else:
+                    offset, size = blocks[ref]
+                    material = text[offset:offset + size]
+                validate_quote(material, anchor.get("start"), anchor.get("end"), anchor.get("quote"))
+                if (expected != "flag" or verdict.get("pre_audit_decision") != "flag"
+                        or audit.get("support") != "direct" or not audit.get("premise")
+                        or not audit.get("reason") or audit.get("kind") not in ("retention", "contradiction")):
+                    raise ValueError("Invalid factual-objection audit")
+                expected = "uncertain"
             if (
                 verdict["quorum_met"] != (len(valid) >= quorum)
                 or verdict["decision"] != expected

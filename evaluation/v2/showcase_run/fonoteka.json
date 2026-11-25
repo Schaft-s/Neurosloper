@@ -1,0 +1,4092 @@
+{
+  "id": "fonoteka",
+  "expected_found": true,
+  "protected_flagged": 0,
+  "findings": [
+    {
+      "accepted": true,
+      "block_id": "3",
+      "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+      "start": 0,
+      "end": 72,
+      "pattern": "ложное чувство безопасности",
+      "effect": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+      "normal": "успокоение пользователя",
+      "related_ids": [
+        "7"
+      ],
+      "decision": "flag",
+      "channel": "semantic",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "id": "0",
+      "channels": [
+        "semantic"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "3",
+          "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+          "start": 0,
+          "end": 72,
+          "pattern": "Инструкция подменяет конкретное требование расплывчатым обещанием и прямо противоречит другому блоку той же страницы.",
+          "effect": "Читатель закроет карточку и может удалить файл с рекордера до появления подтверждения «Передано в фонотеку», что нарушает требование блока 7 и ставит под угрозу завершение передачи.",
+          "normal": "Здесь должно быть либо условие («можно закрыть только после сообщения \"Передано в фонотеку\"»), либо этот блок должен отсутствовать — его содержание покрывается блоками 6–7.",
+          "related_ids": [
+            "7"
+          ],
+          "decision": "flag",
+          "channel": "semantic",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 42
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 31
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 112
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 72
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 20
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 138
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 24
+            },
+            {
+              "block_id": "7",
+              "start": 0,
+              "end": 122
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": "moe+gqa",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "нет риска: указание безопасно для процесса",
+          "normal": "защита: инструкция даёт чёткий сигнал действовать",
+          "effect": "редакционная фраза разрешает действие, соответствующее цели страницы",
+          "normal_test": "редакционная фраза разрешает действие, соответствующее цели страницы",
+          "counterfactual": "редакционная фраза разрешает действие, соответствующее цели страницы",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "challenge": "нет риска: указание безопасно для процесса",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 0,
+            "end": 56,
+            "quote": "Это страница помощи звукорежиссёру при обрыве загрузки. ",
+            "ref": "brief.s0"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "flag",
+          "pattern": "ложное чувство безопасности",
+          "normal": "успокоение пользователя",
+          "effect": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+          "normal_test": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+          "counterfactual": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "challenge": "ложное чувство безопасности",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        },
+        {
+          "model": "anthropic/claude-sonnet-4.6",
+          "served_model": "anthropic/claude-sonnet-4.6",
+          "family": "claude",
+          "architecture": null,
+          "status": "ok",
+          "role": "arbiter",
+          "decision": "flag",
+          "pattern": "снимает обязанность держать файл до подтверждения",
+          "normal": "успокаивает: принятые части сохранены",
+          "effect": "b7.s1 прямо запрещает то, что b3.s0 разрешает",
+          "normal_test": "b7.s1 прямо запрещает то, что b3.s0 разрешает",
+          "counterfactual": "b7.s1 прямо запрещает то, что b3.s0 разрешает",
+          "voice": "author",
+          "evidence": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "challenge": "снимает обязанность держать файл до подтверждения",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "discourse_role": "authored",
+          "relation": "mismatch"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": true,
+      "normal_test": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+      "counterfactual": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+      "voice": "author",
+      "verification_evidence": {
+        "block_id": "3",
+        "start": 0,
+        "end": 72,
+        "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+        "ref": "b3.s0"
+      },
+      "without_arbiter": "uncertain",
+      "arbiter_called": true,
+      "challenge": "ложное чувство безопасности",
+      "task_anchor": {
+        "block_id": "brief",
+        "start": 56,
+        "end": 124,
+        "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+        "ref": "brief.s1"
+      },
+      "fact_anchor": {
+        "block_id": "3",
+        "start": 0,
+        "end": 72,
+        "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+        "ref": "b3.s0"
+      },
+      "case_file": {
+        "status": "unavailable",
+        "stage_index": 4,
+        "coverage": {
+          "chars_shown": 655,
+          "chars_total": 655,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                42
+              ]
+            ],
+            "1": [
+              [
+                0,
+                31
+              ]
+            ],
+            "2": [
+              [
+                0,
+                112
+              ]
+            ],
+            "3": [
+              [
+                0,
+                72
+              ]
+            ],
+            "4": [
+              [
+                0,
+                20
+              ]
+            ],
+            "5": [
+              [
+                0,
+                138
+              ]
+            ],
+            "6": [
+              [
+                0,
+                24
+              ]
+            ],
+            "7": [
+              [
+                0,
+                122
+              ]
+            ],
+            "8": [
+              [
+                0,
+                94
+              ]
+            ]
+          }
+        },
+        "error": "missing_or_invalid_case"
+      },
+      "case_status": "unavailable",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660"
+    }
+  ],
+  "verdicts": [
+    {
+      "accepted": true,
+      "block_id": "3",
+      "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+      "start": 0,
+      "end": 72,
+      "pattern": "ложное чувство безопасности",
+      "effect": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+      "normal": "успокоение пользователя",
+      "related_ids": [
+        "7"
+      ],
+      "decision": "flag",
+      "channel": "semantic",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "id": "0",
+      "channels": [
+        "semantic"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "3",
+          "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+          "start": 0,
+          "end": 72,
+          "pattern": "Инструкция подменяет конкретное требование расплывчатым обещанием и прямо противоречит другому блоку той же страницы.",
+          "effect": "Читатель закроет карточку и может удалить файл с рекордера до появления подтверждения «Передано в фонотеку», что нарушает требование блока 7 и ставит под угрозу завершение передачи.",
+          "normal": "Здесь должно быть либо условие («можно закрыть только после сообщения \"Передано в фонотеку\"»), либо этот блок должен отсутствовать — его содержание покрывается блоками 6–7.",
+          "related_ids": [
+            "7"
+          ],
+          "decision": "flag",
+          "channel": "semantic",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 42
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 31
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 112
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 72
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 20
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 138
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 24
+            },
+            {
+              "block_id": "7",
+              "start": 0,
+              "end": 122
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": "moe+gqa",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "нет риска: указание безопасно для процесса",
+          "normal": "защита: инструкция даёт чёткий сигнал действовать",
+          "effect": "редакционная фраза разрешает действие, соответствующее цели страницы",
+          "normal_test": "редакционная фраза разрешает действие, соответствующее цели страницы",
+          "counterfactual": "редакционная фраза разрешает действие, соответствующее цели страницы",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "challenge": "нет риска: указание безопасно для процесса",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 0,
+            "end": 56,
+            "quote": "Это страница помощи звукорежиссёру при обрыве загрузки. ",
+            "ref": "brief.s0"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "flag",
+          "pattern": "ложное чувство безопасности",
+          "normal": "успокоение пользователя",
+          "effect": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+          "normal_test": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+          "counterfactual": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+          "voice": "author",
+          "evidence": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "challenge": "ложное чувство безопасности",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "3",
+            "start": 0,
+            "end": 72,
+            "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "ref": "b3.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        },
+        {
+          "model": "anthropic/claude-sonnet-4.6",
+          "served_model": "anthropic/claude-sonnet-4.6",
+          "family": "claude",
+          "architecture": null,
+          "status": "ok",
+          "role": "arbiter",
+          "decision": "flag",
+          "pattern": "снимает обязанность держать файл до подтверждения",
+          "normal": "успокаивает: принятые части сохранены",
+          "effect": "b7.s1 прямо запрещает то, что b3.s0 разрешает",
+          "normal_test": "b7.s1 прямо запрещает то, что b3.s0 разрешает",
+          "counterfactual": "b7.s1 прямо запрещает то, что b3.s0 разрешает",
+          "voice": "author",
+          "evidence": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "challenge": "снимает обязанность держать файл до подтверждения",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "discourse_role": "authored",
+          "relation": "mismatch"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": true,
+      "normal_test": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+      "counterfactual": "обещание «позаботится обо всём» шире инструкции по возобновлению",
+      "voice": "author",
+      "verification_evidence": {
+        "block_id": "3",
+        "start": 0,
+        "end": 72,
+        "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+        "ref": "b3.s0"
+      },
+      "without_arbiter": "uncertain",
+      "arbiter_called": true,
+      "challenge": "ложное чувство безопасности",
+      "task_anchor": {
+        "block_id": "brief",
+        "start": 56,
+        "end": 124,
+        "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+        "ref": "brief.s1"
+      },
+      "fact_anchor": {
+        "block_id": "3",
+        "start": 0,
+        "end": 72,
+        "quote": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+        "ref": "b3.s0"
+      },
+      "case_file": {
+        "status": "unavailable",
+        "stage_index": 4,
+        "coverage": {
+          "chars_shown": 655,
+          "chars_total": 655,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                42
+              ]
+            ],
+            "1": [
+              [
+                0,
+                31
+              ]
+            ],
+            "2": [
+              [
+                0,
+                112
+              ]
+            ],
+            "3": [
+              [
+                0,
+                72
+              ]
+            ],
+            "4": [
+              [
+                0,
+                20
+              ]
+            ],
+            "5": [
+              [
+                0,
+                138
+              ]
+            ],
+            "6": [
+              [
+                0,
+                24
+              ]
+            ],
+            "7": [
+              [
+                0,
+                122
+              ]
+            ],
+            "8": [
+              [
+                0,
+                94
+              ]
+            ]
+          }
+        },
+        "error": "missing_or_invalid_case"
+      },
+      "case_status": "unavailable",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660"
+    },
+    {
+      "accepted": true,
+      "block_id": "5",
+      "quote": "Передача возобновится с последней принятой части",
+      "start": 89,
+      "end": 137,
+      "pattern": "нет риска: шаг не вытесняет и не усложняет другие действия",
+      "effect": "фраза о возобновлении передачи напрямую служит решению по загрузке",
+      "normal": "защита: указание точно совпадает с задачей возобновления",
+      "related_ids": [],
+      "decision": "keep",
+      "channel": "slopotron",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "id": "1",
+      "channels": [
+        "slopotron"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "5",
+          "quote": "Передача возобновится с последней принятой части",
+          "start": 89,
+          "end": 137,
+          "pattern": "нейротроп: «активно» при глаголе (подразумевается)",
+          "effect": "использование будущего времени с акцентом на процесс передачи создаёт эффект активного участия системы",
+          "normal": "глагол «возобновится» уже несёт смысл активности; конструкция типична для AI-стиля описания процессов",
+          "related_ids": [],
+          "decision": "flag",
+          "channel": "slopotron",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 42
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 31
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 112
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 72
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 20
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 138
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 24
+            },
+            {
+              "block_id": "7",
+              "start": 0,
+              "end": 122
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": "moe+gqa",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "нет риска: шаг не вытесняет и не усложняет другие действия",
+          "normal": "защита: указание точно совпадает с задачей возобновления",
+          "effect": "фраза о возобновлении передачи напрямую служит решению по загрузке",
+          "normal_test": "фраза о возобновлении передачи напрямую служит решению по загрузке",
+          "counterfactual": "фраза о возобновлении передачи напрямую служит решению по загрузке",
+          "voice": "author",
+          "evidence": {
+            "block_id": "5",
+            "start": 89,
+            "end": 138,
+            "quote": "Передача возобновится с последней принятой части.",
+            "ref": "b5.s2"
+          },
+          "challenge": "нет риска: шаг не вытесняет и не усложняет другие действия",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "5",
+            "start": 89,
+            "end": 138,
+            "quote": "Передача возобновится с последней принятой части.",
+            "ref": "b5.s2"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "нет",
+          "normal": "описание механики",
+          "effect": "сообщение о техническом принципе возобновления передачи",
+          "normal_test": "сообщение о техническом принципе возобновления передачи",
+          "counterfactual": "сообщение о техническом принципе возобновления передачи",
+          "voice": "author",
+          "evidence": {
+            "block_id": "5",
+            "start": 89,
+            "end": 138,
+            "quote": "Передача возобновится с последней принятой части.",
+            "ref": "b5.s2"
+          },
+          "challenge": "нет",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "5",
+            "start": 89,
+            "end": 138,
+            "quote": "Передача возобновится с последней принятой части.",
+            "ref": "b5.s2"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": true,
+      "normal_test": "фраза о возобновлении передачи напрямую служит решению по загрузке",
+      "counterfactual": "фраза о возобновлении передачи напрямую служит решению по загрузке",
+      "voice": "author",
+      "verification_evidence": {
+        "block_id": "5",
+        "start": 89,
+        "end": 138,
+        "quote": "Передача возобновится с последней принятой части.",
+        "ref": "b5.s2"
+      },
+      "without_arbiter": "keep",
+      "arbiter_called": false,
+      "challenge": "нет риска: шаг не вытесняет и не усложняет другие действия",
+      "task_anchor": {
+        "block_id": "brief",
+        "start": 56,
+        "end": 124,
+        "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+        "ref": "brief.s1"
+      },
+      "fact_anchor": {
+        "block_id": "5",
+        "start": 89,
+        "end": 138,
+        "quote": "Передача возобновится с последней принятой части.",
+        "ref": "b5.s2"
+      },
+      "case_file": {
+        "status": "unavailable",
+        "stage_index": 4,
+        "coverage": {
+          "chars_shown": 655,
+          "chars_total": 655,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                42
+              ]
+            ],
+            "1": [
+              [
+                0,
+                31
+              ]
+            ],
+            "2": [
+              [
+                0,
+                112
+              ]
+            ],
+            "3": [
+              [
+                0,
+                72
+              ]
+            ],
+            "4": [
+              [
+                0,
+                20
+              ]
+            ],
+            "5": [
+              [
+                0,
+                138
+              ]
+            ],
+            "6": [
+              [
+                0,
+                24
+              ]
+            ],
+            "7": [
+              [
+                0,
+                122
+              ]
+            ],
+            "8": [
+              [
+                0,
+                94
+              ]
+            ]
+          }
+        },
+        "error": "missing_or_invalid_case"
+      },
+      "case_status": "unavailable"
+    },
+    {
+      "accepted": true,
+      "block_id": "7",
+      "quote": "Дождитесь сообщения «Передано в фонотеку»",
+      "start": 0,
+      "end": 41,
+      "pattern": "Ложное ощущение полноты при отсутствии контроля",
+      "effect": "Фраза даёт чёткий сигнал действия, соответствующий задаче.",
+      "normal": "Критерий завершения передачи",
+      "related_ids": [],
+      "decision": "keep",
+      "channel": "slopotron",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "id": "2",
+      "channels": [
+        "slopotron"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "7",
+          "quote": "Дождитесь сообщения «Передано в фонотеку»",
+          "start": 0,
+          "end": 41,
+          "pattern": "анти-AI фраза: шаблонное указание действия",
+          "effect": "формулировка звучит как стандартный шаблон инструкции, характерный для генеративных моделей",
+          "normal": "фраза корректна, но в сочетании с другими маркерами может указывать на шаблонность",
+          "related_ids": [],
+          "decision": "flag",
+          "channel": "slopotron",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 42
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 31
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 112
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 72
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 20
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 138
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 24
+            },
+            {
+              "block_id": "7",
+              "start": 0,
+              "end": 122
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": "moe+gqa",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "Ложное ощущение полноты при отсутствии контроля",
+          "normal": "Критерий завершения передачи",
+          "effect": "Фраза даёт чёткий сигнал действия, соответствующий задаче.",
+          "normal_test": "Фраза даёт чёткий сигнал действия, соответствующий задаче.",
+          "counterfactual": "Фраза даёт чёткий сигнал действия, соответствующий задаче.",
+          "voice": "author",
+          "evidence": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          },
+          "challenge": "Ложное ощущение полноты при отсутствии контроля",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "совет вместо условия",
+          "normal": "дает четкий критерий завершения",
+          "effect": "предписание ждать сигнала соответствует задаче определить момент освобождения",
+          "normal_test": "предписание ждать сигнала соответствует задаче определить момент освобождения",
+          "counterfactual": "предписание ждать сигнала соответствует задаче определить момент освобождения",
+          "voice": "author",
+          "evidence": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          },
+          "challenge": "совет вместо условия",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": true,
+      "normal_test": "Фраза даёт чёткий сигнал действия, соответствующий задаче.",
+      "counterfactual": "Фраза даёт чёткий сигнал действия, соответствующий задаче.",
+      "voice": "author",
+      "verification_evidence": {
+        "block_id": "7",
+        "start": 0,
+        "end": 43,
+        "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+        "ref": "b7.s0"
+      },
+      "without_arbiter": "keep",
+      "arbiter_called": false,
+      "challenge": "Ложное ощущение полноты при отсутствии контроля",
+      "task_anchor": {
+        "block_id": "brief",
+        "start": 56,
+        "end": 124,
+        "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+        "ref": "brief.s1"
+      },
+      "fact_anchor": {
+        "block_id": "7",
+        "start": 0,
+        "end": 43,
+        "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+        "ref": "b7.s0"
+      },
+      "case_file": {
+        "status": "ok",
+        "stage_index": 5,
+        "coverage": {
+          "chars_shown": 655,
+          "chars_total": 655,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                42
+              ]
+            ],
+            "1": [
+              [
+                0,
+                31
+              ]
+            ],
+            "2": [
+              [
+                0,
+                112
+              ]
+            ],
+            "3": [
+              [
+                0,
+                72
+              ]
+            ],
+            "4": [
+              [
+                0,
+                20
+              ]
+            ],
+            "5": [
+              [
+                0,
+                138
+              ]
+            ],
+            "6": [
+              [
+                0,
+                24
+              ]
+            ],
+            "7": [
+              [
+                0,
+                122
+              ]
+            ],
+            "8": [
+              [
+                0,
+                94
+              ]
+            ]
+          }
+        },
+        "dossier": {
+          "harm": [
+            "Заменяет рабочее условие завершения на совет «просто дождитесь»; вместо привязки к факту полной передачи снимает у звукорежиссёра необходимость самому проверять, дошёл ли остаток и можно ли уже освобождать рекордер.",
+            "b7.s0"
+          ],
+          "use": [
+            "Для этого адресата фраза даёт понятный критерий окончания: ждать именно сигнала о приёме, после которого можно перейти к следующему шагу по передаче.",
+            "brief.s1"
+          ],
+          "test": [
+            "Различие в том, означает ли эта строка полный приём всей записи или только завершение текущего этапа загрузки; это проверяется соседней инструкцией о том, когда нельзя закрывать карточку и удалять файл.",
+            "b7.s1"
+          ]
+        },
+        "anchors": {
+          "harm": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          },
+          "use": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "test": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          }
+        }
+      },
+      "case_status": "ok"
+    },
+    {
+      "accepted": true,
+      "block_id": "7",
+      "quote": "не закрывайте карточку и не удаляйте файл с рекордера",
+      "start": 68,
+      "end": 121,
+      "pattern": "излишний запрет",
+      "effect": "запрет действий до сигнала напрямую обеспечивает сохранность передачи",
+      "normal": "предотвращает потерю данных",
+      "related_ids": [],
+      "decision": "keep",
+      "channel": "slopotron",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "id": "3",
+      "channels": [
+        "slopotron"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "7",
+          "quote": "не закрывайте карточку и не удаляйте файл с рекордера",
+          "start": 68,
+          "end": 121,
+          "pattern": "анти-AI фраза: негативный параллелизм без антитезы",
+          "effect": "повторение отрицательных конструкций подряд — типичный AI-паттерн",
+          "normal": "«не закрывайте... и не удаляйте» — параллельная отрицательная конструкция, часто встречается в генеративных текстах",
+          "related_ids": [],
+          "decision": "flag",
+          "channel": "slopotron",
+          "region": [
+            {
+              "block_id": "0",
+              "start": 0,
+              "end": 42
+            },
+            {
+              "block_id": "1",
+              "start": 0,
+              "end": 31
+            },
+            {
+              "block_id": "2",
+              "start": 0,
+              "end": 112
+            },
+            {
+              "block_id": "3",
+              "start": 0,
+              "end": 72
+            },
+            {
+              "block_id": "4",
+              "start": 0,
+              "end": 20
+            },
+            {
+              "block_id": "5",
+              "start": 0,
+              "end": 138
+            },
+            {
+              "block_id": "6",
+              "start": 0,
+              "end": 24
+            },
+            {
+              "block_id": "7",
+              "start": 0,
+              "end": 122
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": "moe+gqa",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "flag",
+          "pattern": "Подмена активного контроля на пассивное ожидание",
+          "normal": "Удержание до подтверждения",
+          "effect": "Запрет на закрытие и удаление добавляет обязательство, не вытекающее напрямую из факта загрузки",
+          "normal_test": "Запрет на закрытие и удаление добавляет обязательство, не вытекающее напрямую из факта загрузки",
+          "counterfactual": "Запрет на закрытие и удаление добавляет обязательство, не вытекающее напрямую из факта загрузки",
+          "voice": "author",
+          "evidence": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "challenge": "Подмена активного контроля на пассивное ожидание",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "излишний запрет",
+          "normal": "предотвращает потерю данных",
+          "effect": "запрет действий до сигнала напрямую обеспечивает сохранность передачи",
+          "normal_test": "запрет действий до сигнала напрямую обеспечивает сохранность передачи",
+          "counterfactual": "запрет действий до сигнала напрямую обеспечивает сохранность передачи",
+          "voice": "author",
+          "evidence": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "challenge": "излишний запрет",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        },
+        {
+          "model": "anthropic/claude-sonnet-4.6",
+          "served_model": "anthropic/claude-sonnet-4.6",
+          "family": "claude",
+          "architecture": null,
+          "status": "ok",
+          "role": "arbiter",
+          "decision": "keep",
+          "pattern": "два запрета могут читаться как один составной",
+          "normal": "удерживает от действий до сигнала подтверждения",
+          "effect": "оба запрета реальны; лишнего шага не возникает",
+          "normal_test": "оба запрета реальны; лишнего шага не возникает",
+          "counterfactual": "оба запрета реальны; лишнего шага не возникает",
+          "voice": "author",
+          "evidence": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          },
+          "challenge": "два запрета могут читаться как один составной",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": true,
+      "normal_test": "запрет действий до сигнала напрямую обеспечивает сохранность передачи",
+      "counterfactual": "запрет действий до сигнала напрямую обеспечивает сохранность передачи",
+      "voice": "author",
+      "verification_evidence": {
+        "block_id": "7",
+        "start": 43,
+        "end": 122,
+        "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+        "ref": "b7.s1"
+      },
+      "without_arbiter": "uncertain",
+      "arbiter_called": true,
+      "challenge": "излишний запрет",
+      "task_anchor": {
+        "block_id": "brief",
+        "start": 56,
+        "end": 124,
+        "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+        "ref": "brief.s1"
+      },
+      "fact_anchor": {
+        "block_id": "7",
+        "start": 43,
+        "end": 122,
+        "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+        "ref": "b7.s1"
+      },
+      "case_file": {
+        "status": "ok",
+        "stage_index": 5,
+        "coverage": {
+          "chars_shown": 655,
+          "chars_total": 655,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                42
+              ]
+            ],
+            "1": [
+              [
+                0,
+                31
+              ]
+            ],
+            "2": [
+              [
+                0,
+                112
+              ]
+            ],
+            "3": [
+              [
+                0,
+                72
+              ]
+            ],
+            "4": [
+              [
+                0,
+                20
+              ]
+            ],
+            "5": [
+              [
+                0,
+                138
+              ]
+            ],
+            "6": [
+              [
+                0,
+                24
+              ]
+            ],
+            "7": [
+              [
+                0,
+                122
+              ]
+            ],
+            "8": [
+              [
+                0,
+                94
+              ]
+            ]
+          }
+        },
+        "dossier": {
+          "harm": [
+            "Подменяет необходимость удерживать активную сессию до подтверждения на обещание самоуправления системы; если следовать этому буквально, можно закрыть карточку или удалить файл раньше, чем завершится передача остатка.",
+            "b7.s1"
+          ],
+          "use": [
+            "Эта формулировка выполняет охранную функцию: удерживает звукорежиссёра от преждевременных действий до появления подтверждения о сдаче записи в фонотеку.",
+            "brief.s1"
+          ],
+          "test": [
+            "Ключевое различие в том, относится ли запрет только к карточке и исходному файлу до получения подтверждения или к любому дальнейшему действию; разрешает это только наличие/отсутствие отдельного сигнала об окончании передачи.",
+            "b7.s0"
+          ]
+        },
+        "anchors": {
+          "harm": {
+            "block_id": "7",
+            "start": 43,
+            "end": 122,
+            "quote": "До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+            "ref": "b7.s1"
+          },
+          "use": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "test": {
+            "block_id": "7",
+            "start": 0,
+            "end": 43,
+            "quote": "Дождитесь сообщения «Передано в фонотеку». ",
+            "ref": "b7.s0"
+          }
+        }
+      },
+      "case_status": "ok"
+    },
+    {
+      "accepted": true,
+      "block_id": "8",
+      "quote": "Если кнопка «Продолжить загрузку» недоступна, передайте номер сеанса дежурному звукорежиссёру.",
+      "start": 0,
+      "end": 94,
+      "pattern": "канцелярит",
+      "effect": "повышенная формальность, шаблонность",
+      "normal": "Использование канцелярских конструкций, таких как «передайте номер сеанса», вместо более естественных и разговорных формулировок. В живом тексте чаще встречается упрощённая передача действия: «сообщите номер сеанса» или «скиньте номер дежурному».",
+      "related_ids": [],
+      "decision": "uncertain",
+      "channel": "slopotron",
+      "region": [
+        {
+          "block_id": "8",
+          "start": 0,
+          "end": 94
+        }
+      ],
+      "id": "4",
+      "channels": [
+        "slopotron"
+      ],
+      "evidence": [
+        {
+          "accepted": true,
+          "block_id": "8",
+          "quote": "Если кнопка «Продолжить загрузку» недоступна, передайте номер сеанса дежурному звукорежиссёру.",
+          "start": 0,
+          "end": 94,
+          "pattern": "канцелярит",
+          "effect": "повышенная формальность, шаблонность",
+          "normal": "Использование канцелярских конструкций, таких как «передайте номер сеанса», вместо более естественных и разговорных формулировок. В живом тексте чаще встречается упрощённая передача действия: «сообщите номер сеанса» или «скиньте номер дежурному».",
+          "related_ids": [],
+          "decision": "flag",
+          "channel": "slopotron",
+          "region": [
+            {
+              "block_id": "8",
+              "start": 0,
+              "end": 94
+            }
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "model": "qwen/qwen3-235b-a22b-2507",
+          "served_model": "qwen/qwen3-235b-a22b-2507",
+          "family": "qwen",
+          "architecture": null,
+          "status": "error",
+          "role": "reviewer",
+          "error": "missing_or_invalid_vote"
+        },
+        {
+          "model": "google/gemma-4-31b-it",
+          "served_model": "google/gemma-4-31b-it",
+          "family": "gemma",
+          "architecture": "dense+sliding-and-global-attention",
+          "status": "ok",
+          "role": "reviewer",
+          "decision": "keep",
+          "pattern": "нет",
+          "normal": "инструкция по решению проблемы",
+          "effect": "форма точно передает алгоритм действий при сбое",
+          "normal_test": "форма точно передает алгоритм действий при сбое",
+          "counterfactual": "форма точно передает алгоритм действий при сбое",
+          "voice": "author",
+          "evidence": {
+            "block_id": "8",
+            "start": 0,
+            "end": 94,
+            "quote": "Если кнопка «Продолжить загрузку» недоступна, передайте номер сеанса дежурному звукорежиссёру.",
+            "ref": "b8.s0"
+          },
+          "challenge": "нет",
+          "basis": "fit",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "8",
+            "start": 0,
+            "end": 94,
+            "quote": "Если кнопка «Продолжить загрузку» недоступна, передайте номер сеанса дежурному звукорежиссёру.",
+            "ref": "b8.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "serves"
+        },
+        {
+          "model": "anthropic/claude-sonnet-4.6",
+          "served_model": "anthropic/claude-sonnet-4.6",
+          "family": "claude",
+          "architecture": null,
+          "status": "ok",
+          "role": "arbiter",
+          "decision": "flag",
+          "pattern": "добавляет обязательный шаг передачи номера, которого бриф не требует",
+          "normal": "запасной путь при недоступной кнопке",
+          "effect": "бриф: решают как возобновить и когда освободить рекордер; форма вводит третье лицо как обязательного посредника",
+          "normal_test": "бриф: решают как возобновить и когда освободить рекордер; форма вводит третье лицо как обязательного посредника",
+          "counterfactual": "бриф: решают как возобновить и когда освободить рекордер; форма вводит третье лицо как обязательного посредника",
+          "voice": "author",
+          "evidence": {
+            "block_id": "8",
+            "start": 0,
+            "end": 94,
+            "quote": "Если кнопка «Продолжить загрузку» недоступна, передайте номер сеанса дежурному звукорежиссёру.",
+            "ref": "b8.s0"
+          },
+          "challenge": "добавляет обязательный шаг передачи номера, которого бриф не требует",
+          "basis": "displaced",
+          "task_anchor": {
+            "block_id": "brief",
+            "start": 56,
+            "end": 124,
+            "quote": "По ней решают, как возобновить передачу и когда освободить рекордер.",
+            "ref": "brief.s1"
+          },
+          "fact_anchor": {
+            "block_id": "8",
+            "start": 0,
+            "end": 94,
+            "quote": "Если кнопка «Продолжить загрузку» недоступна, передайте номер сеанса дежурному звукорежиссёру.",
+            "ref": "b8.s0"
+          },
+          "discourse_role": "authored",
+          "relation": "adds"
+        }
+      ],
+      "quorum_met": true,
+      "architecture_diversity_confirmed": false,
+      "without_arbiter": "uncertain",
+      "arbiter_called": true,
+      "case_file": {
+        "status": "unavailable",
+        "stage_index": 6,
+        "coverage": {
+          "chars_shown": 655,
+          "chars_total": 655,
+          "block_ranges": {
+            "0": [
+              [
+                0,
+                42
+              ]
+            ],
+            "1": [
+              [
+                0,
+                31
+              ]
+            ],
+            "2": [
+              [
+                0,
+                112
+              ]
+            ],
+            "3": [
+              [
+                0,
+                72
+              ]
+            ],
+            "4": [
+              [
+                0,
+                20
+              ]
+            ],
+            "5": [
+              [
+                0,
+                138
+              ]
+            ],
+            "6": [
+              [
+                0,
+                24
+              ]
+            ],
+            "7": [
+              [
+                0,
+                122
+              ]
+            ],
+            "8": [
+              [
+                0,
+                94
+              ]
+            ]
+          }
+        },
+        "error": "missing_or_invalid_case"
+      },
+      "case_status": "unavailable"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "search_semantic",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "input_hash": "7c308423ef267b1c93686351dc9c559ad83dd6d98da79cc4a70d9dd8c6aed528",
+      "prompt_hash": "8a69792dd94a7c0a5a0da6b4612b53ea80a35370de673d42c2c1ca2ca97da58f",
+      "config_hash": "9f82081dd0c66d21269ffaf0a83c37c0b19ad4b766b7829a608a4ad927da0528",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1509,
+        "completion_tokens": 683,
+        "total_tokens": 2192,
+        "cost": 0.014772,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.014772,
+          "upstream_inference_prompt_cost": 0.004527,
+          "upstream_inference_completions_cost": 0.010245
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.014772,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 11.637
+    },
+    {
+      "stage": "search_semantic",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        {
+          "block_id": "8",
+          "start": 0,
+          "end": 94
+        }
+      ],
+      "input_hash": "46c7116da2eb7bce33480d97e694973c0fb36c4bc36aa4809b8d677fc8d8b681",
+      "prompt_hash": "8a69792dd94a7c0a5a0da6b4612b53ea80a35370de673d42c2c1ca2ca97da58f",
+      "config_hash": "9f82081dd0c66d21269ffaf0a83c37c0b19ad4b766b7829a608a4ad927da0528",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1474,
+        "completion_tokens": 472,
+        "total_tokens": 1946,
+        "cost": 0.011502,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.011502,
+          "upstream_inference_prompt_cost": 0.004422,
+          "upstream_inference_completions_cost": 0.00708
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.011502,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 10.106
+    },
+    {
+      "stage": "search_slopotron",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "input_hash": "8b1485f3093fa644e3c02b5acb64e08c4445f0bfc21596d1a0c81cb9a7375e37",
+      "prompt_hash": "6000381e8584a28a46a6920cc93fa0d68cd0c29c3f17479ba34d2ad0c1b7b9dd",
+      "config_hash": "d1ed9284f91c2d9da96992db0c2829e352eea5bde847e6e355e5748694ad5ebc",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 19866,
+        "completion_tokens": 593,
+        "total_tokens": 20459,
+        "cost": 0.00152476,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 19232,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00152476,
+          "upstream_inference_prompt_cost": 0.00105036,
+          "upstream_inference_completions_cost": 0.0004744
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00152476,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 17.057,
+      "skill_revision": "94060716b06d2e8c1e21018b994033f014d23e7d"
+    },
+    {
+      "stage": "search_slopotron",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        {
+          "block_id": "8",
+          "start": 0,
+          "end": 94
+        }
+      ],
+      "input_hash": "bee5fb64c5bf28bd6bad76e099df8f27167aa6a1a22aa67eb419a79a4fafa765",
+      "prompt_hash": "6000381e8584a28a46a6920cc93fa0d68cd0c29c3f17479ba34d2ad0c1b7b9dd",
+      "config_hash": "d1ed9284f91c2d9da96992db0c2829e352eea5bde847e6e355e5748694ad5ebc",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 19827,
+        "completion_tokens": 194,
+        "total_tokens": 20021,
+        "cost": 0.00119434,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 19296,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00119434,
+          "upstream_inference_prompt_cost": 0.00103914,
+          "upstream_inference_completions_cost": 0.0001552
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00119434,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 4.628,
+      "skill_revision": "94060716b06d2e8c1e21018b994033f014d23e7d"
+    },
+    {
+      "stage": "case_builder",
+      "model": "openai/gpt-5.4-mini",
+      "family": "gpt",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "0",
+        "1"
+      ],
+      "input_hash": "4cb60ab4d842a23dce84475d7befbc64e5427125a3e1349d66617aa2c1abd529",
+      "prompt_hash": "5bfac809175ea9b7367a960eb6ec2064a0fbbbff0ab7985b662a8dc3e9fd4859",
+      "config_hash": "3651ea979e3a05b75dc4d77c9f8593e858328238860db7c81738ba2d45461ebd",
+      "reasoning_effort": "low",
+      "status": "partial",
+      "usage": {
+        "prompt_tokens": 1076,
+        "completion_tokens": 928,
+        "total_tokens": 2004,
+        "cost": 0.004983,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.004983,
+          "upstream_inference_prompt_cost": 0.000807,
+          "upstream_inference_completions_cost": 0.004176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 160,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.004983,
+      "served_model": "openai/gpt-5.4-mini",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 8.76,
+      "error": "missing_or_invalid_case",
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "case_builder",
+      "model": "openai/gpt-5.4-mini",
+      "family": "gpt",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "2",
+        "3"
+      ],
+      "input_hash": "d6db0d2c157977888b303a1ee4e0d3fc9973c552c80f3dcbd66b8bfed32976a7",
+      "prompt_hash": "5bfac809175ea9b7367a960eb6ec2064a0fbbbff0ab7985b662a8dc3e9fd4859",
+      "config_hash": "3651ea979e3a05b75dc4d77c9f8593e858328238860db7c81738ba2d45461ebd",
+      "reasoning_effort": "low",
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1074,
+        "completion_tokens": 420,
+        "total_tokens": 1494,
+        "cost": 0.0026955,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0026955,
+          "upstream_inference_prompt_cost": 0.0008055,
+          "upstream_inference_completions_cost": 0.00189
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 67,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.0026955,
+      "served_model": "openai/gpt-5.4-mini",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 4.613,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "case_builder",
+      "model": "openai/gpt-5.4-mini",
+      "family": "gpt",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "4"
+      ],
+      "input_hash": "f2a9f387d26251dcbcab1e3311616a45f977387c64895fb62bcc9cc8c715fe67",
+      "prompt_hash": "5bfac809175ea9b7367a960eb6ec2064a0fbbbff0ab7985b662a8dc3e9fd4859",
+      "config_hash": "3651ea979e3a05b75dc4d77c9f8593e858328238860db7c81738ba2d45461ebd",
+      "reasoning_effort": "low",
+      "status": "partial",
+      "usage": {
+        "prompt_tokens": 1045,
+        "completion_tokens": 442,
+        "total_tokens": 1487,
+        "cost": 0.00277275,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00277275,
+          "upstream_inference_prompt_cost": 0.00078375,
+          "upstream_inference_completions_cost": 0.001989
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 39,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00277275,
+      "served_model": "openai/gpt-5.4-mini",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 4.514,
+      "error": "missing_or_invalid_case",
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "0",
+        "1"
+      ],
+      "input_hash": "619bb9254ee75c5f76561576ec494920da483e49011ce6a6cc3745908f17ba31",
+      "prompt_hash": "65099cb577408a738b9fee4c5c16b16c23f836fea89876950a6a66a24da178f2",
+      "config_hash": "202376b99bf8bd086200f8ce3833c8140fc0a5b8391d4979e8da70cd99ea7280",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1727,
+        "completion_tokens": 182,
+        "total_tokens": 1909,
+        "cost": 0.00025553,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00025553,
+          "upstream_inference_prompt_cost": 0.00015543,
+          "upstream_inference_completions_cost": 0.0001001
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00025553,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 8.396,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "google/gemma-4-31b-it",
+      "family": "gemma",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "0",
+        "1"
+      ],
+      "input_hash": "6856d637c437a8cc455d1849efec410be1033e580cb52802c6b7cf584396e018",
+      "prompt_hash": "7694105ac904e54c959484884eae75450abc6d31105f7bb45806367a52ed51e4",
+      "config_hash": "bfecc848b670abc38da4309805682f02c505ec9c84927aa91b6aceaaa6ca81aa",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1546,
+        "completion_tokens": 126,
+        "total_tokens": 1672,
+        "cost": 0.00019744,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00019744,
+          "upstream_inference_prompt_cost": 0.0001546,
+          "upstream_inference_completions_cost": 4.284e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00019744,
+      "served_model": "google/gemma-4-31b-it",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 1.526,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "google/gemma-4-31b-it",
+      "family": "gemma",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "2",
+        "3"
+      ],
+      "input_hash": "fd273a4f90e3e91f55c5a1b419b986ebc58de3b3556cba47668f63cd7330f1cb",
+      "prompt_hash": "7694105ac904e54c959484884eae75450abc6d31105f7bb45806367a52ed51e4",
+      "config_hash": "bfecc848b670abc38da4309805682f02c505ec9c84927aa91b6aceaaa6ca81aa",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1888,
+        "completion_tokens": 208,
+        "total_tokens": 2096,
+        "cost": 0.00036096,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00036096,
+          "upstream_inference_prompt_cost": 0.00025488,
+          "upstream_inference_completions_cost": 0.00010608
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00036096,
+      "served_model": "google/gemma-4-31b-it",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 4.653,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "google/gemma-4-31b-it",
+      "family": "gemma",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "4"
+      ],
+      "input_hash": "485d8fc0cbf4e78fc6e51d47f2ae1ba081e39f10e218505cd1823cba52ca7d89",
+      "prompt_hash": "7694105ac904e54c959484884eae75450abc6d31105f7bb45806367a52ed51e4",
+      "config_hash": "bfecc848b670abc38da4309805682f02c505ec9c84927aa91b6aceaaa6ca81aa",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1513,
+        "completion_tokens": 59,
+        "total_tokens": 1572,
+        "cost": 0.000209185,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000209185,
+          "upstream_inference_prompt_cost": 0.000189125,
+          "upstream_inference_completions_cost": 2.006e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.000209185,
+      "served_model": "google/gemma-4-31b-it",
+      "system_fingerprint": "vllm-0.33.0-544879a2",
+      "finish_reason": "stop",
+      "elapsed": 0.951,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "2",
+        "3"
+      ],
+      "input_hash": "caaeed627513df6614fb3f698c4a9a960917082a451c441f0599ff569f72b147",
+      "prompt_hash": "65099cb577408a738b9fee4c5c16b16c23f836fea89876950a6a66a24da178f2",
+      "config_hash": "202376b99bf8bd086200f8ce3833c8140fc0a5b8391d4979e8da70cd99ea7280",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 2167,
+        "completion_tokens": 176,
+        "total_tokens": 2343,
+        "cost": 0.00029183,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00029183,
+          "upstream_inference_prompt_cost": 0.00019503,
+          "upstream_inference_completions_cost": 9.68e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00029183,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 7.071,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "vote_evidence",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "4"
+      ],
+      "input_hash": "937e950f7068127b898e457375d7d6d83d9f5b1c42dfdebc2e573f7f09b403ce",
+      "prompt_hash": "65099cb577408a738b9fee4c5c16b16c23f836fea89876950a6a66a24da178f2",
+      "config_hash": "202376b99bf8bd086200f8ce3833c8140fc0a5b8391d4979e8da70cd99ea7280",
+      "temperature": 0,
+      "status": "partial",
+      "usage": {
+        "prompt_tokens": 1690,
+        "completion_tokens": 74,
+        "total_tokens": 1764,
+        "cost": 0.0002238,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 800,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002238,
+          "upstream_inference_prompt_cost": 0.0001646,
+          "upstream_inference_completions_cost": 5.92e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.0002238,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 1.849,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      },
+      "error": "missing_or_invalid_vote"
+    },
+    {
+      "stage": "arbiter",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "0",
+        "3"
+      ],
+      "input_hash": "a7ea60aa47c8f79b4e0480384308d7a32b59dbc57649e2d4af8101a8cb96c8be",
+      "prompt_hash": "1b50f86293bb503909a6b84a4a95971e42f2a77f9ced9074b480a23fcb8ad3fe",
+      "config_hash": "8c32fda90122da3929b28f06309d4604c384936421a0fe793132af5a4367a002",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 2234,
+        "completion_tokens": 877,
+        "total_tokens": 3111,
+        "cost": 0.019857,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019857,
+          "upstream_inference_prompt_cost": 0.006702,
+          "upstream_inference_completions_cost": 0.013155
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.019857,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 19.32,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "stage": "arbiter",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "4"
+      ],
+      "input_hash": "993d16ab2d0cc671a8da0da83d44c1a18050c8cbacaeac2febfc6109df350b3c",
+      "prompt_hash": "1b50f86293bb503909a6b84a4a95971e42f2a77f9ced9074b480a23fcb8ad3fe",
+      "config_hash": "8c32fda90122da3929b28f06309d4604c384936421a0fe793132af5a4367a002",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1942,
+        "completion_tokens": 129,
+        "total_tokens": 2071,
+        "cost": 0.007761,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.007761,
+          "upstream_inference_prompt_cost": 0.005826,
+          "upstream_inference_completions_cost": 0.001935
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.007761,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 3.455,
+      "context_coverage": {
+        "chars_shown": 655,
+        "chars_total": 655,
+        "block_ranges": {
+          "0": [
+            [
+              0,
+              42
+            ]
+          ],
+          "1": [
+            [
+              0,
+              31
+            ]
+          ],
+          "2": [
+            [
+              0,
+              112
+            ]
+          ],
+          "3": [
+            [
+              0,
+              72
+            ]
+          ],
+          "4": [
+            [
+              0,
+              20
+            ]
+          ],
+          "5": [
+            [
+              0,
+              138
+            ]
+          ],
+          "6": [
+            [
+              0,
+              24
+            ]
+          ],
+          "7": [
+            [
+              0,
+              122
+            ]
+          ],
+          "8": [
+            [
+              0,
+              94
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "seen": 9,
+  "total": 9,
+  "blocks": [
+    {
+      "id": "0",
+      "text": "Фонотека «Вереск» · Памятка звукорежиссёру",
+      "edit": true,
+      "label": "HTML · строка 22 · фрагмент 1",
+      "html_start": 1055,
+      "html_end": 1097
+    },
+    {
+      "id": "1",
+      "text": "Если оборвалась загрузка записи",
+      "edit": true,
+      "label": "HTML · строка 23 · фрагмент 2",
+      "html_start": 1112,
+      "html_end": 1143
+    },
+    {
+      "id": "2",
+      "text": "В карточке сеанса остаются части, которые студия успела принять. Для записи «Рассвет» это первые 18 минут из 26.",
+      "edit": true,
+      "label": "HTML · строка 25 · фрагмент 3",
+      "html_start": 1170,
+      "html_end": 1282
+    },
+    {
+      "id": "3",
+      "text": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+      "edit": true,
+      "label": "HTML · строка 26 · фрагмент 4",
+      "html_start": 1301,
+      "html_end": 1373
+    },
+    {
+      "id": "4",
+      "text": "Как передать остаток",
+      "edit": true,
+      "label": "HTML · строка 27 · фрагмент 5",
+      "html_start": 1394,
+      "html_end": 1414
+    },
+    {
+      "id": "5",
+      "text": "Откройте карточку сеанса и выберите тот же исходный файл. Нажмите «Продолжить загрузку». Передача возобновится с последней принятой части.",
+      "edit": true,
+      "label": "HTML · строка 28 · фрагмент 6",
+      "html_start": 1427,
+      "html_end": 1565
+    },
+    {
+      "id": "6",
+      "text": "Когда можно закрыть окно",
+      "edit": true,
+      "label": "HTML · строка 29 · фрагмент 7",
+      "html_start": 1578,
+      "html_end": 1602
+    },
+    {
+      "id": "7",
+      "text": "Дождитесь сообщения «Передано в фонотеку». До появления этой строки не закрывайте карточку и не удаляйте файл с рекордера.",
+      "edit": true,
+      "label": "HTML · строка 30 · фрагмент 8",
+      "html_start": 1615,
+      "html_end": 1737
+    },
+    {
+      "id": "8",
+      "text": "Если кнопка «Продолжить загрузку» недоступна, передайте номер сеанса дежурному звукорежиссёру.",
+      "edit": true,
+      "label": "HTML · строка 31 · фрагмент 9",
+      "html_start": 1754,
+      "html_end": 1848
+    }
+  ],
+  "errors": [
+    {
+      "stage": "slopotron",
+      "region": [
+        {
+          "block_id": "0",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "block_id": "1",
+          "start": 0,
+          "end": 31
+        },
+        {
+          "block_id": "2",
+          "start": 0,
+          "end": 112
+        },
+        {
+          "block_id": "3",
+          "start": 0,
+          "end": 72
+        },
+        {
+          "block_id": "4",
+          "start": 0,
+          "end": 20
+        },
+        {
+          "block_id": "5",
+          "start": 0,
+          "end": 138
+        },
+        {
+          "block_id": "6",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "block_id": "7",
+          "start": 0,
+          "end": 122
+        }
+      ],
+      "error": "missing_quote",
+      "candidate": {
+        "block_id": "2",
+        "quote": "студия сама позаботится обо всём остальном",
+        "occurrence": 1,
+        "pattern": "самокомментирование аргумента: корректирующая рамка",
+        "effect": "текст описывает, что произойдёт, вместо того чтобы просто сообщить действия",
+        "normal_explanation": "фраза «сама позаботится» избыточна — достаточно указать, что система обработает ситуацию автоматически",
+        "related_ids": []
+      }
+    }
+  ],
+  "consensus": {
+    "status": "complete",
+    "quorum": 2,
+    "families": [
+      "qwen",
+      "gemma",
+      "claude"
+    ],
+    "skipped": [],
+    "verification": "case_arbiter"
+  },
+  "name": "fonoteka.html",
+  "backend": "LLM · независимая проверка",
+  "summary": "Подтверждено 1 из 5 локализованных кандидатов. Сбоев поиска или привязки: 1.",
+  "coverage_summary": {
+    "semantic": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "slopotron": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  "changes": [],
+  "refusals": [
+    {
+      "block_id": "3",
+      "reason": "Оригинал: «позаботится обо всём остальном» — открытая формулировка без указания на конкретное действие. Редакция: «возобновит передачу самостоятельно» — закрытая формулировка с конкретным действием. Синтаксически оба предложения корректны, но смысловое сужение меняет практический результат для читателя.",
+      "verification": {
+        "id": "3",
+        "block_id": "3",
+        "status": "reject",
+        "mode": "consensus",
+        "policy": "relations_v2",
+        "literal_status": "pass",
+        "literal_reason": "",
+        "reason": "Оригинал: «позаботится обо всём остальном» — открытая формулировка без указания на конкретное действие. Редакция: «возобновит передачу самостоятельно» — закрытая формулировка с конкретным действием. Синтаксически оба предложения корректны, но смысловое сужение меняет практический результат для читателя.",
+        "semantic_status": "reject",
+        "claims": [
+          {
+            "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+            "before_quotes": [
+              "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+            ],
+            "after_quotes": [
+              "Окно можно закрыть: студия возобновит передачу самостоятельно."
+            ],
+            "fact": "окно можно закрыть — разрешение пользователю закрыть окно",
+            "source_units": [
+              "s1"
+            ],
+            "proposal_units": [
+              "t1"
+            ],
+            "status": "compared"
+          },
+          {
+            "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+            "after": "",
+            "before_quotes": [
+              "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+            ],
+            "after_quotes": [],
+            "fact": "студия «позаботится обо всём остальном» — широкое обещание охватить весь дальнейший процесс без уточнения действий",
+            "source_units": [
+              "s1"
+            ],
+            "proposal_units": [],
+            "status": "lost"
+          },
+          {
+            "before": "",
+            "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+            "before_quotes": [],
+            "after_quotes": [
+              "Окно можно закрыть: студия возобновит передачу самостоятельно."
+            ],
+            "fact": "студия возобновит передачу самостоятельно — конкретное утверждение об автоматическом возобновлении, отсутствующее в оригинале",
+            "source_units": [],
+            "proposal_units": [
+              "t1"
+            ],
+            "status": "new"
+          }
+        ],
+        "source_conflicts": [],
+        "votes": [
+          {
+            "model": "anthropic/claude-sonnet-4.6",
+            "family": "claude",
+            "status": "reject",
+            "claims": [
+              {
+                "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+                "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+                "before_quotes": [
+                  "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+                ],
+                "after_quotes": [
+                  "Окно можно закрыть: студия возобновит передачу самостоятельно."
+                ],
+                "fact": "окно можно закрыть — разрешение пользователю закрыть окно",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "compared"
+              },
+              {
+                "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+                "after": "",
+                "before_quotes": [
+                  "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+                ],
+                "after_quotes": [],
+                "fact": "студия «позаботится обо всём остальном» — широкое обещание охватить весь дальнейший процесс без уточнения действий",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [],
+                "status": "lost"
+              },
+              {
+                "before": "",
+                "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+                "before_quotes": [],
+                "after_quotes": [
+                  "Окно можно закрыть: студия возобновит передачу самостоятельно."
+                ],
+                "fact": "студия возобновит передачу самостоятельно — конкретное утверждение об автоматическом возобновлении, отсутствующее в оригинале",
+                "source_units": [],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "new"
+              }
+            ],
+            "source_conflicts": [],
+            "edits": [
+              {
+                "id": "0",
+                "status": "remains",
+                "reason": "Замечание указывало на ложное чувство безопасности от формулировки «позаботится обо всём». Редакция заменила её на «возобновит передачу самостоятельно» — это не устраняет проблему, а конкретизирует ложное обещание: теперь читатель получает ещё более определённое, но не подтверждённое контекстом утверждение об автоматическом возобновлении."
+              }
+            ],
+            "policy": "relations_v2",
+            "served_model": "anthropic/claude-sonnet-4.6",
+            "architecture": null,
+            "model_status": "reject",
+            "forward": "no",
+            "reverse": "no",
+            "reason": "Оригинал: «позаботится обо всём остальном» — открытая формулировка без указания на конкретное действие. Редакция: «возобновит передачу самостоятельно» — закрытая формулировка с конкретным действием. Синтаксически оба предложения корректны, но смысловое сужение меняет практический результат для читателя.",
+            "counterexample": "Звукорежиссёр закрывает окно, прочитав редакцию, и ждёт автоматического возобновления. Однако по контексту остаток нужно передавать вручную (строка 27). Оригинал не обещал именно возобновления — он лишь говорил «позаботится обо всём», что читатель мог понять как «ничего делать не нужно». Редакция превращает эту неопределённость в конкретное ложное обещание автоматического возобновления.",
+            "minimal_check": {
+              "agent": "same",
+              "origin": "same",
+              "phase": "changed",
+              "scenario": "В оригинале «позаботится обо всём остальном» оставляет открытым, что именно сделает студия и потребуется ли участие пользователя после закрытия окна. Редакция закрывает эту открытость, утверждая конкретное действие — автоматическое возобновление передачи, — которое противоречит контексту (строка 27 предполагает ручную передачу остатка).",
+              "outcome": "only_original",
+              "syntax": "natural",
+              "reason": "Оригинал: «позаботится обо всём остальном» — открытая формулировка без указания на конкретное действие. Редакция: «возобновит передачу самостоятельно» — закрытая формулировка с конкретным действием. Синтаксически оба предложения корректны, но смысловое сужение меняет практический результат для читателя."
+            }
+          },
+          {
+            "model": "qwen/qwen3-235b-a22b-2507",
+            "family": "qwen",
+            "status": "reject",
+            "claims": [
+              {
+                "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+                "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+                "before_quotes": [
+                  "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+                ],
+                "after_quotes": [
+                  "Окно можно закрыть: студия возобновит передачу самостоятельно."
+                ],
+                "fact": "пользователь может закрыть окно без негативных последствий",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "compared"
+              },
+              {
+                "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+                "after": "",
+                "before_quotes": [
+                  "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+                ],
+                "after_quotes": [],
+                "fact": "студия берёт на себя все оставшиеся действия после закрытия окна, включая управление сеансом и ресурсами",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [],
+                "status": "lost"
+              },
+              {
+                "before": "",
+                "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+                "before_quotes": [],
+                "after_quotes": [
+                  "Окно можно закрыть: студия возобновит передачу самостоятельно."
+                ],
+                "fact": "студия самостоятельно возобновит передачу",
+                "source_units": [],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "new"
+              }
+            ],
+            "source_conflicts": [],
+            "edits": [
+              {
+                "id": "0",
+                "status": "remains",
+                "reason": "Замена «позаботится обо всём остальном» на «возобновит передачу самостоятельно» сохраняет ложное чувство безопасности, но в более узкой форме: теперь обещается автоматизация только одного действия, хотя пользователь может по-прежнему полагать, что всё будет сделано. Проблема переоценки автономии системы остаётся, но масштаб обещания сокращён. Успокоительный эффект сохраняется, но точность страдает."
+              }
+            ],
+            "policy": "relations_v2",
+            "served_model": "qwen/qwen3-235b-a22b-2507",
+            "architecture": "moe+gqa",
+            "model_status": "reject",
+            "forward": "no",
+            "reverse": "unclear",
+            "reason": "В редакции фраза «студия возобновит передачу самостоятельно» грамматически корректна, но стык между двумя частями предложения через двоеточие теряет плавность: «Окно можно закрыть: студия возобновит передачу самостоятельно» — звучит как будто вторая часть является следствием первой, хотя логически студия действует независимо от закрытия окна. В оригинале «сама позаботится» подчёркивает автономность студии, а «спокойно» — разрешение для пользователя. Эти смыслы в редакции ослаблены. Проблемные слова: «можно закрыть» → «окно можно закрыть» (нейтральный порядок), «спокойно» удалено, «сама позаботится обо всём остальном» → «возобновит передачу самостоятельно» (сужение действия).",
+            "counterexample": "Звукорежиссёр закрывает окно, полагая, что студия сама завершит сеанс и освободит рекордер, но система не освобождает ресурсы, потому что ожидает ручного подтверждения. В оригинале это было исключено фразой «позаботится обо всём остальном», а в редакции такой гарантии нет.",
+            "minimal_check": {
+              "agent": "changed",
+              "origin": "same",
+              "phase": "changed",
+              "scenario": "Студия может не только возобновить передачу, но и завершить сеанс, обновить статус, освободить рекордер и обработать принятые данные. В оригинале подчёркивается, что все эти действия будут выполнены автоматически. В редакции акцент смещён только на возобновление передачи, что может означать, что другие действия требуют вмешательства.",
+              "outcome": "only_original",
+              "syntax": "defect",
+              "reason": "В редакции фраза «студия возобновит передачу самостоятельно» грамматически корректна, но стык между двумя частями предложения через двоеточие теряет плавность: «Окно можно закрыть: студия возобновит передачу самостоятельно» — звучит как будто вторая часть является следствием первой, хотя логически студия действует независимо от закрытия окна. В оригинале «сама позаботится» подчёркивает автономность студии, а «спокойно» — разрешение для пользователя. Эти смыслы в редакции ослаблены. Проблемные слова: «можно закрыть» → «окно можно закрыть» (нейтральный порядок), «спокойно» удалено, «сама позаботится обо всём остальном» → «возобновит передачу самостоятельно» (сужение действия)."
+            }
+          },
+          {
+            "model": "deepseek/deepseek-v3.2",
+            "family": "deepseek",
+            "status": "reject",
+            "claims": [
+              {
+                "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+                "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+                "before_quotes": [
+                  "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+                ],
+                "after_quotes": [
+                  "Окно можно закрыть: студия возобновит передачу самостоятельно."
+                ],
+                "fact": "Пользователь может закрыть окно. Студия выполнит некоторые действия после этого.",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "compared"
+              },
+              {
+                "before": "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном.",
+                "after": "",
+                "before_quotes": [
+                  "Можно спокойно закрыть окно: студия сама позаботится обо всём остальном."
+                ],
+                "after_quotes": [],
+                "fact": "Студия позаботится обо всём остальном (широкое, неспецифицированное обязательство).",
+                "source_units": [
+                  "s1"
+                ],
+                "proposal_units": [],
+                "status": "lost"
+              },
+              {
+                "before": "",
+                "after": "Окно можно закрыть: студия возобновит передачу самостоятельно.",
+                "before_quotes": [],
+                "after_quotes": [
+                  "Окно можно закрыть: студия возобновит передачу самостоятельно."
+                ],
+                "fact": "Студия возобновит передачу самостоятельно (конкретное, узкое действие).",
+                "source_units": [],
+                "proposal_units": [
+                  "t1"
+                ],
+                "status": "new"
+              }
+            ],
+            "source_conflicts": [],
+            "edits": [
+              {
+                "id": "0",
+                "status": "remains",
+                "reason": "Замена 'позаботится обо всём остальном' на 'возобновит передачу самостоятельно' устраняет 'ложное чувство безопасности', но сужает обещание. Эффект 'обещание шире инструкции' устранён, однако теперь обещание уже, чем исходное, что может быть недостаточно для пользователя. Успокоение ('спокойно') удалено, но основная проблема замены широкого обязательства конкретным остаётся."
+              }
+            ],
+            "policy": "relations_v2",
+            "served_model": "deepseek/deepseek-v3.2",
+            "architecture": "mla+moe",
+            "model_status": "reject",
+            "forward": "no",
+            "reverse": "no",
+            "reason": "Обе версии грамматически корректны. Редакция 'Окно можно закрыть:' начинается с объекта, что немного менее естественно для инструкции, чем исходное 'Можно спокойно закрыть окно:', но не является дефектом. Проблемных стыков нет.",
+            "counterexample": "Пользователь закрывает окно, ожидая, что студия не только возобновит передачу, но и, например, объединит принятые части записи, отправит уведомление о завершении или очистит временные файлы. Согласно редакции, студия выполнила обязательство, просто возобновив передачу, и другие действия не гарантированы, что может привести к потере данных или невыполнению ожидаемых пользователем задач.",
+            "minimal_check": {
+              "agent": "same",
+              "origin": "same",
+              "phase": "same",
+              "scenario": "В оригинале: пользователь может закрыть окно, и студия (неизвестный конкретный сотрудник или система) выполнит все необходимые последующие действия. В редакции: пользователь может закрыть окно, и студия (та же сущность) возобновит передачу. Роли и основное событие (закрытие окна) однозначны.",
+              "outcome": "only_original",
+              "syntax": "natural",
+              "reason": "Обе версии грамматически корректны. Редакция 'Окно можно закрыть:' начинается с объекта, что немного менее естественно для инструкции, чем исходное 'Можно спокойно закрыть окно:', но не является дефектом. Проблемных стыков нет."
+            }
+          }
+        ],
+        "proposal_hash": "46e5c39f6c93a6a9496d8a1bf586a8cd0183721e1c1bf454b07b87e29cdf3625",
+        "generation_review": "minimal_edit",
+        "semantic_reason": "Оригинал: «позаботится обо всём остальном» — открытая формулировка без указания на конкретное действие. Редакция: «возобновит передачу самостоятельно» — закрытая формулировка с конкретным действием. Синтаксически оба предложения корректны, но смысловое сужение меняет практический результат для читателя.",
+        "consensus": {
+          "status": "veto",
+          "quorum": 2,
+          "families": [
+            "claude",
+            "qwen",
+            "deepseek"
+          ],
+          "pass_families": [],
+          "skipped": []
+        },
+        "editorial_status": "remains",
+        "syntax_status": "defect"
+      }
+    }
+  ],
+  "rewrite_stages": [
+    {
+      "stage": "rewrite_minimal_edit",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "3"
+      ],
+      "input_hash": "64509bedd72daf7571efdf0d2f6bb04547d017855a7a4dabe488bc6b443856f0",
+      "prompt_hash": "92ffaf08b587168b1955562135cd5b10ee74a56b9e62423f93e5afc2d4d25daf",
+      "config_hash": "32096533e39b2f67169160323d1c9801df38e3a0620684f71f791f0100412491",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1162,
+        "completion_tokens": 352,
+        "total_tokens": 1514,
+        "cost": 0.0004383,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004383,
+          "upstream_inference_prompt_cost": 0.0001743,
+          "upstream_inference_completions_cost": 0.000264
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.0004383,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 22.651,
+      "attempt": 1,
+      "proposed_strategies": [
+        "subtractive",
+        "rephrase"
+      ]
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "3"
+      ],
+      "input_hash": "e02c08f20d46727a05ae19a4dc672f9d1fc7ad51b4998aabde237cafc7adb03f",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "13914e0b9fa52805b16d4d49b5734daa51bf66ce70715fc3518671df4520203e",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 2087,
+        "completion_tokens": 1264,
+        "total_tokens": 3351,
+        "cost": 0.025221,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.025221,
+          "upstream_inference_prompt_cost": 0.006261,
+          "upstream_inference_completions_cost": 0.01896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.025221,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 22.73,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "3"
+      ],
+      "input_hash": "e02c08f20d46727a05ae19a4dc672f9d1fc7ad51b4998aabde237cafc7adb03f",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "cc086acc4e95d062fd90b08dce446a762c1fd0a3c6a86b2657f676d98f723949",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1813,
+        "completion_tokens": 1068,
+        "total_tokens": 2881,
+        "cost": 0.00107295,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00107295,
+          "upstream_inference_prompt_cost": 0.00027195,
+          "upstream_inference_completions_cost": 0.000801
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00107295,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 34.452,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "deepseek/deepseek-v3.2",
+      "family": "deepseek",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "3"
+      ],
+      "input_hash": "e02c08f20d46727a05ae19a4dc672f9d1fc7ad51b4998aabde237cafc7adb03f",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "baf047e9310b656eb86fb6c832604f31384862926c4c2a06f080c3072cf75493",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1664,
+        "completion_tokens": 729,
+        "total_tokens": 2393,
+        "cost": 0.001014176,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001014176,
+          "upstream_inference_prompt_cost": 0.000430976,
+          "upstream_inference_completions_cost": 0.0005832
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.001014176,
+      "served_model": "deepseek/deepseek-v3.2",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 33.885,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "anthropic/claude-sonnet-4.6",
+      "family": "claude",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "3"
+      ],
+      "input_hash": "189d2aed500b937ae075a48cdc30f220fda4cc8fdfb876bb716fd788be7dea68",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "13914e0b9fa52805b16d4d49b5734daa51bf66ce70715fc3518671df4520203e",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 2093,
+        "completion_tokens": 1106,
+        "total_tokens": 3199,
+        "cost": 0.022869,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022869,
+          "upstream_inference_prompt_cost": 0.006279,
+          "upstream_inference_completions_cost": 0.01659
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.022869,
+      "served_model": "anthropic/claude-sonnet-4.6",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 19.109,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "3"
+      ],
+      "input_hash": "189d2aed500b937ae075a48cdc30f220fda4cc8fdfb876bb716fd788be7dea68",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "cc086acc4e95d062fd90b08dce446a762c1fd0a3c6a86b2657f676d98f723949",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1816,
+        "completion_tokens": 1077,
+        "total_tokens": 2893,
+        "cost": 0.00104672,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 768,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00104672,
+          "upstream_inference_prompt_cost": 0.00018512,
+          "upstream_inference_completions_cost": 0.0008616
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00104672,
+      "served_model": "qwen/qwen3-235b-a22b-2507",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 25.821,
+      "fidelity_policy": "relations_v2"
+    },
+    {
+      "stage": "fidelity_vote",
+      "model": "deepseek/deepseek-v3.2",
+      "family": "deepseek",
+      "endpoint": "openrouter.ai",
+      "revision_hash": "ddc663a15d410bb9882949ae899daade5bf3a25c27c26ec778531d15c5d4d660",
+      "region": [
+        "3"
+      ],
+      "input_hash": "189d2aed500b937ae075a48cdc30f220fda4cc8fdfb876bb716fd788be7dea68",
+      "prompt_hash": "517ed14540b766326f939f6f3f8f7bf0b6383609a9c423fe3d8d4edd8c43a806",
+      "config_hash": "baf047e9310b656eb86fb6c832604f31384862926c4c2a06f080c3072cf75493",
+      "temperature": 0,
+      "status": "ok",
+      "usage": {
+        "prompt_tokens": 1667,
+        "completion_tokens": 733,
+        "total_tokens": 2400,
+        "cost": 0.00055388,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00055388,
+          "upstream_inference_prompt_cost": 0.00027534,
+          "upstream_inference_completions_cost": 0.00027854
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "cost_usd": 0.00055388,
+      "served_model": "deepseek/deepseek-v3.2",
+      "system_fingerprint": null,
+      "finish_reason": "stop",
+      "elapsed": 37.137,
+      "fidelity_policy": "relations_v2"
+    }
+  ]
+}
