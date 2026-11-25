@@ -1,0 +1,6 @@
+skill_run {'tp': 5, 'fp': 0, 'fn': 0, 'match': 12, 'n': 12}
+plain_run {'tp': 5, 'fp': 0, 'fn': 0, 'match': 12, 'n': 12}
+contextual_skill {'match': 12, 'n': 12, 'exact_positive_quotes': 5, 'positive_quotes': 5}
+contextual_plain {'match': 12, 'n': 12, 'exact_positive_quotes': 5, 'positive_quotes': 5}
+mixed_skill {'tp': 4, 'fp': 0, 'fn': 0}
+mixed_plain {'tp': 4, 'fp': 0, 'fn': 0}

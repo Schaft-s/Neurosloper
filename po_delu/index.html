@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>По делу — редактор текста</title>
+<link rel="stylesheet" href="/editor.css"><script defer src="/editor.js"></script>
+</head>
+<body>
+<header><div class="bar"><a class="brand" href="/" aria-label="По делу, редактор"><span class="symbol" aria-hidden="true">п</span>По делу</a><button type="button" id="open-memory" class="quiet">Личная память</button></div></header>
+<main>
+<div class="intro"><h1>Проверка текста</h1><p>Найдите шаблонные формулировки и решите, какие из них стоит заменить.</p></div>
+<form id="form">
+<section class="paper draft"><div class="section-head"><h2>Черновик</h2><button type="button" class="link" id="example">Вставить пример</button></div>
+<div class="tabs" aria-label="Способ ввода"><button type="button" id="tab-text" aria-pressed="true">Ввести текст</button><button type="button" id="tab-file" aria-pressed="false">Загрузить файл</button></div>
+<div id="text-pane"><label class="sr" for="draft">Текст черновика</label><textarea id="draft" name="text" placeholder="Напишите или вставьте сюда текст…" spellcheck="true"></textarea>
+<div class="under"><label>Формат <select name="format"><option value="txt">Текст</option><option value="md">Markdown</option><option value="html">HTML</option></select></label><span id="count">0 символов</span></div></div>
+<div id="file-pane" hidden><label class="file-label" for="source-file">Файл для проверки<input type="file" name="file" id="source-file" accept=".txt,.md,.html,.htm,.docx,.pptx,.pdf"></label><p class="hint">TXT, Markdown, HTML, DOCX, PPTX или PDF с текстовым слоем. До 10 МБ.</p></div>
+</section>
+<aside class="paper settings"><h2>Настройки</h2>
+<fieldset id="consent-panel" data-consent-visibility><legend class="sr">Обработка документа</legend>
+<label>Режим проверки<select name="analysis_mode"><option value="local">Локальные правила</option><option value="models">С помощью моделей</option></select></label>
+<p id="local-description" class="hint">Текст проверяется на этом сервере.</p>
+<label class="check" id="document-agreement" hidden><input type="checkbox" name="share_document" value="true">Разрешаю передать текст этого черновика, ТЗ и контекст подключённым моделям для проверки и замены.</label>
+</fieldset>
+<label>Для кого и зачем<input name="context" placeholder="Например, инструкция для оператора" maxlength="4000"></label>
+<details><summary>Исходные требования</summary><label>ТЗ или заметка автора<textarea name="source" rows="3" maxlength="8000"></textarea></label></details>
+<details open><summary>Параметры замены</summary>
+<label>Регистр<select name="style"><option value="voice">Сохранить голос автора</option><option value="direct">Жёстко и прямо</option><option value="formal">Юридически формально</option><option value="friendly">По-дружески и мягко</option></select></label>
+<label>Допуск правки<select name="precision"><option value="minimal">Только выбранные цитаты</option><option value="free">Весь выбранный блок</option><option value="literal">Дословная защита выражений</option></select></label>
+<label>Длина блока<select name="length"><option value="short">Не увеличивать</option><option value="near">В пределах ±10%</option><option value="fit">Вписать в рамку слайда</option><option value="free">Без ограничения</option></select></label>
+<label>Сохранить дословно<textarea name="terms" rows="2" placeholder="По одному выражению на строку"></textarea></label>
+<label class="check"><input type="checkbox" name="share_examples">Разрешить передать модели мои примеры и пояснения для этой замены</label>
+</details></aside>
+<div class="submitline"><button class="primary" id="review">Найти шаблонные формулировки</button></div>
+</form>
+<p id="status" role="status" aria-live="polite"></p><section id="result" aria-label="Результат проверки"></section>
+</main>
+<dialog id="memory"><div class="section-head"><h2>Личная память</h2><button type="button" class="quiet" id="close-memory">Закрыть</button></div>
+<p>Записи сохраняются по вашему выбору для этого браузера. Точные совпадения появятся в отдельном списке при следующей проверке.</p>
+<div id="rules"></div>
+<form id="rule-form"><label>Тип записи<select name="kind"><option value="example">Предпочитаю другую формулировку</option><option value="exception">Оставлять эту фразу</option></select></label><label>Исходная фраза<input name="before" required maxlength="1000"></label><label id="rule-after">Предпочтительная формулировка<input name="after" required maxlength="1000"></label><label>Пояснение, по желанию<textarea name="note" rows="2" maxlength="1000" placeholder="Когда это правило подходит"></textarea></label>
+<button class="primary">Сохранить запись</button></form><p id="rule-status" role="status"></p></dialog>
+</body></html>

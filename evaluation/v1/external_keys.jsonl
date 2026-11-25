@@ -1,0 +1,30 @@
+{"id": "cc1ae85d1bb6", "family": "ext-01", "repository": "mdn/translated-content", "side": "before", "decision": "keep", "spans": []}
+{"id": "d88523bf5943", "family": "ext-01", "repository": "mdn/translated-content", "side": "after", "decision": "keep", "spans": []}
+{"id": "ba10abcb70f0", "family": "ext-02", "repository": "mdn/translated-content", "side": "before", "decision": "flag", "spans": [{"start": 23, "end": 147, "quote": "являются неотъемлемой частью современной веб-разработки,предоставляя разработчикам проверенные и протестированныеинструменты", "decision": "flag"}]}
+{"id": "176e7642ae03", "family": "ext-02", "repository": "mdn/translated-content", "side": "after", "decision": "flag", "spans": [{"start": 22, "end": 148, "quote": "являются неотъемлемой частью современной веб-разработки, предоставляя разработчикам проверенные и протестированные инструменты", "decision": "flag"}]}
+{"id": "b7bcf4b9fbbc", "family": "ext-03", "repository": "mdn/translated-content", "side": "before", "decision": "keep", "spans": []}
+{"id": "1c5aa1045e0a", "family": "ext-03", "repository": "mdn/translated-content", "side": "after", "decision": "keep", "spans": []}
+{"id": "f7776e0fe659", "family": "ext-04", "repository": "mdn/translated-content", "side": "before", "decision": "keep", "spans": []}
+{"id": "70644e899144", "family": "ext-04", "repository": "mdn/translated-content", "side": "after", "decision": "keep", "spans": []}
+{"id": "33526825e2ff", "family": "ext-05", "repository": "mdn/translated-content", "side": "before", "decision": "keep", "spans": []}
+{"id": "c17ceefba7ac", "family": "ext-05", "repository": "mdn/translated-content", "side": "after", "decision": "keep", "spans": []}
+{"id": "7eebbe071d20", "family": "ext-06", "repository": "mdn/translated-content", "side": "before", "decision": "keep", "spans": []}
+{"id": "0dc9ba26db63", "family": "ext-06", "repository": "mdn/translated-content", "side": "after", "decision": "keep", "spans": []}
+{"id": "d0ac7babda21", "family": "ext-07", "repository": "mdn/translated-content", "side": "before", "decision": "keep", "spans": []}
+{"id": "dc139f2fe9fc", "family": "ext-07", "repository": "mdn/translated-content", "side": "after", "decision": "keep", "spans": []}
+{"id": "4bf8dcaa4cf2", "family": "ext-08", "repository": "mdn/translated-content", "side": "before", "decision": "keep", "spans": []}
+{"id": "79802dab9dfc", "family": "ext-08", "repository": "mdn/translated-content", "side": "after", "decision": "keep", "spans": []}
+{"id": "6fd5e0358185", "family": "ext-09", "repository": "reactjs/ru.react.dev", "side": "before", "decision": "keep", "spans": []}
+{"id": "56e4e86411eb", "family": "ext-09", "repository": "reactjs/ru.react.dev", "side": "after", "decision": "keep", "spans": []}
+{"id": "06b711367e53", "family": "ext-10", "repository": "reactjs/ru.react.dev", "side": "before", "decision": "keep", "spans": []}
+{"id": "d6b12dd1f52e", "family": "ext-10", "repository": "reactjs/ru.react.dev", "side": "after", "decision": "keep", "spans": []}
+{"id": "ceb9f29b88c2", "family": "ext-11", "repository": "reactjs/ru.react.dev", "side": "before", "decision": "uncertain", "spans": [{"start": 0, "end": 44, "quote": "Это отличные и часто очень полезные техники.", "decision": "uncertain"}]}
+{"id": "8acbf9e58288", "family": "ext-11", "repository": "reactjs/ru.react.dev", "side": "after", "decision": "keep", "spans": []}
+{"id": "58bd38bb1b01", "family": "ext-12", "repository": "reactjs/ru.react.dev", "side": "before", "decision": "keep", "spans": []}
+{"id": "afdb89e03c2b", "family": "ext-12", "repository": "reactjs/ru.react.dev", "side": "after", "decision": "keep", "spans": []}
+{"id": "8b256179de2f", "family": "ext-13", "repository": "reactjs/ru.react.dev", "side": "before", "decision": "keep", "spans": []}
+{"id": "10b5f2501c56", "family": "ext-13", "repository": "reactjs/ru.react.dev", "side": "after", "decision": "flag", "spans": [{"start": 39, "end": 163, "quote": "Строгий режим спасает вас от ошибок, которые могут испортить работу вашей команды и вызывать проблемы у ваших пользователей.", "decision": "flag"}]}
+{"id": "2deade9fb15f", "family": "ext-14", "repository": "reactjs/ru.react.dev", "side": "before", "decision": "keep", "spans": []}
+{"id": "9e39d7588816", "family": "ext-14", "repository": "reactjs/ru.react.dev", "side": "after", "decision": "keep", "spans": []}
+{"id": "87258ce3c66c", "family": "ext-15", "repository": "reactjs/ru.react.dev", "side": "before", "decision": "flag", "spans": [{"start": 42, "end": 216, "quote": "много печатания и совсем немного мышления. С другой стороны, создание интерактивного приложения подразумевает более глубокий мыслительный процесс и лишь долю рутинной печати.", "decision": "flag"}]}
+{"id": "5d558e2e3126", "family": "ext-15", "repository": "reactjs/ru.react.dev", "side": "after", "decision": "flag", "spans": [{"start": 42, "end": 213, "quote": "много печатать и совсем немного думать. С другой стороны, создание интерактивного приложения подразумевает более глубокий мыслительный процесс и лишь долю рутинной печати.", "decision": "flag"}]}

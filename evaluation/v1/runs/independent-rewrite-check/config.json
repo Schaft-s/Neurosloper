@@ -1,0 +1,47 @@
+{
+  "backend": "router",
+  "suite": "rewrite-lockbox",
+  "mode": "fidelity",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "panel": [
+    "qwen/qwen3-235b-a22b-2507",
+    "google/gemma-4-31b-it",
+    "deepseek/deepseek-v3.2"
+  ],
+  "ids": [
+    "7ada611ff0bb8",
+    "f08f93d92d75d",
+    "26c742d07cf89",
+    "b52a8efd0d533",
+    "ff070993bd963",
+    "d8c8741a4b8eb",
+    "f9eaea31f769c",
+    "4129da872ac23"
+  ],
+  "input_hashes": [
+    "e351de2a1de49f0eec3ae500c13f6e34f306f7cdfe1b65aa37833c873e3954da",
+    "c1c066ca93ce3ef56f2574aabd0d846b772138062b99b7db30e57c612adc741c",
+    "781ffe1f80cf59381658bd0e6263237634e887f86e8906db8a900477f8e9d6e3",
+    "4e3e21eb2cc893ee1b8eea7ec9b439ab658df6324001a27ae49b8dd531d6d7bc",
+    "de4248fd754b915cccdbab6338d46c6a42928539361c474c4bc8c4b4abe41840",
+    "35170d3f79634d8d8994c451c86bba6d90b9fa49cd97d57196026beed98acbf1",
+    "46c0b02604ded056ca17dc65b81a473afdc2c8bad13360822eb40a678cd9c3ec",
+    "7849d29433ed5951596f28406dc0e34a3332e118849bbb40779f7d8ba74d2c43"
+  ],
+  "request_hashes": [
+    "b6e16406ae09b9c3240d4e1f224ebc7fdcc1929ca18d33c9def444134f4349b5",
+    "20b72cac1a22a456d4da2232b09b96f2b6266c0a3d007b973b441ea0a0b14806",
+    "612c13b0c1753fdd138c3ed0442597f811556164f2e87873e1609e64d785ee54",
+    "80dcf88ad0f11dc01cae38ed17b526d77bedea39b957c37498f14fb8640bae7a",
+    "bc6ba006220776dcde277efe42b87a2baecf3addcc0609ce0bf43633c60e4a15",
+    "92e6f8ed818ad2324c95883db4d24cf4370c94fad4d3824408a734f3b46c9195",
+    "701c0e8ff5b9f2361f01f37d803b70ee79c682c88e698cd912e5a78622e8c4f1",
+    "9c53952cb308bda879c9db3f3fa5cfa536d7e5f26c737fe98b83d09d5aa83336"
+  ],
+  "rewriter": "standard",
+  "protocol": "json",
+  "rewrite_consensus": "1",
+  "detector_variant": "blinded",
+  "code_hash": "73e6ea4ab55680dfbf6318e311da156539a2b6377c3edafd98b00d1224bbc9b7",
+  "revision": "independent-rewrite-check"
+}

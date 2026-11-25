@@ -1,0 +1,59 @@
+{
+  "backend": "router",
+  "suite": "rewrite",
+  "mode": "rewrite",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "panel": [
+    "qwen/qwen3-235b-a22b-2507",
+    "google/gemma-4-31b-it",
+    "deepseek/deepseek-v3.2"
+  ],
+  "ids": [
+    "edit-01",
+    "edit-02",
+    "edit-03",
+    "edit-04",
+    "edit-05",
+    "edit-06",
+    "edit-07",
+    "edit-08",
+    "edit-09",
+    "edit-10",
+    "edit-11",
+    "edit-12"
+  ],
+  "input_hashes": [
+    "3145dc8aad26c6ceae6f7a9cc06e1cc84371ab485df4c9589c6e25797f763450",
+    "20be9b84c09c234f474970ac8942e28e2ffa2f558481579eba54eb8eb76a7351",
+    "3725f247c2e87f2edd3c8b45a60edcb565999e80df985c7b58a0ae4daca4e1dc",
+    "fdd2310233974775c7e8c1bd6d0bd3de15cf70e01eb22cbd64feb8456c623bb9",
+    "81e4038ad0eb3d6c8169632a7a598c019cccd0078e9da1dfde14116330ac0550",
+    "4ca09e5a4c0198e6675d38c2bb8f9fe5b72eec10fc4d58688ba4dfc7f876db08",
+    "e484d07cdae1b77eb5040cbe6acc742ee92cb9d9c27b6af9e32d65ace5b2be59",
+    "02355c87a2fde2895157de335b10f5c23c0ec31d23173fa4fbca672ed2902cb6",
+    "59c3da55d23abe5b41df8cc43305c214806ca0d417c5754aa5285b21ff302d4a",
+    "65dcff2c3d73f1fa18bd03345d96692ef92cdbf39e33f02618e735302af7a5b8",
+    "73e4c4467f6c9c131c7cfac828500c159e5ecbfe41702904d1ef6e19014b9419",
+    "836520858be2f6bd2a008e1b1633a4c563ef88aa090cd58506b7139cd50063a4"
+  ],
+  "request_hashes": [
+    "f5f2023e8ff82aab9f378c87b0d598ebde6d4b5cce0b53724a5cf4797917bad3",
+    "35c1b5d44e99987b5fa07754c1783fe3bc879a23d56e8dd81af66df79b6b5051",
+    "33722f2f03419e331c1093f7559cac1c45a6939b65f4b49db33cf6bcf356d9b4",
+    "ece6a1d139959c4f36e8b3b00cc687a84789cc7ca232003a2093624f378b425f",
+    "3baa74809491272e490bf323cfc9c1fa1033ca58ba156da3b1a16dc744995c44",
+    "a9afd0fe1d0e7e4719e121beabe09e0267f310fae189f3267b853609dca301d3",
+    "2b781770552ebe229acfabe3f72216b314b73a19119abb326a82c8c1dadb0458",
+    "14ab8c13fe6fa44b1b93a3e8abe3f1e7d0e4e993ed426351ee8159751dc496b9",
+    "47d4610105e5db6126b660cbe7817faca9ce3f81eccc83a2c27d6fb2f0869b8a",
+    "2f3db1f3a3af7a6418179bbdbb286fd66ad4e018bf66af8bee1216521411d3cb",
+    "258f8d809a7a82204f974aec193378ceb7fb9610264b10846cef75906e44ca26",
+    "b28cf21587de74e2af78e70c3f3940737e5bb94688895eeeaa4ef9a343623b5e"
+  ],
+  "rewriter": "standard",
+  "protocol": "json",
+  "rewrite_consensus": "1",
+  "detector_variant": "blinded",
+  "code_hash": "73e6ea4ab55680dfbf6318e311da156539a2b6377c3edafd98b00d1224bbc9b7",
+  "revision": "release-rewrite"
+}

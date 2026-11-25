@@ -1,0 +1,47 @@
+{
+  "files": {
+    "SKILL.md": "d6705dd0c0c9cacc57acc22d2e8f8d87674d29b50864a0ce9923fdabde904e6e",
+    "data/genre_blind.jsonl": "cc8a54ee74695eff4086059109999248966d0f4b85cc4d745b1ef102455d74dd",
+    "data/genre_provenance.jsonl": "4e982fa8e98abaadd0d35348bfe277c00414d1873ac91517697ab501be459432",
+    "evaluation/lockbox/SHA256SUMS": "19369e361e1a8267b584a2febcddfa3d395e44ff0dbd49f453c757a6f6f8c870",
+    "evaluation/review_b.jsonl": "903666d66252ea8b9cbcbfa7c061ccd9f6aad3b809935b5d6e7d1a9d71bbcbe4",
+    "evaluation/rewrite_lockbox/SHA256SUMS": "032b2412996fa9ce7d515a0bc6279e04af4333b699912d212e3ec65c810239a6",
+    "evaluation/v1/PROSPECTIVE.json": "328d32b75bb043e0df45bbadf3c77395821bf7700de5e8aadf30ed447c8aa8e5",
+    "evaluation/v1/adjudicated.jsonl": "74d9a27a9821fb6c6ce0908c886debdae6f6786258a0fc3a589e14e96ccf6352",
+    "evaluation/v1/adjudication_log.jsonl": "aab07f501a11fc039c36fe26123c9256bc045f2d04088f27393c06e83d880136",
+    "evaluation/v1/contrast_inputs.jsonl": "15dc82592da8f17f550dd6b8f4ad85914ecc38ab747f25ae86e723745aafdbaa",
+    "evaluation/v1/contrast_keys.jsonl": "c535931ff9a9aadfa40939f7104d87926cda64bf44db997e678164b2900c06a6",
+    "evaluation/v1/contrast_targets.jsonl": "12626d92672db1a2e81af9b713cea8fc29db877ce5fb54356b2939d361e69645",
+    "evaluation/v1/external.jsonl": "90002cbca09793e48be8072cfb3113992da87292f18ce1f2e6c9b0a5c484555f",
+    "evaluation/v1/external_inputs.jsonl": "e64687d108044005cbb02b6c32db02bfa4645aa32a18a6cef42004d47dd0528b",
+    "evaluation/v1/external_keys.jsonl": "2f688e1c5f67603fbe4192cc5850bbcebc2c8ee804739b704a5be624f0317df9",
+    "evaluation/v1/fidelity_inputs.jsonl": "cfde710370a1f0f179592574b3c16e2c8e07e381883e2672f810803e4bb3a985",
+    "evaluation/v1/fidelity_keys.jsonl": "f9ec62bc0210b2c5d39058a968e0158116b6a3ccb58f35eabf830fcfae1783c7",
+    "evaluation/v1/reader_feedback.jsonl": "7e91e01a76eb328e03147b8318d7f62f9d3428434d657280d68cd61cde8efe33",
+    "evaluation/v1/review_a.jsonl": "b2d92c4a8acf0a6f50ba874aecaab17612683b49ee18ae619e0c6d836abd9ce6",
+    "evaluation/v1/rewrite_inputs.jsonl": "5f90ad29d174be33db0ad783ea1f1f442719d2c7527d2a7e451c468c93cabbb6",
+    "evaluation/v1/rewrite_keys.jsonl": "8d2ce18f681427f80f06f5a11954f62e8848f99933beb52a0833618644347abb",
+    "evaluation/v1/strata.jsonl": "ce769311b0ca163c232edabc490f2dfe0c99a69589a0af00b92b6629cd2735f5",
+    "evaluation/v1/style_inputs.jsonl": "7bb429b92ad86d7cb0e62afc9028b5abb2b0980fe76d63e8b8d114cf0fab3cb3"
+  },
+  "checks": {
+    "genre_docs": 90,
+    "history_rows_checked": 619,
+    "exact_overlap": [],
+    "word_5gram_jaccard_at_least_0.30": [],
+    "synthetic_contrast": 24,
+    "fidelity_contracts": 24,
+    "style_requests": 32,
+    "targeted_rewrites": 12,
+    "prospective_docs": 21,
+    "independent_rewrite_contracts": 8,
+    "reader_signals": 37,
+    "external_revision_pairs": 15,
+    "legacy_wiki_known_spans": 225,
+    "adjudicated": {
+      "flag": 69,
+      "keep": 13,
+      "uncertain": 8
+    }
+  }
+}

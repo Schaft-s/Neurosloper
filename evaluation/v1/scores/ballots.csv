@@ -1,0 +1,1067 @@
+run,id,cluster,source,candidate_id,start,end,quote,gold,target_iou,decision,delivered
+check-fixed,0b5f3afe47f2,срок,consensus,location,0,18,Всё идёт по плану.,keep,1.0,unavailable,uncertain
+check-fixed,0b5f3afe47f2,срок,qwen/qwen3-30b-a3b-instruct-2507,location,0,18,Всё идёт по плану.,keep,1.0,unavailable,unavailable
+check-fixed,0b5f3afe47f2,срок,google/gemma-3-27b-it,location,0,18,Всё идёт по плану.,keep,1.0,unavailable,unavailable
+check-fixed,0b5f3afe47f2,срок,deepseek/deepseek-v3.2,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+check-fixed,1f19f3293f1b,опрос,consensus,location,0,32,Все участники остались довольны.,keep,1.0,unavailable,uncertain
+check-fixed,1f19f3293f1b,опрос,qwen/qwen3-30b-a3b-instruct-2507,location,0,32,Все участники остались довольны.,keep,1.0,unavailable,unavailable
+check-fixed,1f19f3293f1b,опрос,google/gemma-3-27b-it,location,0,32,Все участники остались довольны.,keep,1.0,unavailable,unavailable
+check-fixed,1f19f3293f1b,опрос,deepseek/deepseek-v3.2,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+check-fixed,292cb97c3952,тираж,consensus,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,unavailable,uncertain
+check-fixed,292cb97c3952,тираж,qwen/qwen3-30b-a3b-instruct-2507,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,unavailable,unavailable
+check-fixed,292cb97c3952,тираж,google/gemma-3-27b-it,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,unavailable,unavailable
+check-fixed,292cb97c3952,тираж,deepseek/deepseek-v3.2,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+check-fixed,294cc8735c5f,владение,consensus,location,79,108,Трудности делают нас сильнее.,flag,1.0,unavailable,uncertain
+check-fixed,294cc8735c5f,владение,qwen/qwen3-30b-a3b-instruct-2507,location,79,108,Трудности делают нас сильнее.,flag,1.0,unavailable,unavailable
+check-fixed,294cc8735c5f,владение,google/gemma-3-27b-it,location,79,108,Трудности делают нас сильнее.,flag,1.0,unavailable,unavailable
+check-fixed,294cc8735c5f,владение,deepseek/deepseek-v3.2,location,79,108,Трудности делают нас сильнее.,flag,1.0,keep,keep
+check-fixed,2b7e6a018afd,срок,consensus,location,60,78,Всё идёт по плану.,flag,1.0,unavailable,uncertain
+check-fixed,2b7e6a018afd,срок,qwen/qwen3-30b-a3b-instruct-2507,location,60,78,Всё идёт по плану.,flag,1.0,unavailable,unavailable
+check-fixed,2b7e6a018afd,срок,google/gemma-3-27b-it,location,60,78,Всё идёт по плану.,flag,1.0,unavailable,unavailable
+check-fixed,2b7e6a018afd,срок,deepseek/deepseek-v3.2,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+check-fixed,46ea1e2e7838,владение,consensus,location,1,30,Трудности делают нас сильнее.,keep,1.0,unavailable,uncertain
+check-fixed,46ea1e2e7838,владение,qwen/qwen3-30b-a3b-instruct-2507,location,1,30,Трудности делают нас сильнее.,keep,1.0,unavailable,unavailable
+check-fixed,46ea1e2e7838,владение,google/gemma-3-27b-it,location,1,30,Трудности делают нас сильнее.,keep,1.0,unavailable,unavailable
+check-fixed,46ea1e2e7838,владение,deepseek/deepseek-v3.2,location,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+check-fixed,482273164b21,ритм,consensus,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,unavailable,uncertain
+check-fixed,482273164b21,ритм,qwen/qwen3-30b-a3b-instruct-2507,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,unavailable,unavailable
+check-fixed,482273164b21,ритм,google/gemma-3-27b-it,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,unavailable,unavailable
+check-fixed,482273164b21,ритм,deepseek/deepseek-v3.2,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,keep,keep
+check-fixed,4dc9de74f611,диспетчер,consensus,location,55,83,Нам важно объединить усилия.,keep,1.0,unavailable,uncertain
+check-fixed,4dc9de74f611,диспетчер,qwen/qwen3-30b-a3b-instruct-2507,location,55,83,Нам важно объединить усилия.,keep,1.0,unavailable,unavailable
+check-fixed,4dc9de74f611,диспетчер,google/gemma-3-27b-it,location,55,83,Нам важно объединить усилия.,keep,1.0,unavailable,unavailable
+check-fixed,4dc9de74f611,диспетчер,deepseek/deepseek-v3.2,location,55,83,Нам важно объединить усилия.,keep,1.0,keep,keep
+check-fixed,53ac471576bc,доступ,consensus,location,65,86,Оставайтесь на связи.,flag,1.0,unavailable,uncertain
+check-fixed,53ac471576bc,доступ,qwen/qwen3-30b-a3b-instruct-2507,location,65,86,Оставайтесь на связи.,flag,1.0,unavailable,unavailable
+check-fixed,53ac471576bc,доступ,google/gemma-3-27b-it,location,65,86,Оставайтесь на связи.,flag,1.0,unavailable,unavailable
+check-fixed,53ac471576bc,доступ,deepseek/deepseek-v3.2,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+check-fixed,58a18181ed6f,словарь,consensus,location,61,90,Это событие войдёт в историю.,flag,1.0,unavailable,uncertain
+check-fixed,58a18181ed6f,словарь,qwen/qwen3-30b-a3b-instruct-2507,location,61,90,Это событие войдёт в историю.,flag,1.0,unavailable,unavailable
+check-fixed,58a18181ed6f,словарь,google/gemma-3-27b-it,location,61,90,Это событие войдёт в историю.,flag,1.0,unavailable,unavailable
+check-fixed,58a18181ed6f,словарь,deepseek/deepseek-v3.2,location,61,90,Это событие войдёт в историю.,flag,1.0,keep,keep
+check-fixed,65194ea68049,касса,consensus,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,unavailable,uncertain
+check-fixed,65194ea68049,касса,qwen/qwen3-30b-a3b-instruct-2507,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,unavailable,unavailable
+check-fixed,65194ea68049,касса,google/gemma-3-27b-it,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,unavailable,unavailable
+check-fixed,65194ea68049,касса,deepseek/deepseek-v3.2,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+check-fixed,73941c7386d2,диспетчер,consensus,location,58,86,Нам важно объединить усилия.,flag,1.0,unavailable,uncertain
+check-fixed,73941c7386d2,диспетчер,qwen/qwen3-30b-a3b-instruct-2507,location,58,86,Нам важно объединить усилия.,flag,1.0,unavailable,unavailable
+check-fixed,73941c7386d2,диспетчер,google/gemma-3-27b-it,location,58,86,Нам важно объединить усилия.,flag,1.0,unavailable,unavailable
+check-fixed,73941c7386d2,диспетчер,deepseek/deepseek-v3.2,location,58,86,Нам важно объединить усилия.,flag,1.0,keep,keep
+check-fixed,74b41c7d153c,музей,consensus,location,59,85,Открываем двери в будущее.,flag,1.0,unavailable,uncertain
+check-fixed,74b41c7d153c,музей,qwen/qwen3-30b-a3b-instruct-2507,location,59,85,Открываем двери в будущее.,flag,1.0,unavailable,unavailable
+check-fixed,74b41c7d153c,музей,google/gemma-3-27b-it,location,59,85,Открываем двери в будущее.,flag,1.0,unavailable,unavailable
+check-fixed,74b41c7d153c,музей,deepseek/deepseek-v3.2,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+check-fixed,8217db985a6e,ветвление,consensus,location,29,50,Шаг 2. Закажите скан.,keep,1.0,unavailable,uncertain
+check-fixed,8217db985a6e,ветвление,qwen/qwen3-30b-a3b-instruct-2507,location,29,50,Шаг 2. Закажите скан.,keep,1.0,unavailable,unavailable
+check-fixed,8217db985a6e,ветвление,google/gemma-3-27b-it,location,29,50,Шаг 2. Закажите скан.,keep,1.0,unavailable,unavailable
+check-fixed,8217db985a6e,ветвление,deepseek/deepseek-v3.2,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+check-fixed,88596b20f85f,ветвление,consensus,location,29,50,Шаг 2. Закажите скан.,flag,1.0,unavailable,uncertain
+check-fixed,88596b20f85f,ветвление,qwen/qwen3-30b-a3b-instruct-2507,location,29,50,Шаг 2. Закажите скан.,flag,1.0,unavailable,unavailable
+check-fixed,88596b20f85f,ветвление,google/gemma-3-27b-it,location,29,50,Шаг 2. Закажите скан.,flag,1.0,unavailable,unavailable
+check-fixed,88596b20f85f,ветвление,deepseek/deepseek-v3.2,location,29,50,Шаг 2. Закажите скан.,flag,1.0,flag,flag
+check-fixed,8f4adfd64243,тираж,consensus,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,unavailable,uncertain
+check-fixed,8f4adfd64243,тираж,qwen/qwen3-30b-a3b-instruct-2507,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,unavailable,unavailable
+check-fixed,8f4adfd64243,тираж,google/gemma-3-27b-it,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,unavailable,unavailable
+check-fixed,8f4adfd64243,тираж,deepseek/deepseek-v3.2,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,keep,keep
+check-fixed,90b88e256de0,архив,consensus,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,unavailable,uncertain
+check-fixed,90b88e256de0,архив,qwen/qwen3-30b-a3b-instruct-2507,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,unavailable,unavailable
+check-fixed,90b88e256de0,архив,google/gemma-3-27b-it,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,unavailable,unavailable
+check-fixed,90b88e256de0,архив,deepseek/deepseek-v3.2,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+check-fixed,90ce4749e4a3,музей,consensus,location,25,51,Открываем двери в будущее.,keep,1.0,unavailable,uncertain
+check-fixed,90ce4749e4a3,музей,qwen/qwen3-30b-a3b-instruct-2507,location,25,51,Открываем двери в будущее.,keep,1.0,unavailable,unavailable
+check-fixed,90ce4749e4a3,музей,google/gemma-3-27b-it,location,25,51,Открываем двери в будущее.,keep,1.0,unavailable,unavailable
+check-fixed,90ce4749e4a3,музей,deepseek/deepseek-v3.2,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+check-fixed,9768679dc112,ритм,consensus,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,unavailable,uncertain
+check-fixed,9768679dc112,ритм,qwen/qwen3-30b-a3b-instruct-2507,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,unavailable,unavailable
+check-fixed,9768679dc112,ритм,google/gemma-3-27b-it,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,unavailable,unavailable
+check-fixed,9768679dc112,ритм,deepseek/deepseek-v3.2,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+check-fixed,9883b0919ec9,архив,consensus,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,unavailable,uncertain
+check-fixed,9883b0919ec9,архив,qwen/qwen3-30b-a3b-instruct-2507,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,unavailable,unavailable
+check-fixed,9883b0919ec9,архив,google/gemma-3-27b-it,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,unavailable,unavailable
+check-fixed,9883b0919ec9,архив,deepseek/deepseek-v3.2,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,keep,keep
+check-fixed,bfa75cba8cb2,опрос,consensus,location,49,81,Все участники остались довольны.,flag,1.0,unavailable,uncertain
+check-fixed,bfa75cba8cb2,опрос,qwen/qwen3-30b-a3b-instruct-2507,location,49,81,Все участники остались довольны.,flag,1.0,unavailable,unavailable
+check-fixed,bfa75cba8cb2,опрос,google/gemma-3-27b-it,location,49,81,Все участники остались довольны.,flag,1.0,unavailable,unavailable
+check-fixed,bfa75cba8cb2,опрос,deepseek/deepseek-v3.2,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+check-fixed,c2f6e4a30e13,касса,consensus,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,unavailable,uncertain
+check-fixed,c2f6e4a30e13,касса,qwen/qwen3-30b-a3b-instruct-2507,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,unavailable,unavailable
+check-fixed,c2f6e4a30e13,касса,google/gemma-3-27b-it,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,unavailable,unavailable
+check-fixed,c2f6e4a30e13,касса,deepseek/deepseek-v3.2,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,keep,keep
+check-fixed,c42ea90365a9,словарь,consensus,location,64,93,Это событие войдёт в историю.,keep,1.0,unavailable,uncertain
+check-fixed,c42ea90365a9,словарь,qwen/qwen3-30b-a3b-instruct-2507,location,64,93,Это событие войдёт в историю.,keep,1.0,unavailable,unavailable
+check-fixed,c42ea90365a9,словарь,google/gemma-3-27b-it,location,64,93,Это событие войдёт в историю.,keep,1.0,unavailable,unavailable
+check-fixed,c42ea90365a9,словарь,deepseek/deepseek-v3.2,location,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+check-fixed,cd860a993243,доступ,consensus,location,0,21,Оставайтесь на связи.,keep,1.0,unavailable,uncertain
+check-fixed,cd860a993243,доступ,qwen/qwen3-30b-a3b-instruct-2507,location,0,21,Оставайтесь на связи.,keep,1.0,unavailable,unavailable
+check-fixed,cd860a993243,доступ,google/gemma-3-27b-it,location,0,21,Оставайтесь на связи.,keep,1.0,unavailable,unavailable
+check-fixed,cd860a993243,доступ,deepseek/deepseek-v3.2,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,consensus,0,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,qwen/qwen3-235b-a22b-2507,0,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,google/gemma-4-31b-it,0,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,deepseek/deepseek-v3.2,0,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,consensus,1,33,84,В полученных семи анкетах каждый отметил «доволен».,,0.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,qwen/qwen3-235b-a22b-2507,1,33,84,В полученных семи анкетах каждый отметил «доволен».,,0.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,google/gemma-4-31b-it,1,33,84,В полученных семи анкетах каждый отметил «доволен».,,0.0,keep,keep
+final-contrast,1f19f3293f1b,опрос,deepseek/deepseek-v3.2,1,33,84,В полученных семи анкетах каждый отметил «доволен».,,0.0,keep,keep
+final-contrast,292cb97c3952,тираж,consensus,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-contrast,292cb97c3952,тираж,qwen/qwen3-235b-a22b-2507,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-contrast,292cb97c3952,тираж,google/gemma-4-31b-it,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-contrast,292cb97c3952,тираж,deepseek/deepseek-v3.2,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-contrast,294cc8735c5f,владение,consensus,0,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+final-contrast,294cc8735c5f,владение,qwen/qwen3-235b-a22b-2507,0,79,108,Трудности делают нас сильнее.,flag,1.0,unavailable,unavailable
+final-contrast,294cc8735c5f,владение,google/gemma-4-31b-it,0,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+final-contrast,294cc8735c5f,владение,deepseek/deepseek-v3.2,0,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+final-contrast,2b7e6a018afd,срок,consensus,0,0,15,Счёт отправлен.,,0.0,keep,keep
+final-contrast,2b7e6a018afd,срок,qwen/qwen3-235b-a22b-2507,0,0,15,Счёт отправлен.,,0.0,keep,keep
+final-contrast,2b7e6a018afd,срок,google/gemma-4-31b-it,0,0,15,Счёт отправлен.,,0.0,keep,keep
+final-contrast,2b7e6a018afd,срок,deepseek/deepseek-v3.2,0,0,15,Счёт отправлен.,,0.0,keep,keep
+final-contrast,2b7e6a018afd,срок,consensus,1,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,keep,keep
+final-contrast,2b7e6a018afd,срок,qwen/qwen3-235b-a22b-2507,1,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,keep,keep
+final-contrast,2b7e6a018afd,срок,google/gemma-4-31b-it,1,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,unavailable,unavailable
+final-contrast,2b7e6a018afd,срок,deepseek/deepseek-v3.2,1,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,keep,keep
+final-contrast,46ea1e2e7838,владение,consensus,0,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+final-contrast,46ea1e2e7838,владение,qwen/qwen3-235b-a22b-2507,0,1,30,Трудности делают нас сильнее.,keep,1.0,unavailable,unavailable
+final-contrast,46ea1e2e7838,владение,google/gemma-4-31b-it,0,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+final-contrast,46ea1e2e7838,владение,deepseek/deepseek-v3.2,0,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+final-contrast,482273164b21,ритм,consensus,0,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+final-contrast,482273164b21,ритм,qwen/qwen3-235b-a22b-2507,0,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+final-contrast,482273164b21,ритм,google/gemma-4-31b-it,0,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+final-contrast,482273164b21,ритм,deepseek/deepseek-v3.2,0,73,96,Быстрее. Выше. Сильнее.,flag,1.0,keep,keep
+final-contrast,4dc9de74f611,диспетчер,consensus,0,55,83,Нам важно объединить усилия.,keep,1.0,uncertain,uncertain
+final-contrast,4dc9de74f611,диспетчер,qwen/qwen3-235b-a22b-2507,0,55,83,Нам важно объединить усилия.,keep,1.0,flag,flag
+final-contrast,4dc9de74f611,диспетчер,google/gemma-4-31b-it,0,55,83,Нам важно объединить усилия.,keep,1.0,keep,keep
+final-contrast,4dc9de74f611,диспетчер,deepseek/deepseek-v3.2,0,55,83,Нам важно объединить усилия.,keep,1.0,unavailable,unavailable
+final-contrast,53ac471576bc,доступ,consensus,0,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+final-contrast,53ac471576bc,доступ,qwen/qwen3-235b-a22b-2507,0,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+final-contrast,53ac471576bc,доступ,google/gemma-4-31b-it,0,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+final-contrast,53ac471576bc,доступ,deepseek/deepseek-v3.2,0,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+final-contrast,58a18181ed6f,словарь,consensus,0,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+final-contrast,58a18181ed6f,словарь,qwen/qwen3-235b-a22b-2507,0,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+final-contrast,58a18181ed6f,словарь,google/gemma-4-31b-it,0,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+final-contrast,58a18181ed6f,словарь,deepseek/deepseek-v3.2,0,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+final-contrast,65194ea68049,касса,consensus,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+final-contrast,65194ea68049,касса,qwen/qwen3-235b-a22b-2507,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+final-contrast,65194ea68049,касса,google/gemma-4-31b-it,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,unavailable,unavailable
+final-contrast,65194ea68049,касса,deepseek/deepseek-v3.2,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+final-contrast,73941c7386d2,диспетчер,consensus,0,58,86,Нам важно объединить усилия.,flag,1.0,uncertain,uncertain
+final-contrast,73941c7386d2,диспетчер,qwen/qwen3-235b-a22b-2507,0,58,86,Нам важно объединить усилия.,flag,1.0,uncertain,uncertain
+final-contrast,73941c7386d2,диспетчер,google/gemma-4-31b-it,0,58,86,Нам важно объединить усилия.,flag,1.0,flag,flag
+final-contrast,73941c7386d2,диспетчер,deepseek/deepseek-v3.2,0,58,86,Нам важно объединить усилия.,flag,1.0,keep,keep
+final-contrast,74b41c7d153c,музей,consensus,0,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-contrast,74b41c7d153c,музей,qwen/qwen3-235b-a22b-2507,0,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-contrast,74b41c7d153c,музей,google/gemma-4-31b-it,0,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-contrast,74b41c7d153c,музей,deepseek/deepseek-v3.2,0,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-contrast,8217db985a6e,ветвление,consensus,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+final-contrast,8217db985a6e,ветвление,qwen/qwen3-235b-a22b-2507,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+final-contrast,8217db985a6e,ветвление,google/gemma-4-31b-it,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+final-contrast,8217db985a6e,ветвление,deepseek/deepseek-v3.2,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+final-contrast,88596b20f85f,ветвление,consensus,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,flag,flag
+final-contrast,88596b20f85f,ветвление,qwen/qwen3-235b-a22b-2507,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,keep,keep
+final-contrast,88596b20f85f,ветвление,google/gemma-4-31b-it,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,flag,flag
+final-contrast,88596b20f85f,ветвление,deepseek/deepseek-v3.2,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,flag,flag
+final-contrast,88596b20f85f,ветвление,consensus,1,29,50,Шаг 2. Закажите скан.,flag,1.0,keep,keep
+final-contrast,88596b20f85f,ветвление,qwen/qwen3-235b-a22b-2507,1,29,50,Шаг 2. Закажите скан.,flag,1.0,keep,keep
+final-contrast,88596b20f85f,ветвление,google/gemma-4-31b-it,1,29,50,Шаг 2. Закажите скан.,flag,1.0,flag,flag
+final-contrast,88596b20f85f,ветвление,deepseek/deepseek-v3.2,1,29,50,Шаг 2. Закажите скан.,flag,1.0,keep,keep
+final-contrast,8f4adfd64243,тираж,consensus,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+final-contrast,8f4adfd64243,тираж,qwen/qwen3-235b-a22b-2507,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,uncertain,uncertain
+final-contrast,8f4adfd64243,тираж,google/gemma-4-31b-it,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+final-contrast,8f4adfd64243,тираж,deepseek/deepseek-v3.2,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+final-contrast,90b88e256de0,архив,consensus,0,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+final-contrast,90b88e256de0,архив,qwen/qwen3-235b-a22b-2507,0,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,uncertain,uncertain
+final-contrast,90b88e256de0,архив,google/gemma-4-31b-it,0,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+final-contrast,90b88e256de0,архив,deepseek/deepseek-v3.2,0,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+final-contrast,90b88e256de0,архив,consensus,1,19,39,комплекс мероприятий,keep,0.5,keep,keep
+final-contrast,90b88e256de0,архив,qwen/qwen3-235b-a22b-2507,1,19,39,комплекс мероприятий,keep,0.5,keep,keep
+final-contrast,90b88e256de0,архив,google/gemma-4-31b-it,1,19,39,комплекс мероприятий,keep,0.5,keep,keep
+final-contrast,90b88e256de0,архив,deepseek/deepseek-v3.2,1,19,39,комплекс мероприятий,keep,0.5,keep,keep
+final-contrast,90b88e256de0,архив,consensus,2,62,67,затем,,0.0,keep,keep
+final-contrast,90b88e256de0,архив,qwen/qwen3-235b-a22b-2507,2,62,67,затем,,0.0,unavailable,unavailable
+final-contrast,90b88e256de0,архив,google/gemma-4-31b-it,2,62,67,затем,,0.0,keep,keep
+final-contrast,90b88e256de0,архив,deepseek/deepseek-v3.2,2,62,67,затем,,0.0,keep,keep
+final-contrast,90b88e256de0,архив,consensus,3,92,104,после сверки,,0.0,keep,keep
+final-contrast,90b88e256de0,архив,qwen/qwen3-235b-a22b-2507,3,92,104,после сверки,,0.0,keep,keep
+final-contrast,90b88e256de0,архив,google/gemma-4-31b-it,3,92,104,после сверки,,0.0,keep,keep
+final-contrast,90b88e256de0,архив,deepseek/deepseek-v3.2,3,92,104,после сверки,,0.0,keep,keep
+final-contrast,90ce4749e4a3,музей,consensus,0,24,52,«Открываем двери в будущее.»,keep,0.9285714285714286,keep,keep
+final-contrast,90ce4749e4a3,музей,qwen/qwen3-235b-a22b-2507,0,24,52,«Открываем двери в будущее.»,keep,0.9285714285714286,keep,keep
+final-contrast,90ce4749e4a3,музей,google/gemma-4-31b-it,0,24,52,«Открываем двери в будущее.»,keep,0.9285714285714286,unavailable,unavailable
+final-contrast,90ce4749e4a3,музей,deepseek/deepseek-v3.2,0,24,52,«Открываем двери в будущее.»,keep,0.9285714285714286,keep,keep
+final-contrast,9768679dc112,ритм,consensus,0,49,74,«Быстрее. Выше. Сильнее.»,keep,0.92,keep,keep
+final-contrast,9768679dc112,ритм,qwen/qwen3-235b-a22b-2507,0,49,74,«Быстрее. Выше. Сильнее.»,keep,0.92,keep,keep
+final-contrast,9768679dc112,ритм,google/gemma-4-31b-it,0,49,74,«Быстрее. Выше. Сильнее.»,keep,0.92,keep,keep
+final-contrast,9768679dc112,ритм,deepseek/deepseek-v3.2,0,49,74,«Быстрее. Выше. Сильнее.»,keep,0.92,keep,keep
+final-contrast,bfa75cba8cb2,опрос,consensus,0,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+final-contrast,bfa75cba8cb2,опрос,qwen/qwen3-235b-a22b-2507,0,49,81,Все участники остались довольны.,flag,1.0,unavailable,unavailable
+final-contrast,bfa75cba8cb2,опрос,google/gemma-4-31b-it,0,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+final-contrast,bfa75cba8cb2,опрос,deepseek/deepseek-v3.2,0,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+final-contrast,c42ea90365a9,словарь,consensus,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+final-contrast,c42ea90365a9,словарь,qwen/qwen3-235b-a22b-2507,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+final-contrast,c42ea90365a9,словарь,google/gemma-4-31b-it,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+final-contrast,c42ea90365a9,словарь,deepseek/deepseek-v3.2,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+final-contrast,cd860a993243,доступ,consensus,0,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-contrast,cd860a993243,доступ,qwen/qwen3-235b-a22b-2507,0,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-contrast,cd860a993243,доступ,google/gemma-4-31b-it,0,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-contrast,cd860a993243,доступ,deepseek/deepseek-v3.2,0,0,21,Оставайтесь на связи.,keep,1.0,unavailable,unavailable
+final-contrast,cd860a993243,доступ,consensus,1,22,76,"Пока идёт сверка, оператор продиктует последнюю цифру.",,0.0,keep,keep
+final-contrast,cd860a993243,доступ,qwen/qwen3-235b-a22b-2507,1,22,76,"Пока идёт сверка, оператор продиктует последнюю цифру.",,0.0,keep,keep
+final-contrast,cd860a993243,доступ,google/gemma-4-31b-it,1,22,76,"Пока идёт сверка, оператор продиктует последнюю цифру.",,0.0,keep,keep
+final-contrast,cd860a993243,доступ,deepseek/deepseek-v3.2,1,22,76,"Пока идёт сверка, оператор продиктует последнюю цифру.",,0.0,unavailable,unavailable
+final-contrast,cd860a993243,доступ,consensus,2,77,122,"Если разорвать звонок, сверку начнут сначала.",,0.0,keep,keep
+final-contrast,cd860a993243,доступ,qwen/qwen3-235b-a22b-2507,2,77,122,"Если разорвать звонок, сверку начнут сначала.",,0.0,keep,keep
+final-contrast,cd860a993243,доступ,google/gemma-4-31b-it,2,77,122,"Если разорвать звонок, сверку начнут сначала.",,0.0,keep,keep
+final-contrast,cd860a993243,доступ,deepseek/deepseek-v3.2,2,77,122,"Если разорвать звонок, сверку начнут сначала.",,0.0,keep,keep
+final-fixed,0b5f3afe47f2,срок,consensus,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+final-fixed,0b5f3afe47f2,срок,qwen/qwen3-235b-a22b-2507,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+final-fixed,0b5f3afe47f2,срок,google/gemma-4-31b-it,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+final-fixed,0b5f3afe47f2,срок,deepseek/deepseek-v3.2,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+final-fixed,1f19f3293f1b,опрос,consensus,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-fixed,1f19f3293f1b,опрос,qwen/qwen3-235b-a22b-2507,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-fixed,1f19f3293f1b,опрос,google/gemma-4-31b-it,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-fixed,1f19f3293f1b,опрос,deepseek/deepseek-v3.2,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+final-fixed,292cb97c3952,тираж,consensus,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-fixed,292cb97c3952,тираж,qwen/qwen3-235b-a22b-2507,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-fixed,292cb97c3952,тираж,google/gemma-4-31b-it,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-fixed,292cb97c3952,тираж,deepseek/deepseek-v3.2,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+final-fixed,294cc8735c5f,владение,consensus,location,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+final-fixed,294cc8735c5f,владение,qwen/qwen3-235b-a22b-2507,location,79,108,Трудности делают нас сильнее.,flag,1.0,unavailable,unavailable
+final-fixed,294cc8735c5f,владение,google/gemma-4-31b-it,location,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+final-fixed,294cc8735c5f,владение,deepseek/deepseek-v3.2,location,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+final-fixed,2b7e6a018afd,срок,consensus,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+final-fixed,2b7e6a018afd,срок,qwen/qwen3-235b-a22b-2507,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+final-fixed,2b7e6a018afd,срок,google/gemma-4-31b-it,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+final-fixed,2b7e6a018afd,срок,deepseek/deepseek-v3.2,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+final-fixed,46ea1e2e7838,владение,consensus,location,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+final-fixed,46ea1e2e7838,владение,qwen/qwen3-235b-a22b-2507,location,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+final-fixed,46ea1e2e7838,владение,google/gemma-4-31b-it,location,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+final-fixed,46ea1e2e7838,владение,deepseek/deepseek-v3.2,location,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+final-fixed,482273164b21,ритм,consensus,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+final-fixed,482273164b21,ритм,qwen/qwen3-235b-a22b-2507,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+final-fixed,482273164b21,ритм,google/gemma-4-31b-it,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+final-fixed,482273164b21,ритм,deepseek/deepseek-v3.2,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,keep,keep
+final-fixed,4dc9de74f611,диспетчер,consensus,location,55,83,Нам важно объединить усилия.,keep,1.0,uncertain,uncertain
+final-fixed,4dc9de74f611,диспетчер,qwen/qwen3-235b-a22b-2507,location,55,83,Нам важно объединить усилия.,keep,1.0,unavailable,unavailable
+final-fixed,4dc9de74f611,диспетчер,google/gemma-4-31b-it,location,55,83,Нам важно объединить усилия.,keep,1.0,keep,keep
+final-fixed,4dc9de74f611,диспетчер,deepseek/deepseek-v3.2,location,55,83,Нам важно объединить усилия.,keep,1.0,flag,flag
+final-fixed,53ac471576bc,доступ,consensus,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+final-fixed,53ac471576bc,доступ,qwen/qwen3-235b-a22b-2507,location,65,86,Оставайтесь на связи.,flag,1.0,uncertain,uncertain
+final-fixed,53ac471576bc,доступ,google/gemma-4-31b-it,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+final-fixed,53ac471576bc,доступ,deepseek/deepseek-v3.2,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+final-fixed,58a18181ed6f,словарь,consensus,location,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+final-fixed,58a18181ed6f,словарь,qwen/qwen3-235b-a22b-2507,location,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+final-fixed,58a18181ed6f,словарь,google/gemma-4-31b-it,location,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+final-fixed,58a18181ed6f,словарь,deepseek/deepseek-v3.2,location,61,90,Это событие войдёт в историю.,flag,1.0,keep,keep
+final-fixed,65194ea68049,касса,consensus,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+final-fixed,65194ea68049,касса,qwen/qwen3-235b-a22b-2507,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+final-fixed,65194ea68049,касса,google/gemma-4-31b-it,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+final-fixed,65194ea68049,касса,deepseek/deepseek-v3.2,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+final-fixed,73941c7386d2,диспетчер,consensus,location,58,86,Нам важно объединить усилия.,flag,1.0,keep,keep
+final-fixed,73941c7386d2,диспетчер,qwen/qwen3-235b-a22b-2507,location,58,86,Нам важно объединить усилия.,flag,1.0,keep,keep
+final-fixed,73941c7386d2,диспетчер,google/gemma-4-31b-it,location,58,86,Нам важно объединить усилия.,flag,1.0,flag,flag
+final-fixed,73941c7386d2,диспетчер,deepseek/deepseek-v3.2,location,58,86,Нам важно объединить усилия.,flag,1.0,keep,keep
+final-fixed,74b41c7d153c,музей,consensus,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-fixed,74b41c7d153c,музей,qwen/qwen3-235b-a22b-2507,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-fixed,74b41c7d153c,музей,google/gemma-4-31b-it,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-fixed,74b41c7d153c,музей,deepseek/deepseek-v3.2,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+final-fixed,8217db985a6e,ветвление,consensus,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+final-fixed,8217db985a6e,ветвление,qwen/qwen3-235b-a22b-2507,location,29,50,Шаг 2. Закажите скан.,keep,1.0,unavailable,unavailable
+final-fixed,8217db985a6e,ветвление,google/gemma-4-31b-it,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+final-fixed,8217db985a6e,ветвление,deepseek/deepseek-v3.2,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+final-fixed,88596b20f85f,ветвление,consensus,location,29,50,Шаг 2. Закажите скан.,flag,1.0,uncertain,uncertain
+final-fixed,88596b20f85f,ветвление,qwen/qwen3-235b-a22b-2507,location,29,50,Шаг 2. Закажите скан.,flag,1.0,keep,keep
+final-fixed,88596b20f85f,ветвление,google/gemma-4-31b-it,location,29,50,Шаг 2. Закажите скан.,flag,1.0,flag,flag
+final-fixed,88596b20f85f,ветвление,deepseek/deepseek-v3.2,location,29,50,Шаг 2. Закажите скан.,flag,1.0,unavailable,unavailable
+final-fixed,8f4adfd64243,тираж,consensus,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+final-fixed,8f4adfd64243,тираж,qwen/qwen3-235b-a22b-2507,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+final-fixed,8f4adfd64243,тираж,google/gemma-4-31b-it,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+final-fixed,8f4adfd64243,тираж,deepseek/deepseek-v3.2,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+final-fixed,90b88e256de0,архив,consensus,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+final-fixed,90b88e256de0,архив,qwen/qwen3-235b-a22b-2507,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,uncertain,uncertain
+final-fixed,90b88e256de0,архив,google/gemma-4-31b-it,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+final-fixed,90b88e256de0,архив,deepseek/deepseek-v3.2,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+final-fixed,90ce4749e4a3,музей,consensus,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+final-fixed,90ce4749e4a3,музей,qwen/qwen3-235b-a22b-2507,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+final-fixed,90ce4749e4a3,музей,google/gemma-4-31b-it,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+final-fixed,90ce4749e4a3,музей,deepseek/deepseek-v3.2,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+final-fixed,9768679dc112,ритм,consensus,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+final-fixed,9768679dc112,ритм,qwen/qwen3-235b-a22b-2507,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+final-fixed,9768679dc112,ритм,google/gemma-4-31b-it,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+final-fixed,9768679dc112,ритм,deepseek/deepseek-v3.2,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+final-fixed,9883b0919ec9,архив,consensus,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,keep,keep
+final-fixed,9883b0919ec9,архив,qwen/qwen3-235b-a22b-2507,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,uncertain,uncertain
+final-fixed,9883b0919ec9,архив,google/gemma-4-31b-it,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,keep,keep
+final-fixed,9883b0919ec9,архив,deepseek/deepseek-v3.2,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,keep,keep
+final-fixed,bfa75cba8cb2,опрос,consensus,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+final-fixed,bfa75cba8cb2,опрос,qwen/qwen3-235b-a22b-2507,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+final-fixed,bfa75cba8cb2,опрос,google/gemma-4-31b-it,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+final-fixed,bfa75cba8cb2,опрос,deepseek/deepseek-v3.2,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+final-fixed,c2f6e4a30e13,касса,consensus,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,flag,flag
+final-fixed,c2f6e4a30e13,касса,qwen/qwen3-235b-a22b-2507,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,flag,flag
+final-fixed,c2f6e4a30e13,касса,google/gemma-4-31b-it,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,flag,flag
+final-fixed,c2f6e4a30e13,касса,deepseek/deepseek-v3.2,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,keep,keep
+final-fixed,c42ea90365a9,словарь,consensus,location,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+final-fixed,c42ea90365a9,словарь,qwen/qwen3-235b-a22b-2507,location,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+final-fixed,c42ea90365a9,словарь,google/gemma-4-31b-it,location,64,93,Это событие войдёт в историю.,keep,1.0,unavailable,unavailable
+final-fixed,c42ea90365a9,словарь,deepseek/deepseek-v3.2,location,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+final-fixed,cd860a993243,доступ,consensus,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-fixed,cd860a993243,доступ,qwen/qwen3-235b-a22b-2507,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-fixed,cd860a993243,доступ,google/gemma-4-31b-it,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-fixed,cd860a993243,доступ,deepseek/deepseek-v3.2,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+final-native-probe,0b5f3afe47f2,срок,consensus,0,19,68,"Машина пришла к 08:00, погрузку закончили к 09:00",,0.0,keep,keep
+final-native-probe,0b5f3afe47f2,срок,qwen/qwen3-235b-a22b-2507,0,19,68,"Машина пришла к 08:00, погрузку закончили к 09:00",,0.0,keep,keep
+final-native-probe,0b5f3afe47f2,срок,google/gemma-4-31b-it,0,19,68,"Машина пришла к 08:00, погрузку закончили к 09:00",,0.0,keep,keep
+final-native-probe,0b5f3afe47f2,срок,deepseek/deepseek-v3.2,0,19,68,"Машина пришла к 08:00, погрузку закончили к 09:00",,0.0,keep,keep
+prospective-anchored,e31cc68d85b,G7,consensus,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-anchored,e31cc68d85b,G7,qwen/qwen3-235b-a22b-2507,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-anchored,e31cc68d85b,G7,google/gemma-4-31b-it,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-anchored,e31cc68d85b,G7,deepseek/deepseek-v3.2,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-anchored,6557f3091dd,G6,consensus,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,keep,keep
+prospective-anchored,6557f3091dd,G6,qwen/qwen3-235b-a22b-2507,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,keep,keep
+prospective-anchored,6557f3091dd,G6,google/gemma-4-31b-it,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,unavailable,unavailable
+prospective-anchored,6557f3091dd,G6,deepseek/deepseek-v3.2,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,keep,keep
+prospective-anchored,a29bc6c9533,G4,consensus,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-anchored,a29bc6c9533,G4,qwen/qwen3-235b-a22b-2507,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-anchored,a29bc6c9533,G4,google/gemma-4-31b-it,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-anchored,a29bc6c9533,G4,deepseek/deepseek-v3.2,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,keep,keep
+prospective-anchored,24b2d1c84ee,G5,consensus,location,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-anchored,24b2d1c84ee,G5,qwen/qwen3-235b-a22b-2507,location,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-anchored,24b2d1c84ee,G5,google/gemma-4-31b-it,location,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,flag,flag
+prospective-anchored,24b2d1c84ee,G5,deepseek/deepseek-v3.2,location,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-anchored,f75f37e682c,G2,consensus,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-anchored,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-anchored,f75f37e682c,G2,google/gemma-4-31b-it,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-anchored,f75f37e682c,G2,deepseek/deepseek-v3.2,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-anchored,7b164626a94,G9,consensus,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-anchored,7b164626a94,G9,qwen/qwen3-235b-a22b-2507,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-anchored,7b164626a94,G9,google/gemma-4-31b-it,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-anchored,7b164626a94,G9,deepseek/deepseek-v3.2,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-anchored,87a23dc922f,G9,consensus,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-anchored,87a23dc922f,G9,qwen/qwen3-235b-a22b-2507,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-anchored,87a23dc922f,G9,google/gemma-4-31b-it,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-anchored,87a23dc922f,G9,deepseek/deepseek-v3.2,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-anchored,c4343257229,G6,consensus,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,uncertain,uncertain
+prospective-anchored,c4343257229,G6,qwen/qwen3-235b-a22b-2507,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,keep,keep
+prospective-anchored,c4343257229,G6,google/gemma-4-31b-it,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,flag,flag
+prospective-anchored,c4343257229,G6,deepseek/deepseek-v3.2,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,unavailable,unavailable
+prospective-anchored,73fc6603a6b,G8,consensus,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-anchored,73fc6603a6b,G8,qwen/qwen3-235b-a22b-2507,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-anchored,73fc6603a6b,G8,google/gemma-4-31b-it,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-anchored,73fc6603a6b,G8,deepseek/deepseek-v3.2,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-anchored,b5f8ea69e31,G5,consensus,location,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-anchored,b5f8ea69e31,G5,qwen/qwen3-235b-a22b-2507,location,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-anchored,b5f8ea69e31,G5,google/gemma-4-31b-it,location,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,flag,flag
+prospective-anchored,b5f8ea69e31,G5,deepseek/deepseek-v3.2,location,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-anchored,d9cff664905,G8,consensus,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-anchored,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,unavailable,unavailable
+prospective-anchored,d9cff664905,G8,google/gemma-4-31b-it,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-anchored,d9cff664905,G8,deepseek/deepseek-v3.2,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-anchored,9e47865028c,G1,consensus,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-anchored,9e47865028c,G1,qwen/qwen3-235b-a22b-2507,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-anchored,9e47865028c,G1,google/gemma-4-31b-it,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-anchored,9e47865028c,G1,deepseek/deepseek-v3.2,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-anchored,bd0785541c1,G5,consensus,location,41,87,Лист подписывают после заполнения обеих строк.,uncertain,1.0,keep,keep
+prospective-anchored,bd0785541c1,G5,qwen/qwen3-235b-a22b-2507,location,41,87,Лист подписывают после заполнения обеих строк.,uncertain,1.0,keep,keep
+prospective-anchored,bd0785541c1,G5,google/gemma-4-31b-it,location,41,87,Лист подписывают после заполнения обеих строк.,uncertain,1.0,flag,flag
+prospective-anchored,bd0785541c1,G5,deepseek/deepseek-v3.2,location,41,87,Лист подписывают после заполнения обеих строк.,uncertain,1.0,keep,keep
+prospective-anchored,d54189d8805,G2,consensus,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-anchored,d54189d8805,G2,qwen/qwen3-235b-a22b-2507,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-anchored,d54189d8805,G2,google/gemma-4-31b-it,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-anchored,d54189d8805,G2,deepseek/deepseek-v3.2,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-anchored,95ef4a71fff,G1,consensus,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-anchored,95ef4a71fff,G1,qwen/qwen3-235b-a22b-2507,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-anchored,95ef4a71fff,G1,google/gemma-4-31b-it,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-anchored,95ef4a71fff,G1,deepseek/deepseek-v3.2,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-anchored,ccf84b5c902,G7,consensus,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-anchored,ccf84b5c902,G7,qwen/qwen3-235b-a22b-2507,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-anchored,ccf84b5c902,G7,google/gemma-4-31b-it,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-anchored,ccf84b5c902,G7,deepseek/deepseek-v3.2,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,unavailable,unavailable
+prospective-anchored,3ca26ba5226,G3,consensus,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-anchored,3ca26ba5226,G3,qwen/qwen3-235b-a22b-2507,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-anchored,3ca26ba5226,G3,google/gemma-4-31b-it,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-anchored,3ca26ba5226,G3,deepseek/deepseek-v3.2,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-anchored,864a6b7f87b,G4,consensus,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-anchored,864a6b7f87b,G4,qwen/qwen3-235b-a22b-2507,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-anchored,864a6b7f87b,G4,google/gemma-4-31b-it,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-anchored,864a6b7f87b,G4,deepseek/deepseek-v3.2,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,unavailable,unavailable
+prospective-anchored,38dd083254b,G3,consensus,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-anchored,38dd083254b,G3,qwen/qwen3-235b-a22b-2507,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-anchored,38dd083254b,G3,google/gemma-4-31b-it,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-anchored,38dd083254b,G3,deepseek/deepseek-v3.2,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-anchored,b7c04625cc5,G7,consensus,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-anchored,b7c04625cc5,G7,qwen/qwen3-235b-a22b-2507,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-anchored,b7c04625cc5,G7,google/gemma-4-31b-it,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-anchored,b7c04625cc5,G7,deepseek/deepseek-v3.2,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-anchored,065972bce8e,G4,consensus,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-anchored,065972bce8e,G4,qwen/qwen3-235b-a22b-2507,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,uncertain,uncertain
+prospective-anchored,065972bce8e,G4,google/gemma-4-31b-it,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-anchored,065972bce8e,G4,deepseek/deepseek-v3.2,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-base-r2,a29bc6c9533,G4,returned,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-base-r2,24b2d1c84ee,G5,returned,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,flag,flag
+prospective-base-r2,24b2d1c84ee,G5,returned,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-base-r2,f75f37e682c,G2,returned,0,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,flag,flag
+prospective-base-r2,87a23dc922f,G9,returned,0,131,175,и утренний замер вычеркнули из журнала смены,,0.0,flag,flag
+prospective-base-r2,c4343257229,G6,returned,0,146,158,у двора свои,,0.3,flag,flag
+prospective-base-r2,73fc6603a6b,G8,returned,0,95,110,выйдет на сцену,,0.3,flag,flag
+prospective-base-r2,b5f8ea69e31,G5,returned,0,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-base-r2,d9cff664905,G8,returned,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,flag,flag
+prospective-base-r2,9e47865028c,G1,returned,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,flag,flag
+prospective-base-r2,bd0785541c1,G5,returned,0,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-base-r2,d54189d8805,G2,returned,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,flag,flag
+prospective-base-r2,ccf84b5c902,G7,returned,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,uncertain,uncertain
+prospective-base-r2,3ca26ba5226,G3,returned,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,flag,flag
+prospective-base-r2,864a6b7f87b,G4,returned,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,flag,flag
+prospective-base-r2,38dd083254b,G3,returned,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,flag,flag
+prospective-base-r2,b7c04625cc5,G7,returned,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,flag,flag
+prospective-base-r2,065972bce8e,G4,returned,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,flag,flag
+prospective-fixed,e31cc68d85b,G7,consensus,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-fixed,e31cc68d85b,G7,qwen/qwen3-235b-a22b-2507,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,unavailable,unavailable
+prospective-fixed,e31cc68d85b,G7,google/gemma-4-31b-it,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-fixed,e31cc68d85b,G7,deepseek/deepseek-v3.2,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-fixed,6557f3091dd,G6,consensus,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,keep,keep
+prospective-fixed,6557f3091dd,G6,qwen/qwen3-235b-a22b-2507,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,keep,keep
+prospective-fixed,6557f3091dd,G6,google/gemma-4-31b-it,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,keep,keep
+prospective-fixed,6557f3091dd,G6,deepseek/deepseek-v3.2,location,61,101,"У чердака свои сторонники, у двора свои.",keep,1.0,keep,keep
+prospective-fixed,a29bc6c9533,G4,consensus,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-fixed,a29bc6c9533,G4,qwen/qwen3-235b-a22b-2507,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-fixed,a29bc6c9533,G4,google/gemma-4-31b-it,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-fixed,a29bc6c9533,G4,deepseek/deepseek-v3.2,location,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,keep,keep
+prospective-fixed,f75f37e682c,G2,consensus,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-fixed,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-fixed,f75f37e682c,G2,google/gemma-4-31b-it,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-fixed,f75f37e682c,G2,deepseek/deepseek-v3.2,location,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-fixed,7b164626a94,G9,consensus,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-fixed,7b164626a94,G9,qwen/qwen3-235b-a22b-2507,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-fixed,7b164626a94,G9,google/gemma-4-31b-it,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-fixed,7b164626a94,G9,deepseek/deepseek-v3.2,location,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-fixed,87a23dc922f,G9,consensus,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-fixed,87a23dc922f,G9,qwen/qwen3-235b-a22b-2507,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-fixed,87a23dc922f,G9,google/gemma-4-31b-it,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-fixed,87a23dc922f,G9,deepseek/deepseek-v3.2,location,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-fixed,c4343257229,G6,consensus,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,keep,keep
+prospective-fixed,c4343257229,G6,qwen/qwen3-235b-a22b-2507,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,keep,keep
+prospective-fixed,c4343257229,G6,google/gemma-4-31b-it,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,keep,keep
+prospective-fixed,c4343257229,G6,deepseek/deepseek-v3.2,location,119,159,"У чердака свои сторонники, у двора свои.",flag,1.0,unavailable,unavailable
+prospective-fixed,73fc6603a6b,G8,consensus,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-fixed,73fc6603a6b,G8,qwen/qwen3-235b-a22b-2507,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-fixed,73fc6603a6b,G8,google/gemma-4-31b-it,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-fixed,73fc6603a6b,G8,deepseek/deepseek-v3.2,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-fixed,d9cff664905,G8,consensus,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-fixed,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,unavailable,unavailable
+prospective-fixed,d9cff664905,G8,google/gemma-4-31b-it,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-fixed,d9cff664905,G8,deepseek/deepseek-v3.2,location,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-fixed,9e47865028c,G1,consensus,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-fixed,9e47865028c,G1,qwen/qwen3-235b-a22b-2507,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-fixed,9e47865028c,G1,google/gemma-4-31b-it,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-fixed,9e47865028c,G1,deepseek/deepseek-v3.2,location,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-fixed,d54189d8805,G2,consensus,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-fixed,d54189d8805,G2,qwen/qwen3-235b-a22b-2507,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-fixed,d54189d8805,G2,google/gemma-4-31b-it,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-fixed,d54189d8805,G2,deepseek/deepseek-v3.2,location,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-fixed,95ef4a71fff,G1,consensus,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-fixed,95ef4a71fff,G1,qwen/qwen3-235b-a22b-2507,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-fixed,95ef4a71fff,G1,google/gemma-4-31b-it,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-fixed,95ef4a71fff,G1,deepseek/deepseek-v3.2,location,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,keep,keep
+prospective-fixed,ccf84b5c902,G7,consensus,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-fixed,ccf84b5c902,G7,qwen/qwen3-235b-a22b-2507,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-fixed,ccf84b5c902,G7,google/gemma-4-31b-it,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-fixed,ccf84b5c902,G7,deepseek/deepseek-v3.2,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-fixed,3ca26ba5226,G3,consensus,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-fixed,3ca26ba5226,G3,qwen/qwen3-235b-a22b-2507,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-fixed,3ca26ba5226,G3,google/gemma-4-31b-it,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-fixed,3ca26ba5226,G3,deepseek/deepseek-v3.2,location,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-fixed,864a6b7f87b,G4,consensus,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-fixed,864a6b7f87b,G4,qwen/qwen3-235b-a22b-2507,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-fixed,864a6b7f87b,G4,google/gemma-4-31b-it,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-fixed,864a6b7f87b,G4,deepseek/deepseek-v3.2,location,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,unavailable,unavailable
+prospective-fixed,38dd083254b,G3,consensus,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-fixed,38dd083254b,G3,qwen/qwen3-235b-a22b-2507,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-fixed,38dd083254b,G3,google/gemma-4-31b-it,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-fixed,38dd083254b,G3,deepseek/deepseek-v3.2,location,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-fixed,b7c04625cc5,G7,consensus,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-fixed,b7c04625cc5,G7,qwen/qwen3-235b-a22b-2507,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-fixed,b7c04625cc5,G7,google/gemma-4-31b-it,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-fixed,b7c04625cc5,G7,deepseek/deepseek-v3.2,location,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-fixed,065972bce8e,G4,consensus,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-fixed,065972bce8e,G4,qwen/qwen3-235b-a22b-2507,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,uncertain,uncertain
+prospective-fixed,065972bce8e,G4,google/gemma-4-31b-it,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-fixed,065972bce8e,G4,deepseek/deepseek-v3.2,location,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-oneshot,a29bc6c9533,G4,returned,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-oneshot,24b2d1c84ee,G5,returned,0,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-oneshot,87a23dc922f,G9,returned,0,131,175,и утренний замер вычеркнули из журнала смены,,0.0,flag,flag
+prospective-oneshot,d9cff664905,G8,returned,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,flag,flag
+prospective-oneshot,9e47865028c,G1,returned,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,flag,flag
+prospective-oneshot,bd0785541c1,G5,returned,0,41,87,Лист подписывают после заполнения обеих строк.,uncertain,1.0,flag,flag
+prospective-oneshot,bd0785541c1,G5,returned,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-oneshot,d54189d8805,G2,returned,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,flag,flag
+prospective-oneshot,95ef4a71fff,G1,returned,0,132,167,Одна стрелка привела к нам пятерых.,keep,1.0,flag,flag
+prospective-oneshot,3ca26ba5226,G3,returned,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,flag,flag
+prospective-oneshot,864a6b7f87b,G4,returned,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,flag,flag
+prospective-oneshot,38dd083254b,G3,returned,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,flag,flag
+prospective-oneshot,b7c04625cc5,G7,returned,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,flag,flag
+prospective-oneshot,065972bce8e,G4,returned,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,flag,flag
+prospective-r2-retry,065972bce8e,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-r2-retry,065972bce8e,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,unavailable,unavailable
+prospective-r2-retry,065972bce8e,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-r2-retry,065972bce8e,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-repeat-complete,e31cc68d85b,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-repeat-complete,e31cc68d85b,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-repeat-complete,e31cc68d85b,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-repeat-complete,e31cc68d85b,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-repeat-complete,a29bc6c9533,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-repeat-complete,a29bc6c9533,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-repeat-complete,a29bc6c9533,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-repeat-complete,a29bc6c9533,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,keep,keep
+prospective-repeat-complete,24b2d1c84ee,G5,consensus,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-repeat-complete,24b2d1c84ee,G5,qwen/qwen3-235b-a22b-2507,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-repeat-complete,24b2d1c84ee,G5,google/gemma-4-31b-it,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-repeat-complete,24b2d1c84ee,G5,deepseek/deepseek-v3.2,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-repeat-complete,24b2d1c84ee,G5,consensus,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-repeat-complete,24b2d1c84ee,G5,qwen/qwen3-235b-a22b-2507,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,unavailable,unavailable
+prospective-repeat-complete,24b2d1c84ee,G5,google/gemma-4-31b-it,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-repeat-complete,24b2d1c84ee,G5,deepseek/deepseek-v3.2,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,consensus,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,unavailable,unavailable
+prospective-repeat-complete,f75f37e682c,G2,google/gemma-4-31b-it,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,deepseek/deepseek-v3.2,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,consensus,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,google/gemma-4-31b-it,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,deepseek/deepseek-v3.2,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,consensus,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,google/gemma-4-31b-it,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,deepseek/deepseek-v3.2,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,consensus,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,google/gemma-4-31b-it,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-repeat-complete,f75f37e682c,G2,deepseek/deepseek-v3.2,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-repeat-complete,7b164626a94,G9,consensus,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-repeat-complete,7b164626a94,G9,qwen/qwen3-235b-a22b-2507,0,134,167,Так закончилась история с креном.,flag,1.0,unavailable,unavailable
+prospective-repeat-complete,7b164626a94,G9,google/gemma-4-31b-it,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-repeat-complete,7b164626a94,G9,deepseek/deepseek-v3.2,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-repeat-complete,87a23dc922f,G9,consensus,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-repeat-complete,87a23dc922f,G9,qwen/qwen3-235b-a22b-2507,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-repeat-complete,87a23dc922f,G9,google/gemma-4-31b-it,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-repeat-complete,87a23dc922f,G9,deepseek/deepseek-v3.2,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-repeat-complete,73fc6603a6b,G8,consensus,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-repeat-complete,73fc6603a6b,G8,qwen/qwen3-235b-a22b-2507,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-repeat-complete,73fc6603a6b,G8,google/gemma-4-31b-it,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-repeat-complete,73fc6603a6b,G8,deepseek/deepseek-v3.2,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-repeat-complete,b5f8ea69e31,G5,consensus,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-repeat-complete,b5f8ea69e31,G5,qwen/qwen3-235b-a22b-2507,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-repeat-complete,b5f8ea69e31,G5,google/gemma-4-31b-it,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-repeat-complete,b5f8ea69e31,G5,deepseek/deepseek-v3.2,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-repeat-complete,b5f8ea69e31,G5,consensus,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,uncertain,uncertain
+prospective-repeat-complete,b5f8ea69e31,G5,qwen/qwen3-235b-a22b-2507,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,unavailable,unavailable
+prospective-repeat-complete,b5f8ea69e31,G5,google/gemma-4-31b-it,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-repeat-complete,b5f8ea69e31,G5,deepseek/deepseek-v3.2,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-repeat-complete,d9cff664905,G8,consensus,0,61,66,Пусть,,0.1,keep,keep
+prospective-repeat-complete,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,0,61,66,Пусть,,0.1,keep,keep
+prospective-repeat-complete,d9cff664905,G8,google/gemma-4-31b-it,0,61,66,Пусть,,0.1,keep,keep
+prospective-repeat-complete,d9cff664905,G8,deepseek/deepseek-v3.2,0,61,66,Пусть,,0.1,keep,keep
+prospective-repeat-complete,d9cff664905,G8,consensus,1,67,86,выцветший полосатик,,0.38,keep,keep
+prospective-repeat-complete,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,1,67,86,выцветший полосатик,,0.38,unavailable,unavailable
+prospective-repeat-complete,d9cff664905,G8,google/gemma-4-31b-it,1,67,86,выцветший полосатик,,0.38,keep,keep
+prospective-repeat-complete,d9cff664905,G8,deepseek/deepseek-v3.2,1,67,86,выцветший полосатик,,0.38,keep,keep
+prospective-repeat-complete,d9cff664905,G8,consensus,2,87,110,ещё раз выйдет на сцену,,0.46,keep,keep
+prospective-repeat-complete,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,2,87,110,ещё раз выйдет на сцену,,0.46,unavailable,unavailable
+prospective-repeat-complete,d9cff664905,G8,google/gemma-4-31b-it,2,87,110,ещё раз выйдет на сцену,,0.46,keep,keep
+prospective-repeat-complete,d9cff664905,G8,deepseek/deepseek-v3.2,2,87,110,ещё раз выйдет на сцену,,0.46,keep,keep
+prospective-repeat-complete,d9cff664905,G8,consensus,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,keep,keep
+prospective-repeat-complete,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,unavailable,unavailable
+prospective-repeat-complete,d9cff664905,G8,google/gemma-4-31b-it,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,keep,keep
+prospective-repeat-complete,d9cff664905,G8,deepseek/deepseek-v3.2,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,keep,keep
+prospective-repeat-complete,9e47865028c,G1,consensus,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-repeat-complete,9e47865028c,G1,qwen/qwen3-235b-a22b-2507,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-repeat-complete,9e47865028c,G1,google/gemma-4-31b-it,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,unavailable,unavailable
+prospective-repeat-complete,9e47865028c,G1,deepseek/deepseek-v3.2,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-repeat-complete,d54189d8805,G2,consensus,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-repeat-complete,d54189d8805,G2,qwen/qwen3-235b-a22b-2507,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-repeat-complete,d54189d8805,G2,google/gemma-4-31b-it,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-repeat-complete,d54189d8805,G2,deepseek/deepseek-v3.2,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-repeat-complete,ccf84b5c902,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-repeat-complete,ccf84b5c902,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-repeat-complete,ccf84b5c902,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-repeat-complete,ccf84b5c902,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-repeat-complete,3ca26ba5226,G3,consensus,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-repeat-complete,3ca26ba5226,G3,qwen/qwen3-235b-a22b-2507,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,unavailable,unavailable
+prospective-repeat-complete,3ca26ba5226,G3,google/gemma-4-31b-it,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-repeat-complete,3ca26ba5226,G3,deepseek/deepseek-v3.2,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-repeat-complete,864a6b7f87b,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-repeat-complete,864a6b7f87b,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-repeat-complete,864a6b7f87b,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-repeat-complete,864a6b7f87b,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,unavailable,unavailable
+prospective-repeat-complete,38dd083254b,G3,consensus,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-repeat-complete,38dd083254b,G3,qwen/qwen3-235b-a22b-2507,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-repeat-complete,38dd083254b,G3,google/gemma-4-31b-it,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,flag,flag
+prospective-repeat-complete,38dd083254b,G3,deepseek/deepseek-v3.2,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-repeat-complete,b7c04625cc5,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-repeat-complete,b7c04625cc5,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-repeat-complete,b7c04625cc5,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-repeat-complete,b7c04625cc5,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,flag,flag
+prospective-repeat-complete,065972bce8e,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-repeat-complete,065972bce8e,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,unavailable,unavailable
+prospective-repeat-complete,065972bce8e,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-repeat-complete,065972bce8e,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-search,e31cc68d85b,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search,e31cc68d85b,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search,e31cc68d85b,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search,e31cc68d85b,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search,a29bc6c9533,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-search,a29bc6c9533,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-search,a29bc6c9533,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-search,a29bc6c9533,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-search,24b2d1c84ee,G5,consensus,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search,24b2d1c84ee,G5,qwen/qwen3-235b-a22b-2507,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search,24b2d1c84ee,G5,google/gemma-4-31b-it,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search,24b2d1c84ee,G5,deepseek/deepseek-v3.2,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search,24b2d1c84ee,G5,consensus,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search,24b2d1c84ee,G5,qwen/qwen3-235b-a22b-2507,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,unavailable,unavailable
+prospective-search,24b2d1c84ee,G5,google/gemma-4-31b-it,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search,24b2d1c84ee,G5,deepseek/deepseek-v3.2,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,consensus,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-search,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-search,f75f37e682c,G2,google/gemma-4-31b-it,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-search,f75f37e682c,G2,deepseek/deepseek-v3.2,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-search,f75f37e682c,G2,consensus,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,google/gemma-4-31b-it,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,deepseek/deepseek-v3.2,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,consensus,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search,f75f37e682c,G2,google/gemma-4-31b-it,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search,f75f37e682c,G2,deepseek/deepseek-v3.2,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search,f75f37e682c,G2,consensus,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,google/gemma-4-31b-it,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search,f75f37e682c,G2,deepseek/deepseek-v3.2,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search,7b164626a94,G9,consensus,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-search,7b164626a94,G9,qwen/qwen3-235b-a22b-2507,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-search,7b164626a94,G9,google/gemma-4-31b-it,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-search,7b164626a94,G9,deepseek/deepseek-v3.2,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-search,87a23dc922f,G9,consensus,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search,87a23dc922f,G9,qwen/qwen3-235b-a22b-2507,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search,87a23dc922f,G9,google/gemma-4-31b-it,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search,87a23dc922f,G9,deepseek/deepseek-v3.2,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search,c4343257229,G6,consensus,0,51,118,Про чердак спросили только одно — кто заберёт оттуда старые стулья.,,0.0,keep,keep
+prospective-search,c4343257229,G6,qwen/qwen3-235b-a22b-2507,0,51,118,Про чердак спросили только одно — кто заберёт оттуда старые стулья.,,0.0,keep,keep
+prospective-search,c4343257229,G6,google/gemma-4-31b-it,0,51,118,Про чердак спросили только одно — кто заберёт оттуда старые стулья.,,0.0,keep,keep
+prospective-search,c4343257229,G6,deepseek/deepseek-v3.2,0,51,118,Про чердак спросили только одно — кто заберёт оттуда старые стулья.,,0.0,keep,keep
+prospective-search,73fc6603a6b,G8,consensus,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-search,73fc6603a6b,G8,qwen/qwen3-235b-a22b-2507,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-search,73fc6603a6b,G8,google/gemma-4-31b-it,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-search,73fc6603a6b,G8,deepseek/deepseek-v3.2,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-search,b5f8ea69e31,G5,consensus,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-search,b5f8ea69e31,G5,qwen/qwen3-235b-a22b-2507,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-search,b5f8ea69e31,G5,google/gemma-4-31b-it,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,flag,flag
+prospective-search,b5f8ea69e31,G5,deepseek/deepseek-v3.2,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-search,d9cff664905,G8,consensus,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-search,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,unavailable,unavailable
+prospective-search,d9cff664905,G8,google/gemma-4-31b-it,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-search,d9cff664905,G8,deepseek/deepseek-v3.2,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,keep,1.0,keep,keep
+prospective-search,bd0785541c1,G5,consensus,0,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search,bd0785541c1,G5,qwen/qwen3-235b-a22b-2507,0,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search,bd0785541c1,G5,google/gemma-4-31b-it,0,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-search,bd0785541c1,G5,deepseek/deepseek-v3.2,0,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search,ccf84b5c902,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search,ccf84b5c902,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search,ccf84b5c902,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search,ccf84b5c902,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search,3ca26ba5226,G3,consensus,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-search,3ca26ba5226,G3,qwen/qwen3-235b-a22b-2507,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-search,3ca26ba5226,G3,google/gemma-4-31b-it,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-search,3ca26ba5226,G3,deepseek/deepseek-v3.2,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-search,864a6b7f87b,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,unavailable,uncertain
+prospective-search,864a6b7f87b,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,unavailable,unavailable
+prospective-search,864a6b7f87b,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-search,864a6b7f87b,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,unavailable,unavailable
+prospective-search,38dd083254b,G3,consensus,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-search,38dd083254b,G3,qwen/qwen3-235b-a22b-2507,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-search,38dd083254b,G3,google/gemma-4-31b-it,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-search,38dd083254b,G3,deepseek/deepseek-v3.2,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-search,b7c04625cc5,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-search,b7c04625cc5,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-search,b7c04625cc5,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-search,b7c04625cc5,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,flag,flag
+prospective-search,065972bce8e,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-search,065972bce8e,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,uncertain,uncertain
+prospective-search,065972bce8e,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-search,065972bce8e,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,uncertain,1.0,keep,keep
+prospective-search-r2,e31cc68d85b,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search-r2,e31cc68d85b,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search-r2,e31cc68d85b,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search-r2,e31cc68d85b,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",keep,1.0,keep,keep
+prospective-search-r2,a29bc6c9533,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-search-r2,a29bc6c9533,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-search-r2,a29bc6c9533,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,flag,flag
+prospective-search-r2,a29bc6c9533,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,flag,1.0,keep,keep
+prospective-search-r2,24b2d1c84ee,G5,consensus,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search-r2,24b2d1c84ee,G5,qwen/qwen3-235b-a22b-2507,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search-r2,24b2d1c84ee,G5,google/gemma-4-31b-it,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search-r2,24b2d1c84ee,G5,deepseek/deepseek-v3.2,0,41,87,Лист подписывают после заполнения обеих строк.,keep,1.0,keep,keep
+prospective-search-r2,24b2d1c84ee,G5,consensus,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search-r2,24b2d1c84ee,G5,qwen/qwen3-235b-a22b-2507,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,unavailable,unavailable
+prospective-search-r2,24b2d1c84ee,G5,google/gemma-4-31b-it,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search-r2,24b2d1c84ee,G5,deepseek/deepseek-v3.2,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,consensus,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,unavailable,unavailable
+prospective-search-r2,f75f37e682c,G2,google/gemma-4-31b-it,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,deepseek/deepseek-v3.2,0,0,75,"Администратор ставит на талоне номер ящика, по нему кладовщик выдаёт заказ.",,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,consensus,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,google/gemma-4-31b-it,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,deepseek/deepseek-v3.2,1,44,74,по нему кладовщик выдаёт заказ,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,consensus,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,google/gemma-4-31b-it,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,deepseek/deepseek-v3.2,2,76,121,"Сначала к администратору, потом к кладовщику.",keep,1.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,consensus,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,qwen/qwen3-235b-a22b-2507,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,google/gemma-4-31b-it,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search-r2,f75f37e682c,G2,deepseek/deepseek-v3.2,3,122,147,Обе двери выходят в фойе.,,0.0,keep,keep
+prospective-search-r2,7b164626a94,G9,consensus,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-search-r2,7b164626a94,G9,qwen/qwen3-235b-a22b-2507,0,134,167,Так закончилась история с креном.,flag,1.0,unavailable,unavailable
+prospective-search-r2,7b164626a94,G9,google/gemma-4-31b-it,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-search-r2,7b164626a94,G9,deepseek/deepseek-v3.2,0,134,167,Так закончилась история с креном.,flag,1.0,keep,keep
+prospective-search-r2,87a23dc922f,G9,consensus,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search-r2,87a23dc922f,G9,qwen/qwen3-235b-a22b-2507,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search-r2,87a23dc922f,G9,google/gemma-4-31b-it,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search-r2,87a23dc922f,G9,deepseek/deepseek-v3.2,0,177,210,Так закончилась история с креном.,keep,1.0,keep,keep
+prospective-search-r2,73fc6603a6b,G8,consensus,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-search-r2,73fc6603a6b,G8,qwen/qwen3-235b-a22b-2507,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-search-r2,73fc6603a6b,G8,google/gemma-4-31b-it,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,flag,flag
+prospective-search-r2,73fc6603a6b,G8,deepseek/deepseek-v3.2,0,61,111,Пусть выцветший полосатик ещё раз выйдет на сцену.,flag,1.0,keep,keep
+prospective-search-r2,b5f8ea69e31,G5,consensus,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-search-r2,b5f8ea69e31,G5,qwen/qwen3-235b-a22b-2507,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-search-r2,b5f8ea69e31,G5,google/gemma-4-31b-it,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-search-r2,b5f8ea69e31,G5,deepseek/deepseek-v3.2,0,41,87,Лист подписывают после заполнения обеих строк.,flag,1.0,keep,keep
+prospective-search-r2,b5f8ea69e31,G5,consensus,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,uncertain,uncertain
+prospective-search-r2,b5f8ea69e31,G5,qwen/qwen3-235b-a22b-2507,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,unavailable,unavailable
+prospective-search-r2,b5f8ea69e31,G5,google/gemma-4-31b-it,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,flag,flag
+prospective-search-r2,b5f8ea69e31,G5,deepseek/deepseek-v3.2,1,128,174,Лист подписывают после заполнения обеих строк.,,0.0,keep,keep
+prospective-search-r2,d9cff664905,G8,consensus,0,61,66,Пусть,,0.1,keep,keep
+prospective-search-r2,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,0,61,66,Пусть,,0.1,keep,keep
+prospective-search-r2,d9cff664905,G8,google/gemma-4-31b-it,0,61,66,Пусть,,0.1,keep,keep
+prospective-search-r2,d9cff664905,G8,deepseek/deepseek-v3.2,0,61,66,Пусть,,0.1,keep,keep
+prospective-search-r2,d9cff664905,G8,consensus,1,67,86,выцветший полосатик,,0.38,keep,keep
+prospective-search-r2,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,1,67,86,выцветший полосатик,,0.38,unavailable,unavailable
+prospective-search-r2,d9cff664905,G8,google/gemma-4-31b-it,1,67,86,выцветший полосатик,,0.38,keep,keep
+prospective-search-r2,d9cff664905,G8,deepseek/deepseek-v3.2,1,67,86,выцветший полосатик,,0.38,keep,keep
+prospective-search-r2,d9cff664905,G8,consensus,2,87,110,ещё раз выйдет на сцену,,0.46,keep,keep
+prospective-search-r2,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,2,87,110,ещё раз выйдет на сцену,,0.46,unavailable,unavailable
+prospective-search-r2,d9cff664905,G8,google/gemma-4-31b-it,2,87,110,ещё раз выйдет на сцену,,0.46,keep,keep
+prospective-search-r2,d9cff664905,G8,deepseek/deepseek-v3.2,2,87,110,ещё раз выйдет на сцену,,0.46,keep,keep
+prospective-search-r2,d9cff664905,G8,consensus,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,keep,keep
+prospective-search-r2,d9cff664905,G8,qwen/qwen3-235b-a22b-2507,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,unavailable,unavailable
+prospective-search-r2,d9cff664905,G8,google/gemma-4-31b-it,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,keep,keep
+prospective-search-r2,d9cff664905,G8,deepseek/deepseek-v3.2,3,112,168,За подкладкой в правом углу осталась английская булавка.,,0.0,keep,keep
+prospective-search-r2,9e47865028c,G1,consensus,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-search-r2,9e47865028c,G1,qwen/qwen3-235b-a22b-2507,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-search-r2,9e47865028c,G1,google/gemma-4-31b-it,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,unavailable,unavailable
+prospective-search-r2,9e47865028c,G1,deepseek/deepseek-v3.2,0,133,168,Одна стрелка привела к нам пятерых.,flag,1.0,keep,keep
+prospective-search-r2,d54189d8805,G2,consensus,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-search-r2,d54189d8805,G2,qwen/qwen3-235b-a22b-2507,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-search-r2,d54189d8805,G2,google/gemma-4-31b-it,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-search-r2,d54189d8805,G2,deepseek/deepseek-v3.2,0,91,136,"Сначала к администратору, потом к кладовщику.",flag,1.0,keep,keep
+prospective-search-r2,ccf84b5c902,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search-r2,ccf84b5c902,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search-r2,ccf84b5c902,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search-r2,ccf84b5c902,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",uncertain,1.0,keep,keep
+prospective-search-r2,3ca26ba5226,G3,consensus,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-search-r2,3ca26ba5226,G3,qwen/qwen3-235b-a22b-2507,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,unavailable,unavailable
+prospective-search-r2,3ca26ba5226,G3,google/gemma-4-31b-it,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-search-r2,3ca26ba5226,G3,deepseek/deepseek-v3.2,0,133,196,"Как досадно, когда подарок не удаётся вручить в тот самый день.",keep,1.0,keep,keep
+prospective-search-r2,864a6b7f87b,G4,consensus,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-search-r2,864a6b7f87b,G4,qwen/qwen3-235b-a22b-2507,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-search-r2,864a6b7f87b,G4,google/gemma-4-31b-it,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,keep,keep
+prospective-search-r2,864a6b7f87b,G4,deepseek/deepseek-v3.2,0,113,155,А как бы вы поступили с третьим конвертом?,keep,1.0,unavailable,unavailable
+prospective-search-r2,38dd083254b,G3,consensus,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-search-r2,38dd083254b,G3,qwen/qwen3-235b-a22b-2507,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-search-r2,38dd083254b,G3,google/gemma-4-31b-it,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,flag,flag
+prospective-search-r2,38dd083254b,G3,deepseek/deepseek-v3.2,0,48,111,"Как досадно, когда подарок не удаётся вручить в тот самый день.",flag,1.0,keep,keep
+prospective-search-r2,b7c04625cc5,G7,consensus,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-search-r2,b7c04625cc5,G7,qwen/qwen3-235b-a22b-2507,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-search-r2,b7c04625cc5,G7,google/gemma-4-31b-it,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,keep,keep
+prospective-search-r2,b7c04625cc5,G7,deepseek/deepseek-v3.2,0,110,169,"С тех пор я точно знаю, что у каждой паузы есть свой голос.",flag,1.0,flag,flag
+routed-both,0b5f3afe47f2,срок,consensus,0,0,99,"Всё идёт по плану. Машина пришла к 08:00, погрузку закончили к 09:00; оба срока совпали с графиком.",,0.18181818181818182,keep,keep
+routed-both,0b5f3afe47f2,срок,qwen/qwen3-30b-a3b-instruct-2507,0,0,99,"Всё идёт по плану. Машина пришла к 08:00, погрузку закончили к 09:00; оба срока совпали с графиком.",,0.18181818181818182,keep,keep
+routed-both,0b5f3afe47f2,срок,google/gemma-3-27b-it,0,0,99,"Всё идёт по плану. Машина пришла к 08:00, погрузку закончили к 09:00; оба срока совпали с графиком.",,0.18181818181818182,keep,keep
+routed-both,0b5f3afe47f2,срок,deepseek/deepseek-v3.2,0,0,99,"Всё идёт по плану. Машина пришла к 08:00, погрузку закончили к 09:00; оба срока совпали с графиком.",,0.18181818181818182,keep,keep
+routed-both,1f19f3293f1b,опрос,consensus,0,0,84,Все участники остались довольны. В полученных семи анкетах каждый отметил «доволен».,,0.38095238095238093,keep,keep
+routed-both,1f19f3293f1b,опрос,qwen/qwen3-30b-a3b-instruct-2507,0,0,84,Все участники остались довольны. В полученных семи анкетах каждый отметил «доволен».,,0.38095238095238093,keep,keep
+routed-both,1f19f3293f1b,опрос,google/gemma-3-27b-it,0,0,84,Все участники остались довольны. В полученных семи анкетах каждый отметил «доволен».,,0.38095238095238093,keep,keep
+routed-both,1f19f3293f1b,опрос,deepseek/deepseek-v3.2,0,0,84,Все участники остались довольны. В полученных семи анкетах каждый отметил «доволен».,,0.38095238095238093,keep,keep
+routed-both,292cb97c3952,тираж,consensus,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-both,292cb97c3952,тираж,qwen/qwen3-30b-a3b-instruct-2507,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-both,292cb97c3952,тираж,google/gemma-3-27b-it,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-both,292cb97c3952,тираж,deepseek/deepseek-v3.2,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-both,294cc8735c5f,владение,consensus,0,0,39,Партия задержана из-за отсутствия тары.,,0.0,keep,keep
+routed-both,294cc8735c5f,владение,qwen/qwen3-30b-a3b-instruct-2507,0,0,39,Партия задержана из-за отсутствия тары.,,0.0,keep,keep
+routed-both,294cc8735c5f,владение,google/gemma-3-27b-it,0,0,39,Партия задержана из-за отсутствия тары.,,0.0,keep,keep
+routed-both,294cc8735c5f,владение,deepseek/deepseek-v3.2,0,0,39,Партия задержана из-за отсутствия тары.,,0.0,keep,keep
+routed-both,294cc8735c5f,владение,consensus,1,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-both,294cc8735c5f,владение,qwen/qwen3-30b-a3b-instruct-2507,1,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-both,294cc8735c5f,владение,google/gemma-3-27b-it,1,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-both,294cc8735c5f,владение,deepseek/deepseek-v3.2,1,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-both,2b7e6a018afd,срок,consensus,0,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,keep,keep
+routed-both,2b7e6a018afd,срок,qwen/qwen3-30b-a3b-instruct-2507,0,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,keep,keep
+routed-both,2b7e6a018afd,срок,google/gemma-3-27b-it,0,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,keep,keep
+routed-both,2b7e6a018afd,срок,deepseek/deepseek-v3.2,0,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,keep,keep
+routed-both,46ea1e2e7838,владение,consensus,0,0,31,«Трудности делают нас сильнее.»,keep,0.9354838709677419,keep,keep
+routed-both,46ea1e2e7838,владение,qwen/qwen3-30b-a3b-instruct-2507,0,0,31,«Трудности делают нас сильнее.»,keep,0.9354838709677419,keep,keep
+routed-both,46ea1e2e7838,владение,google/gemma-3-27b-it,0,0,31,«Трудности делают нас сильнее.»,keep,0.9354838709677419,flag,flag
+routed-both,46ea1e2e7838,владение,deepseek/deepseek-v3.2,0,0,31,«Трудности делают нас сильнее.»,keep,0.9354838709677419,keep,keep
+routed-both,46ea1e2e7838,владение,consensus,1,0,76,«Трудности делают нас сильнее.» — произнёс начальник и опять не назвал срок.,,0.3815789473684211,keep,keep
+routed-both,46ea1e2e7838,владение,qwen/qwen3-30b-a3b-instruct-2507,1,0,76,«Трудности делают нас сильнее.» — произнёс начальник и опять не назвал срок.,,0.3815789473684211,keep,keep
+routed-both,46ea1e2e7838,владение,google/gemma-3-27b-it,1,0,76,«Трудности делают нас сильнее.» — произнёс начальник и опять не назвал срок.,,0.3815789473684211,keep,keep
+routed-both,46ea1e2e7838,владение,deepseek/deepseek-v3.2,1,0,76,«Трудности делают нас сильнее.» — произнёс начальник и опять не назвал срок.,,0.3815789473684211,keep,keep
+routed-both,46ea1e2e7838,владение,consensus,2,55,75,опять не назвал срок,,0.0,uncertain,uncertain
+routed-both,46ea1e2e7838,владение,qwen/qwen3-30b-a3b-instruct-2507,2,55,75,опять не назвал срок,,0.0,flag,flag
+routed-both,46ea1e2e7838,владение,google/gemma-3-27b-it,2,55,75,опять не назвал срок,,0.0,uncertain,uncertain
+routed-both,46ea1e2e7838,владение,deepseek/deepseek-v3.2,2,55,75,опять не назвал срок,,0.0,keep,keep
+routed-both,482273164b21,ритм,consensus,0,0,72,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее.,,0.0,keep,keep
+routed-both,482273164b21,ритм,qwen/qwen3-30b-a3b-instruct-2507,0,0,72,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее.,,0.0,keep,keep
+routed-both,482273164b21,ритм,google/gemma-3-27b-it,0,0,72,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее.,,0.0,keep,keep
+routed-both,482273164b21,ритм,deepseek/deepseek-v3.2,0,0,72,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее.,,0.0,keep,keep
+routed-both,482273164b21,ритм,consensus,1,0,96,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее. Быстрее. Выше. Сильнее.,,0.23958333333333334,flag,flag
+routed-both,482273164b21,ритм,qwen/qwen3-30b-a3b-instruct-2507,1,0,96,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее. Быстрее. Выше. Сильнее.,,0.23958333333333334,flag,flag
+routed-both,482273164b21,ритм,google/gemma-3-27b-it,1,0,96,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее. Быстрее. Выше. Сильнее.,,0.23958333333333334,flag,flag
+routed-both,482273164b21,ритм,deepseek/deepseek-v3.2,1,0,96,Со вторника накладные выдаются у стойки № 2. Время обслуживания прежнее. Быстрее. Выше. Сильнее.,,0.23958333333333334,keep,keep
+routed-both,482273164b21,ритм,consensus,2,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+routed-both,482273164b21,ритм,qwen/qwen3-30b-a3b-instruct-2507,2,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+routed-both,482273164b21,ритм,google/gemma-3-27b-it,2,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+routed-both,482273164b21,ритм,deepseek/deepseek-v3.2,2,73,96,Быстрее. Выше. Сильнее.,flag,1.0,keep,keep
+routed-both,4dc9de74f611,диспетчер,consensus,0,0,116,"На вопрос, кто вызовет электрика, начальник отвечает: «Нам важно объединить усилия.» Диспетчер молча набирает номер.",,0.2413793103448276,keep,keep
+routed-both,4dc9de74f611,диспетчер,qwen/qwen3-30b-a3b-instruct-2507,0,0,116,"На вопрос, кто вызовет электрика, начальник отвечает: «Нам важно объединить усилия.» Диспетчер молча набирает номер.",,0.2413793103448276,keep,keep
+routed-both,4dc9de74f611,диспетчер,google/gemma-3-27b-it,0,0,116,"На вопрос, кто вызовет электрика, начальник отвечает: «Нам важно объединить усилия.» Диспетчер молча набирает номер.",,0.2413793103448276,flag,flag
+routed-both,4dc9de74f611,диспетчер,deepseek/deepseek-v3.2,0,0,116,"На вопрос, кто вызовет электрика, начальник отвечает: «Нам важно объединить усилия.» Диспетчер молча набирает номер.",,0.2413793103448276,keep,keep
+routed-both,53ac471576bc,доступ,consensus,0,0,64,Журнал откроется во вторник в 09:00 без дополнительных действий.,,0.0,keep,keep
+routed-both,53ac471576bc,доступ,qwen/qwen3-30b-a3b-instruct-2507,0,0,64,Журнал откроется во вторник в 09:00 без дополнительных действий.,,0.0,keep,keep
+routed-both,53ac471576bc,доступ,google/gemma-3-27b-it,0,0,64,Журнал откроется во вторник в 09:00 без дополнительных действий.,,0.0,keep,keep
+routed-both,53ac471576bc,доступ,deepseek/deepseek-v3.2,0,0,64,Журнал откроется во вторник в 09:00 без дополнительных действий.,,0.0,keep,keep
+routed-both,53ac471576bc,доступ,consensus,1,0,86,Журнал откроется во вторник в 09:00 без дополнительных действий. Оставайтесь на связи.,,0.2441860465116279,keep,keep
+routed-both,53ac471576bc,доступ,qwen/qwen3-30b-a3b-instruct-2507,1,0,86,Журнал откроется во вторник в 09:00 без дополнительных действий. Оставайтесь на связи.,,0.2441860465116279,keep,keep
+routed-both,53ac471576bc,доступ,google/gemma-3-27b-it,1,0,86,Журнал откроется во вторник в 09:00 без дополнительных действий. Оставайтесь на связи.,,0.2441860465116279,keep,keep
+routed-both,53ac471576bc,доступ,deepseek/deepseek-v3.2,1,0,86,Журнал откроется во вторник в 09:00 без дополнительных действий. Оставайтесь на связи.,,0.2441860465116279,keep,keep
+routed-both,58a18181ed6f,словарь,consensus,0,0,60,Библиотекарь передала редактору очередной экземпляр словаря.,,0.0,keep,keep
+routed-both,58a18181ed6f,словарь,qwen/qwen3-30b-a3b-instruct-2507,0,0,60,Библиотекарь передала редактору очередной экземпляр словаря.,,0.0,keep,keep
+routed-both,58a18181ed6f,словарь,google/gemma-3-27b-it,0,0,60,Библиотекарь передала редактору очередной экземпляр словаря.,,0.0,keep,keep
+routed-both,58a18181ed6f,словарь,deepseek/deepseek-v3.2,0,0,60,Библиотекарь передала редактору очередной экземпляр словаря.,,0.0,keep,keep
+routed-both,58a18181ed6f,словарь,consensus,1,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+routed-both,58a18181ed6f,словарь,qwen/qwen3-30b-a3b-instruct-2507,1,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+routed-both,58a18181ed6f,словарь,google/gemma-3-27b-it,1,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+routed-both,58a18181ed6f,словарь,deepseek/deepseek-v3.2,1,61,90,Это событие войдёт в историю.,flag,1.0,uncertain,uncertain
+routed-both,65194ea68049,касса,consensus,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-both,65194ea68049,касса,qwen/qwen3-30b-a3b-instruct-2507,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-both,65194ea68049,касса,google/gemma-3-27b-it,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-both,65194ea68049,касса,deepseek/deepseek-v3.2,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-both,65194ea68049,касса,consensus,1,47,132,При утрате квитанции ищем платёж по дате; при споре о сумме поднимаем кассовую ленту.,,0.0,keep,keep
+routed-both,65194ea68049,касса,qwen/qwen3-30b-a3b-instruct-2507,1,47,132,При утрате квитанции ищем платёж по дате; при споре о сумме поднимаем кассовую ленту.,,0.0,keep,keep
+routed-both,65194ea68049,касса,google/gemma-3-27b-it,1,47,132,При утрате квитанции ищем платёж по дате; при споре о сумме поднимаем кассовую ленту.,,0.0,keep,keep
+routed-both,65194ea68049,касса,deepseek/deepseek-v3.2,1,47,132,При утрате квитанции ищем платёж по дате; при споре о сумме поднимаем кассовую ленту.,,0.0,keep,keep
+routed-both,73941c7386d2,диспетчер,consensus,0,0,57,До 10:30 диспетчер должен вызвать электрика к стенду № 4.,,0.0,keep,keep
+routed-both,73941c7386d2,диспетчер,qwen/qwen3-30b-a3b-instruct-2507,0,0,57,До 10:30 диспетчер должен вызвать электрика к стенду № 4.,,0.0,keep,keep
+routed-both,73941c7386d2,диспетчер,google/gemma-3-27b-it,0,0,57,До 10:30 диспетчер должен вызвать электрика к стенду № 4.,,0.0,keep,keep
+routed-both,73941c7386d2,диспетчер,deepseek/deepseek-v3.2,0,0,57,До 10:30 диспетчер должен вызвать электрика к стенду № 4.,,0.0,keep,keep
+routed-both,73941c7386d2,диспетчер,consensus,1,0,86,До 10:30 диспетчер должен вызвать электрика к стенду № 4. Нам важно объединить усилия.,,0.32558139534883723,keep,keep
+routed-both,73941c7386d2,диспетчер,qwen/qwen3-30b-a3b-instruct-2507,1,0,86,До 10:30 диспетчер должен вызвать электрика к стенду № 4. Нам важно объединить усилия.,,0.32558139534883723,keep,keep
+routed-both,73941c7386d2,диспетчер,google/gemma-3-27b-it,1,0,86,До 10:30 диспетчер должен вызвать электрика к стенду № 4. Нам важно объединить усилия.,,0.32558139534883723,uncertain,uncertain
+routed-both,73941c7386d2,диспетчер,deepseek/deepseek-v3.2,1,0,86,До 10:30 диспетчер должен вызвать электрика к стенду № 4. Нам важно объединить усилия.,,0.32558139534883723,keep,keep
+routed-both,74b41c7d153c,музей,consensus,0,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+routed-both,74b41c7d153c,музей,qwen/qwen3-30b-a3b-instruct-2507,0,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+routed-both,74b41c7d153c,музей,google/gemma-3-27b-it,0,59,85,Открываем двери в будущее.,flag,1.0,flag,flag
+routed-both,74b41c7d153c,музей,deepseek/deepseek-v3.2,0,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+routed-both,8217db985a6e,ветвление,consensus,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+routed-both,8217db985a6e,ветвление,qwen/qwen3-30b-a3b-instruct-2507,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+routed-both,8217db985a6e,ветвление,google/gemma-3-27b-it,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+routed-both,8217db985a6e,ветвление,deepseek/deepseek-v3.2,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,keep,keep
+routed-both,88596b20f85f,ветвление,consensus,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,uncertain,uncertain
+routed-both,88596b20f85f,ветвление,qwen/qwen3-30b-a3b-instruct-2507,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,keep,keep
+routed-both,88596b20f85f,ветвление,google/gemma-3-27b-it,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,uncertain,uncertain
+routed-both,88596b20f85f,ветвление,deepseek/deepseek-v3.2,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,flag,flag
+routed-both,8f4adfd64243,тираж,consensus,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,keep,keep
+routed-both,8f4adfd64243,тираж,qwen/qwen3-30b-a3b-instruct-2507,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,keep,keep
+routed-both,8f4adfd64243,тираж,google/gemma-3-27b-it,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+routed-both,8f4adfd64243,тираж,deepseek/deepseek-v3.2,0,57,100,Лучший результат начинается с первого шага.,flag,1.0,keep,keep
+routed-both,90b88e256de0,архив,consensus,0,0,123,"Предстоит провести комплекс мероприятий. Сначала сушим листы, затем восстанавливаем номера, после сверки переснимаем опись.",,0.3252032520325203,keep,keep
+routed-both,90b88e256de0,архив,qwen/qwen3-30b-a3b-instruct-2507,0,0,123,"Предстоит провести комплекс мероприятий. Сначала сушим листы, затем восстанавливаем номера, после сверки переснимаем опись.",,0.3252032520325203,keep,keep
+routed-both,90b88e256de0,архив,google/gemma-3-27b-it,0,0,123,"Предстоит провести комплекс мероприятий. Сначала сушим листы, затем восстанавливаем номера, после сверки переснимаем опись.",,0.3252032520325203,keep,keep
+routed-both,90b88e256de0,архив,deepseek/deepseek-v3.2,0,0,123,"Предстоит провести комплекс мероприятий. Сначала сушим листы, затем восстанавливаем номера, после сверки переснимаем опись.",,0.3252032520325203,keep,keep
+routed-both,90b88e256de0,архив,consensus,1,49,60,сушим листы,,0.0,keep,keep
+routed-both,90b88e256de0,архив,qwen/qwen3-30b-a3b-instruct-2507,1,49,60,сушим листы,,0.0,keep,keep
+routed-both,90b88e256de0,архив,google/gemma-3-27b-it,1,49,60,сушим листы,,0.0,keep,keep
+routed-both,90b88e256de0,архив,deepseek/deepseek-v3.2,1,49,60,сушим листы,,0.0,keep,keep
+routed-both,90b88e256de0,архив,consensus,2,49,122,"сушим листы, затем восстанавливаем номера, после сверки переснимаем опись",,0.0,keep,keep
+routed-both,90b88e256de0,архив,qwen/qwen3-30b-a3b-instruct-2507,2,49,122,"сушим листы, затем восстанавливаем номера, после сверки переснимаем опись",,0.0,keep,keep
+routed-both,90b88e256de0,архив,google/gemma-3-27b-it,2,49,122,"сушим листы, затем восстанавливаем номера, после сверки переснимаем опись",,0.0,keep,keep
+routed-both,90b88e256de0,архив,deepseek/deepseek-v3.2,2,49,122,"сушим листы, затем восстанавливаем номера, после сверки переснимаем опись",,0.0,keep,keep
+routed-both,90b88e256de0,архив,consensus,3,68,90,восстанавливаем номера,,0.0,keep,keep
+routed-both,90b88e256de0,архив,qwen/qwen3-30b-a3b-instruct-2507,3,68,90,восстанавливаем номера,,0.0,keep,keep
+routed-both,90b88e256de0,архив,google/gemma-3-27b-it,3,68,90,восстанавливаем номера,,0.0,keep,keep
+routed-both,90b88e256de0,архив,deepseek/deepseek-v3.2,3,68,90,восстанавливаем номера,,0.0,keep,keep
+routed-both,90b88e256de0,архив,consensus,4,105,122,переснимаем опись,,0.0,keep,keep
+routed-both,90b88e256de0,архив,qwen/qwen3-30b-a3b-instruct-2507,4,105,122,переснимаем опись,,0.0,keep,keep
+routed-both,90b88e256de0,архив,google/gemma-3-27b-it,4,105,122,переснимаем опись,,0.0,keep,keep
+routed-both,90b88e256de0,архив,deepseek/deepseek-v3.2,4,105,122,переснимаем опись,,0.0,keep,keep
+routed-both,90ce4749e4a3,музей,consensus,0,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-both,90ce4749e4a3,музей,qwen/qwen3-30b-a3b-instruct-2507,0,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-both,90ce4749e4a3,музей,google/gemma-3-27b-it,0,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-both,90ce4749e4a3,музей,deepseek/deepseek-v3.2,0,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-both,9768679dc112,ритм,consensus,0,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-both,9768679dc112,ритм,qwen/qwen3-30b-a3b-instruct-2507,0,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-both,9768679dc112,ритм,google/gemma-3-27b-it,0,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-both,9768679dc112,ритм,deepseek/deepseek-v3.2,0,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-both,9883b0919ec9,архив,consensus,0,0,44,В папке описи отсутствует паспорт блока К-7.,,0.0,keep,keep
+routed-both,9883b0919ec9,архив,qwen/qwen3-30b-a3b-instruct-2507,0,0,44,В папке описи отсутствует паспорт блока К-7.,,0.0,keep,keep
+routed-both,9883b0919ec9,архив,google/gemma-3-27b-it,0,0,44,В папке описи отсутствует паспорт блока К-7.,,0.0,keep,keep
+routed-both,9883b0919ec9,архив,deepseek/deepseek-v3.2,0,0,44,В папке описи отсутствует паспорт блока К-7.,,0.0,keep,keep
+routed-both,9883b0919ec9,архив,consensus,1,0,121,В папке описи отсутствует паспорт блока К-7. Ответственный за поиск — хранитель. Предстоит провести комплекс мероприятий.,,0.3305785123966942,keep,keep
+routed-both,9883b0919ec9,архив,qwen/qwen3-30b-a3b-instruct-2507,1,0,121,В папке описи отсутствует паспорт блока К-7. Ответственный за поиск — хранитель. Предстоит провести комплекс мероприятий.,,0.3305785123966942,keep,keep
+routed-both,9883b0919ec9,архив,google/gemma-3-27b-it,1,0,121,В папке описи отсутствует паспорт блока К-7. Ответственный за поиск — хранитель. Предстоит провести комплекс мероприятий.,,0.3305785123966942,flag,flag
+routed-both,9883b0919ec9,архив,deepseek/deepseek-v3.2,1,0,121,В папке описи отсутствует паспорт блока К-7. Ответственный за поиск — хранитель. Предстоит провести комплекс мероприятий.,,0.3305785123966942,keep,keep
+routed-both,bfa75cba8cb2,опрос,consensus,0,0,25,Вернули 11 из 14 бланков.,,0.0,keep,keep
+routed-both,bfa75cba8cb2,опрос,qwen/qwen3-30b-a3b-instruct-2507,0,0,25,Вернули 11 из 14 бланков.,,0.0,keep,keep
+routed-both,bfa75cba8cb2,опрос,google/gemma-3-27b-it,0,0,25,Вернули 11 из 14 бланков.,,0.0,keep,keep
+routed-both,bfa75cba8cb2,опрос,deepseek/deepseek-v3.2,0,0,25,Вернули 11 из 14 бланков.,,0.0,keep,keep
+routed-both,bfa75cba8cb2,опрос,consensus,1,0,81,Вернули 11 из 14 бланков. Ответы пока не читали. Все участники остались довольны.,,0.3950617283950617,keep,keep
+routed-both,bfa75cba8cb2,опрос,qwen/qwen3-30b-a3b-instruct-2507,1,0,81,Вернули 11 из 14 бланков. Ответы пока не читали. Все участники остались довольны.,,0.3950617283950617,keep,keep
+routed-both,bfa75cba8cb2,опрос,google/gemma-3-27b-it,1,0,81,Вернули 11 из 14 бланков. Ответы пока не читали. Все участники остались довольны.,,0.3950617283950617,flag,flag
+routed-both,bfa75cba8cb2,опрос,deepseek/deepseek-v3.2,1,0,81,Вернули 11 из 14 бланков. Ответы пока не читали. Все участники остались довольны.,,0.3950617283950617,keep,keep
+routed-both,c2f6e4a30e13,касса,consensus,0,0,59,Залог возвращает кассир при предъявлении ключа и квитанции.,,0.0,keep,keep
+routed-both,c2f6e4a30e13,касса,qwen/qwen3-30b-a3b-instruct-2507,0,0,59,Залог возвращает кассир при предъявлении ключа и квитанции.,,0.0,keep,keep
+routed-both,c2f6e4a30e13,касса,google/gemma-3-27b-it,0,0,59,Залог возвращает кассир при предъявлении ключа и квитанции.,,0.0,keep,keep
+routed-both,c2f6e4a30e13,касса,deepseek/deepseek-v3.2,0,0,59,Залог возвращает кассир при предъявлении ключа и квитанции.,,0.0,keep,keep
+routed-both,c2f6e4a30e13,касса,consensus,1,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,uncertain,uncertain
+routed-both,c2f6e4a30e13,касса,qwen/qwen3-30b-a3b-instruct-2507,1,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,uncertain,uncertain
+routed-both,c2f6e4a30e13,касса,google/gemma-3-27b-it,1,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,uncertain,uncertain
+routed-both,c2f6e4a30e13,касса,deepseek/deepseek-v3.2,1,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,keep,keep
+routed-both,c42ea90365a9,словарь,consensus,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+routed-both,c42ea90365a9,словарь,qwen/qwen3-30b-a3b-instruct-2507,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+routed-both,c42ea90365a9,словарь,google/gemma-3-27b-it,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+routed-both,c42ea90365a9,словарь,deepseek/deepseek-v3.2,0,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+routed-both,cd860a993243,доступ,consensus,0,0,122,"Оставайтесь на связи. Пока идёт сверка, оператор продиктует последнюю цифру. Если разорвать звонок, сверку начнут сначала.",,0.1721311475409836,keep,keep
+routed-both,cd860a993243,доступ,qwen/qwen3-30b-a3b-instruct-2507,0,0,122,"Оставайтесь на связи. Пока идёт сверка, оператор продиктует последнюю цифру. Если разорвать звонок, сверку начнут сначала.",,0.1721311475409836,keep,keep
+routed-both,cd860a993243,доступ,google/gemma-3-27b-it,0,0,122,"Оставайтесь на связи. Пока идёт сверка, оператор продиктует последнюю цифру. Если разорвать звонок, сверку начнут сначала.",,0.1721311475409836,keep,keep
+routed-both,cd860a993243,доступ,deepseek/deepseek-v3.2,0,0,122,"Оставайтесь на связи. Пока идёт сверка, оператор продиктует последнюю цифру. Если разорвать звонок, сверку начнут сначала.",,0.1721311475409836,keep,keep
+routed-fixed,0b5f3afe47f2,срок,consensus,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+routed-fixed,0b5f3afe47f2,срок,qwen/qwen3-30b-a3b-instruct-2507,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+routed-fixed,0b5f3afe47f2,срок,google/gemma-3-27b-it,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+routed-fixed,0b5f3afe47f2,срок,deepseek/deepseek-v3.2,location,0,18,Всё идёт по плану.,keep,1.0,keep,keep
+routed-fixed,1f19f3293f1b,опрос,consensus,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+routed-fixed,1f19f3293f1b,опрос,qwen/qwen3-30b-a3b-instruct-2507,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+routed-fixed,1f19f3293f1b,опрос,google/gemma-3-27b-it,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+routed-fixed,1f19f3293f1b,опрос,deepseek/deepseek-v3.2,location,0,32,Все участники остались довольны.,keep,1.0,keep,keep
+routed-fixed,292cb97c3952,тираж,consensus,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-fixed,292cb97c3952,тираж,qwen/qwen3-30b-a3b-instruct-2507,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-fixed,292cb97c3952,тираж,google/gemma-3-27b-it,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-fixed,292cb97c3952,тираж,deepseek/deepseek-v3.2,location,31,74,Лучший результат начинается с первого шага.,keep,1.0,keep,keep
+routed-fixed,294cc8735c5f,владение,consensus,location,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-fixed,294cc8735c5f,владение,qwen/qwen3-30b-a3b-instruct-2507,location,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-fixed,294cc8735c5f,владение,google/gemma-3-27b-it,location,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-fixed,294cc8735c5f,владение,deepseek/deepseek-v3.2,location,79,108,Трудности делают нас сильнее.,flag,1.0,flag,flag
+routed-fixed,2b7e6a018afd,срок,consensus,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+routed-fixed,2b7e6a018afd,срок,qwen/qwen3-30b-a3b-instruct-2507,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+routed-fixed,2b7e6a018afd,срок,google/gemma-3-27b-it,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+routed-fixed,2b7e6a018afd,срок,deepseek/deepseek-v3.2,location,60,78,Всё идёт по плану.,flag,1.0,keep,keep
+routed-fixed,46ea1e2e7838,владение,consensus,location,1,30,Трудности делают нас сильнее.,keep,1.0,flag,flag
+routed-fixed,46ea1e2e7838,владение,qwen/qwen3-30b-a3b-instruct-2507,location,1,30,Трудности делают нас сильнее.,keep,1.0,flag,flag
+routed-fixed,46ea1e2e7838,владение,google/gemma-3-27b-it,location,1,30,Трудности делают нас сильнее.,keep,1.0,flag,flag
+routed-fixed,46ea1e2e7838,владение,deepseek/deepseek-v3.2,location,1,30,Трудности делают нас сильнее.,keep,1.0,keep,keep
+routed-fixed,482273164b21,ритм,consensus,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+routed-fixed,482273164b21,ритм,qwen/qwen3-30b-a3b-instruct-2507,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+routed-fixed,482273164b21,ритм,google/gemma-3-27b-it,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,flag,flag
+routed-fixed,482273164b21,ритм,deepseek/deepseek-v3.2,location,73,96,Быстрее. Выше. Сильнее.,flag,1.0,keep,keep
+routed-fixed,4dc9de74f611,диспетчер,consensus,location,55,83,Нам важно объединить усилия.,keep,1.0,flag,flag
+routed-fixed,4dc9de74f611,диспетчер,qwen/qwen3-30b-a3b-instruct-2507,location,55,83,Нам важно объединить усилия.,keep,1.0,flag,flag
+routed-fixed,4dc9de74f611,диспетчер,google/gemma-3-27b-it,location,55,83,Нам важно объединить усилия.,keep,1.0,flag,flag
+routed-fixed,4dc9de74f611,диспетчер,deepseek/deepseek-v3.2,location,55,83,Нам важно объединить усилия.,keep,1.0,keep,keep
+routed-fixed,53ac471576bc,доступ,consensus,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+routed-fixed,53ac471576bc,доступ,qwen/qwen3-30b-a3b-instruct-2507,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+routed-fixed,53ac471576bc,доступ,google/gemma-3-27b-it,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+routed-fixed,53ac471576bc,доступ,deepseek/deepseek-v3.2,location,65,86,Оставайтесь на связи.,flag,1.0,keep,keep
+routed-fixed,58a18181ed6f,словарь,consensus,location,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+routed-fixed,58a18181ed6f,словарь,qwen/qwen3-30b-a3b-instruct-2507,location,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+routed-fixed,58a18181ed6f,словарь,google/gemma-3-27b-it,location,61,90,Это событие войдёт в историю.,flag,1.0,flag,flag
+routed-fixed,58a18181ed6f,словарь,deepseek/deepseek-v3.2,location,61,90,Это событие войдёт в историю.,flag,1.0,keep,keep
+routed-fixed,65194ea68049,касса,consensus,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-fixed,65194ea68049,касса,qwen/qwen3-30b-a3b-instruct-2507,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-fixed,65194ea68049,касса,google/gemma-3-27b-it,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-fixed,65194ea68049,касса,deepseek/deepseek-v3.2,location,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,keep,keep
+routed-fixed,73941c7386d2,диспетчер,consensus,location,58,86,Нам важно объединить усилия.,flag,1.0,uncertain,uncertain
+routed-fixed,73941c7386d2,диспетчер,qwen/qwen3-30b-a3b-instruct-2507,location,58,86,Нам важно объединить усилия.,flag,1.0,flag,flag
+routed-fixed,73941c7386d2,диспетчер,google/gemma-3-27b-it,location,58,86,Нам важно объединить усилия.,flag,1.0,uncertain,uncertain
+routed-fixed,73941c7386d2,диспетчер,deepseek/deepseek-v3.2,location,58,86,Нам важно объединить усилия.,flag,1.0,keep,keep
+routed-fixed,74b41c7d153c,музей,consensus,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+routed-fixed,74b41c7d153c,музей,qwen/qwen3-30b-a3b-instruct-2507,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+routed-fixed,74b41c7d153c,музей,google/gemma-3-27b-it,location,59,85,Открываем двери в будущее.,flag,1.0,flag,flag
+routed-fixed,74b41c7d153c,музей,deepseek/deepseek-v3.2,location,59,85,Открываем двери в будущее.,flag,1.0,keep,keep
+routed-fixed,8217db985a6e,ветвление,consensus,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+routed-fixed,8217db985a6e,ветвление,qwen/qwen3-30b-a3b-instruct-2507,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+routed-fixed,8217db985a6e,ветвление,google/gemma-3-27b-it,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+routed-fixed,8217db985a6e,ветвление,deepseek/deepseek-v3.2,location,29,50,Шаг 2. Закажите скан.,keep,1.0,keep,keep
+routed-fixed,88596b20f85f,ветвление,consensus,location,29,50,Шаг 2. Закажите скан.,flag,1.0,keep,keep
+routed-fixed,88596b20f85f,ветвление,qwen/qwen3-30b-a3b-instruct-2507,location,29,50,Шаг 2. Закажите скан.,flag,1.0,keep,keep
+routed-fixed,88596b20f85f,ветвление,google/gemma-3-27b-it,location,29,50,Шаг 2. Закажите скан.,flag,1.0,flag,flag
+routed-fixed,88596b20f85f,ветвление,deepseek/deepseek-v3.2,location,29,50,Шаг 2. Закажите скан.,flag,1.0,keep,keep
+routed-fixed,8f4adfd64243,тираж,consensus,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,keep,keep
+routed-fixed,8f4adfd64243,тираж,qwen/qwen3-30b-a3b-instruct-2507,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,keep,keep
+routed-fixed,8f4adfd64243,тираж,google/gemma-3-27b-it,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,flag,flag
+routed-fixed,8f4adfd64243,тираж,deepseek/deepseek-v3.2,location,57,100,Лучший результат начинается с первого шага.,flag,1.0,keep,keep
+routed-fixed,90b88e256de0,архив,consensus,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+routed-fixed,90b88e256de0,архив,qwen/qwen3-30b-a3b-instruct-2507,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+routed-fixed,90b88e256de0,архив,google/gemma-3-27b-it,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+routed-fixed,90b88e256de0,архив,deepseek/deepseek-v3.2,location,0,40,Предстоит провести комплекс мероприятий.,keep,1.0,keep,keep
+routed-fixed,90ce4749e4a3,музей,consensus,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-fixed,90ce4749e4a3,музей,qwen/qwen3-30b-a3b-instruct-2507,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-fixed,90ce4749e4a3,музей,google/gemma-3-27b-it,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-fixed,90ce4749e4a3,музей,deepseek/deepseek-v3.2,location,25,51,Открываем двери в будущее.,keep,1.0,keep,keep
+routed-fixed,9768679dc112,ритм,consensus,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-fixed,9768679dc112,ритм,qwen/qwen3-30b-a3b-instruct-2507,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-fixed,9768679dc112,ритм,google/gemma-3-27b-it,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-fixed,9768679dc112,ритм,deepseek/deepseek-v3.2,location,50,73,Быстрее. Выше. Сильнее.,keep,1.0,keep,keep
+routed-fixed,9883b0919ec9,архив,consensus,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,keep,keep
+routed-fixed,9883b0919ec9,архив,qwen/qwen3-30b-a3b-instruct-2507,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,keep,keep
+routed-fixed,9883b0919ec9,архив,google/gemma-3-27b-it,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,uncertain,uncertain
+routed-fixed,9883b0919ec9,архив,deepseek/deepseek-v3.2,location,81,121,Предстоит провести комплекс мероприятий.,flag,1.0,keep,keep
+routed-fixed,bfa75cba8cb2,опрос,consensus,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+routed-fixed,bfa75cba8cb2,опрос,qwen/qwen3-30b-a3b-instruct-2507,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+routed-fixed,bfa75cba8cb2,опрос,google/gemma-3-27b-it,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+routed-fixed,bfa75cba8cb2,опрос,deepseek/deepseek-v3.2,location,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+routed-fixed,c2f6e4a30e13,касса,consensus,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,uncertain,uncertain
+routed-fixed,c2f6e4a30e13,касса,qwen/qwen3-30b-a3b-instruct-2507,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,flag,flag
+routed-fixed,c2f6e4a30e13,касса,google/gemma-3-27b-it,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,uncertain,uncertain
+routed-fixed,c2f6e4a30e13,касса,deepseek/deepseek-v3.2,location,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,keep,keep
+routed-fixed,c42ea90365a9,словарь,consensus,location,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+routed-fixed,c42ea90365a9,словарь,qwen/qwen3-30b-a3b-instruct-2507,location,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+routed-fixed,c42ea90365a9,словарь,google/gemma-3-27b-it,location,64,93,Это событие войдёт в историю.,keep,1.0,flag,flag
+routed-fixed,c42ea90365a9,словарь,deepseek/deepseek-v3.2,location,64,93,Это событие войдёт в историю.,keep,1.0,keep,keep
+routed-fixed,cd860a993243,доступ,consensus,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+routed-fixed,cd860a993243,доступ,qwen/qwen3-30b-a3b-instruct-2507,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+routed-fixed,cd860a993243,доступ,google/gemma-3-27b-it,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+routed-fixed,cd860a993243,доступ,deepseek/deepseek-v3.2,location,0,21,Оставайтесь на связи.,keep,1.0,keep,keep
+routed-oneshot,0b5f3afe47f2,срок,returned,0,0,99,"Всё идёт по плану. Машина пришла к 08:00, погрузку закончили к 09:00; оба срока совпали с графиком.",,0.18181818181818182,flag,flag
+routed-oneshot,1f19f3293f1b,опрос,returned,0,0,84,Все участники остались довольны. В полученных семи анкетах каждый отметил «доволен».,,0.38095238095238093,flag,flag
+routed-oneshot,292cb97c3952,тираж,returned,0,31,74,Лучший результат начинается с первого шага.,keep,1.0,flag,flag
+routed-oneshot,294cc8735c5f,владение,returned,0,0,39,Партия задержана из-за отсутствия тары.,,0.0,flag,flag
+routed-oneshot,2b7e6a018afd,срок,returned,0,0,78,Счёт отправлен. Срок оплаты согласуют после ответа клиента. Всё идёт по плану.,,0.23076923076923078,flag,flag
+routed-oneshot,46ea1e2e7838,владение,returned,0,0,76,«Трудности делают нас сильнее.» — произнёс начальник и опять не назвал срок.,,0.3815789473684211,flag,flag
+routed-oneshot,482273164b21,ритм,returned,0,0,44,Со вторника накладные выдаются у стойки № 2.,,0.0,flag,flag
+routed-oneshot,4dc9de74f611,диспетчер,returned,0,55,83,Нам важно объединить усилия.,keep,1.0,flag,flag
+routed-oneshot,53ac471576bc,доступ,returned,0,0,64,Журнал откроется во вторник в 09:00 без дополнительных действий.,,0.0,flag,flag
+routed-oneshot,58a18181ed6f,словарь,returned,0,0,90,Библиотекарь передала редактору очередной экземпляр словаря. Это событие войдёт в историю.,,0.32222222222222224,flag,flag
+routed-oneshot,65194ea68049,касса,returned,0,0,46,Каждый случай требует индивидуального подхода.,keep,1.0,flag,flag
+routed-oneshot,73941c7386d2,диспетчер,returned,0,0,57,До 10:30 диспетчер должен вызвать электрика к стенду № 4.,,0.0,flag,flag
+routed-oneshot,74b41c7d153c,музей,returned,0,0,85,С 3 марта ключ от фондохранилища выдаёт дежурный у окна 2. Открываем двери в будущее.,,0.3058823529411765,flag,flag
+routed-oneshot,8217db985a6e,ветвление,returned,0,0,87,Шаг 1. Найдите шифр издания. Шаг 2. Закажите скан. Шаг 3. Проверьте письмо с вложением.,,0.2413793103448276,flag,flag
+routed-oneshot,88596b20f85f,ветвление,returned,0,0,50,Шаг 1. Получите книгу лично. Шаг 2. Закажите скан.,,0.42,flag,flag
+routed-oneshot,8f4adfd64243,тираж,returned,0,0,56,Из 80 экземпляров готовы 54. Остальные привезут в среду.,,0.0,flag,flag
+routed-oneshot,90b88e256de0,архив,returned,0,49,122,"сушим листы, затем восстанавливаем номера, после сверки переснимаем опись",,0.0,flag,flag
+routed-oneshot,90ce4749e4a3,музей,returned,0,25,51,Открываем двери в будущее.,keep,1.0,flag,flag
+routed-oneshot,9768679dc112,ритм,returned,0,50,73,Быстрее. Выше. Сильнее.,keep,1.0,flag,flag
+routed-oneshot,9883b0919ec9,архив,returned,0,0,44,В папке описи отсутствует паспорт блока К-7.,,0.0,flag,flag
+routed-oneshot,bfa75cba8cb2,опрос,returned,0,0,25,Вернули 11 из 14 бланков.,,0.0,flag,flag
+routed-oneshot,bfa75cba8cb2,опрос,returned,1,26,48,Ответы пока не читали.,,0.0,flag,flag
+routed-oneshot,bfa75cba8cb2,опрос,returned,2,49,81,Все участники остались довольны.,flag,1.0,flag,flag
+routed-oneshot,c2f6e4a30e13,касса,returned,0,60,106,Каждый случай требует индивидуального подхода.,flag,1.0,flag,flag
+routed-oneshot,c42ea90365a9,словарь,returned,0,64,93,Это событие войдёт в историю.,keep,1.0,flag,flag
+routed-oneshot,cd860a993243,доступ,returned,0,0,122,"Оставайтесь на связи. Пока идёт сверка, оператор продиктует последнюю цифру. Если разорвать звонок, сверку начнут сначала.",,0.1721311475409836,flag,flag

@@ -1,0 +1,28 @@
+{
+  "backend": "router",
+  "suite": "contrast",
+  "mode": "semantic",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "panel": [
+    "qwen/qwen3-235b-a22b-2507",
+    "google/gemma-4-31b-it",
+    "deepseek/deepseek-v3.2"
+  ],
+  "ids": [
+    "0b5f3afe47f2",
+    "1f19f3293f1b"
+  ],
+  "input_hashes": [
+    "a19b7db93167e231433556a2265f33095c251987f839be12f8d92c60d5eb98ce",
+    "bb0ec9ea9200a97d23aa6efbafbb9f31a04e2946349cc41c30073cb1099a04a8"
+  ],
+  "request_hashes": [
+    "503c436db3511e43abab63254b76eac2d58785ae5927a3ac4424d99166e3ff39",
+    "7e71957656f85d2d5aab86508e3547e12d715050bf8b7f3463a90861866fbf71"
+  ],
+  "rewriter": "standard",
+  "protocol": "mcp",
+  "detector_variant": "blinded",
+  "code_hash": "11b5fd16291e95b60fc4542a8a73cf1b015c80f0e7d177f6a2053c93e2c77524",
+  "revision": "final-native-probe"
+}

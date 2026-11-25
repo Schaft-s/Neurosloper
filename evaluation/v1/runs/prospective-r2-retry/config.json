@@ -1,0 +1,26 @@
+{
+  "backend": "router",
+  "suite": "lockbox",
+  "mode": "union",
+  "model": "qwen/qwen3-235b-a22b-2507",
+  "panel": [
+    "qwen/qwen3-235b-a22b-2507",
+    "google/gemma-4-31b-it",
+    "deepseek/deepseek-v3.2"
+  ],
+  "ids": [
+    "065972bce8e"
+  ],
+  "input_hashes": [
+    "3b0143d5f7f2f913d89ab093257452727b4c0549789c0034d8a5ecef816639ef"
+  ],
+  "request_hashes": [
+    "1f5470e0159e7fd0bfd8c9f5a27e8ccf8c12315a6b130fec79b6011d3e1b51a4"
+  ],
+  "rewriter": "standard",
+  "protocol": "json",
+  "rewrite_consensus": "0",
+  "detector_variant": "blinded",
+  "code_hash": "6f64a8f348272b037413e566aabf22d50f195cb34a9cf14597326268b7958902",
+  "revision": "prospective-r2-retry"
+}

@@ -1,0 +1,91 @@
+{
+  "final-meaning": {
+    "total_contracts": 24,
+    "counts": {
+      "equivalent/pass": 9,
+      "corrupt/reject": 23,
+      "identity/pass": 24,
+      "equivalent/uncertain": 1,
+      "equivalent/reject": 14,
+      "corrupt/uncertain": 1
+    }
+  },
+  "final-rewrite": {
+    "cases": 12,
+    "counts": {
+      "offered": 6,
+      "refused": 6
+    }
+  },
+  "final-rewrite-slopotron": {
+    "cases": 12,
+    "counts": {
+      "offered": 7,
+      "refused": 5
+    }
+  },
+  "independent-rewrite-check": {
+    "total_contracts": 8,
+    "counts": {
+      "corrupt/reject": 8,
+      "equivalent/reject": 7,
+      "equivalent/pass": 1
+    }
+  },
+  "prospective-meaning-single": {
+    "total_contracts": 8,
+    "counts": {
+      "corrupt/reject": 8,
+      "equivalent/reject": 7,
+      "equivalent/pass": 1
+    }
+  },
+  "release-rewrite": {
+    "cases": 12,
+    "counts": {
+      "offered": 7,
+      "refused": 5
+    }
+  },
+  "routed-meaning": {
+    "total_contracts": 24,
+    "counts": {
+      "equivalent/pass": 7,
+      "corrupt/reject": 20,
+      "identity/pass": 24,
+      "equivalent/reject": 13,
+      "corrupt/uncertain": 4,
+      "equivalent/uncertain": 4
+    }
+  },
+  "routed-style": {
+    "cases": 32,
+    "counts": {
+      "refused": 26,
+      "offered": 6
+    }
+  },
+  "routed-style-slopotron": {
+    "cases": 32,
+    "counts": {
+      "refused": 27,
+      "offered": 5
+    }
+  },
+  "shipping-double-meaning": {
+    "total_contracts": 24,
+    "counts": {
+      "equivalent/pass": 9,
+      "corrupt/reject": 24,
+      "identity/pass": 24,
+      "equivalent/reject": 15
+    }
+  },
+  "shipping-rewrite": {
+    "cases": 12,
+    "counts": {
+      "offered": 4,
+      "refused": 8
+    }
+  }
+}

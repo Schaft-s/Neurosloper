@@ -1,0 +1,132 @@
+{
+  "revision_hash": "4bc527b6c3cabf1efebe23e2c99562766cb2353a882147ba05b68e4d42f83295",
+  "backend": "LLM · независимая проверка",
+  "detector": "union",
+  "consensus": {
+    "status": "complete",
+    "quorum": 2,
+    "families": [
+      "qwen",
+      "gemma",
+      "deepseek"
+    ],
+    "skipped": []
+  },
+  "seen": 1,
+  "total": 1,
+  "refusals": [],
+  "trial": "synthetic localhost HTTP",
+  "retained": 3,
+  "votes": [
+    [
+      {
+        "model": "qwen/qwen3-235b-a22b-2507",
+        "served_model": "qwen/qwen3-235b-a22b-2507",
+        "family": "qwen",
+        "architecture": "moe+gqa",
+        "decision": "flag",
+        "status": "ok"
+      },
+      {
+        "model": "google/gemma-4-31b-it",
+        "served_model": "google/gemma-4-31b-it",
+        "family": "gemma",
+        "architecture": "dense+sliding-and-global-attention",
+        "decision": "flag",
+        "status": "ok"
+      },
+      {
+        "model": "deepseek/deepseek-v3.2",
+        "served_model": "deepseek/deepseek-v3.2",
+        "family": "deepseek",
+        "architecture": "mla+moe",
+        "decision": "flag",
+        "status": "ok"
+      }
+    ],
+    [
+      {
+        "model": "qwen/qwen3-235b-a22b-2507",
+        "served_model": "qwen/qwen3-235b-a22b-2507",
+        "family": "qwen",
+        "architecture": "moe+gqa",
+        "decision": "keep",
+        "status": "ok"
+      },
+      {
+        "model": "google/gemma-4-31b-it",
+        "served_model": "google/gemma-4-31b-it",
+        "family": "gemma",
+        "architecture": "dense+sliding-and-global-attention",
+        "decision": "flag",
+        "status": "ok"
+      },
+      {
+        "model": "deepseek/deepseek-v3.2",
+        "served_model": "deepseek/deepseek-v3.2",
+        "family": "deepseek",
+        "architecture": "mla+moe",
+        "decision": "keep",
+        "status": "ok"
+      }
+    ],
+    [
+      {
+        "model": "qwen/qwen3-235b-a22b-2507",
+        "served_model": "qwen/qwen3-235b-a22b-2507",
+        "family": "qwen",
+        "architecture": "moe+gqa",
+        "decision": "flag",
+        "status": "ok"
+      },
+      {
+        "model": "google/gemma-4-31b-it",
+        "served_model": "google/gemma-4-31b-it",
+        "family": "gemma",
+        "architecture": "dense+sliding-and-global-attention",
+        "decision": "flag",
+        "status": "ok"
+      },
+      {
+        "model": "deepseek/deepseek-v3.2",
+        "served_model": "deepseek/deepseek-v3.2",
+        "family": "deepseek",
+        "architecture": "mla+moe",
+        "decision": "flag",
+        "status": "ok"
+      }
+    ],
+    [
+      {
+        "model": "qwen/qwen3-235b-a22b-2507",
+        "served_model": "qwen/qwen3-235b-a22b-2507",
+        "family": "qwen",
+        "architecture": "moe+gqa",
+        "decision": "flag",
+        "status": "ok"
+      },
+      {
+        "model": "google/gemma-4-31b-it",
+        "served_model": "google/gemma-4-31b-it",
+        "family": "gemma",
+        "architecture": "dense+sliding-and-global-attention",
+        "decision": "flag",
+        "status": "ok"
+      },
+      {
+        "model": "deepseek/deepseek-v3.2",
+        "served_model": "deepseek/deepseek-v3.2",
+        "family": "deepseek",
+        "architecture": "mla+moe",
+        "decision": "flag",
+        "status": "ok"
+      }
+    ]
+  ],
+  "rewrite": {
+    "offered": 1,
+    "refusals": []
+  },
+  "accepted_export": "В среду в 11:00 пройдёт показ нового макета. В рамках мероприятия пройдёт демонстрация образца.",
+  "no_selection_preserves_bytes": true
+}

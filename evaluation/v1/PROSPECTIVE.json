@@ -1,0 +1,31 @@
+{
+  "protocol": "prospective-v1",
+  "primary": "union",
+  "baseline": "one-shot",
+  "judges": [
+    "qwen/qwen3-235b-a22b-2507",
+    "google/gemma-4-31b-it",
+    "deepseek/deepseek-v3.2"
+  ],
+  "independent_design": "author receives original SKILL only, no development references, failures or outputs",
+  "main_metrics": [
+    "fixed 3-way accuracy",
+    "all decisions correct per family",
+    "free-search one-to-one span F1 at IoU >= .5",
+    "false positive documents",
+    "source coverage"
+  ],
+  "files": {
+    "engine.py": "c6b956665ba925bf16da5a3f5c1487343e4c28abaee78212c47bceced233db2b",
+    "consensus.py": "0e9fb8255037f522f00969db7dff4b35267c6b69b53bacbbb234284908442437",
+    "policy.py": "487c4e41c6247ed49b270fc4aa443778b74f6f640b525e2ebb06487587c3de60",
+    "fidelity.py": "dd04a9bb6aa7e8cabce8b2606559d5f0d4dc92551eb9920afd5d9c7bb9b01807",
+    "provider.py": "5d01058122678594b383dcbe291e7a50beb1943bc8f546a4ca0dbd19338fa135",
+    "spending.py": "5f8c47e58f12a392ec7a6dc1218605777b2aa373f54b68061f728f9501d65ae7",
+    "document_tools.py": "5742771b1cb6df28dc937b57ef60dad0f62d24fefab47f0a262c402a27812add",
+    "formats.py": "b775422ab0745c2b7ccd6a6637696164c9bf80b1c465237032a16ef7a4c361a8",
+    "offline.py": "c8f9b33c94b7f100e2e0b497ab508f87c5f133e41a6df4237a4695fc260a9f38",
+    "vendor/slopotron/SKILL.md": "d693f385cbd9e9a2636850dd8d93e39216d7b3b50d3b6d80457d1fe91e961fcc"
+  },
+  "engine_sha_scope": "sha256 per file"
+}
